@@ -1,0 +1,10 @@
+.text{
+    background-color: black;
+    color: green;
+}
+.tt{
+    border: 4px;
+    border-radius: 50%;
+    background-color: red;
+    color: blue;
+}

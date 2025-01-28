@@ -1,7 +1,7 @@
 from turtle import *
 
 color("white")
-speed(50)
+speed(100)
 
 forward(100)
 color("black")
