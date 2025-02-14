@@ -7,7 +7,7 @@ numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 num = 0
 
-for number in numbers:
-    num += number
+for num in numbers:
+    num += numbers
     
 print(num)

@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"name": "projects",
+			"path": "../../projects"
+		},
+		{
+			"name": "project3",
+			"path": "../project3"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../bank"
+		}
+	],
+	"settings": {}
+}

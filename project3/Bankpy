@@ -1,0 +1,129 @@
+print("mogesalmebist goas banksi")
+print("gaiaret registracia")
+name = input("saxeli:")
+password = input("paroli:")
+
+user_name1 = input("gaimeoret saxeli:")
+user_password1 = input("gaimeoret paroli:")
+
+while user_name1 != name or user_password1 != password:
+    print("registracia ver gaiaret")
+    name = input("tavidan daweret saxeli:")
+    password = input("tavidan daweret paroli:")
+else:
+    print("gamarjoba", name)
+    print("gtavazobt anabris gaketebas ")
+    an = input("tu gnebavt anabris ageba daweret ok:")
+
+if an == "ok":
+     print("gtavazobt axali anabris gaxsnas:")
+
+print("gtxovt airciot anabris tipi")
+
+type_an = input("1-vadiani, 2-segrovebadi:")
+
+if type_an == "1":
+    print("tqven airciet vadiani")
+    vd_an = int(input("airciet anabris sawyisi tanxa:"))
+    while vd_an > 10000 or vd_an < 500:
+        print("tqven ar segizliat 10000 larze meti an 500 larze naklebis anabris areba")
+        vd_an = int(input("gtxovt xelaxla seiyvanot sawyisi tanxa:"))
+    else:
+        print("tqven airciet", vd_an, "lari")
+    print("gtxovt exla seiyvanot tu ramdeni tvit gsurt anabris ageba:")
+
+    tve_an = int(input("3 4 5 6 7 8 9 10-tve:"))
+
+    if tve_an < 3  or tve_an > 10:
+       print("tqven ar segizliat airciot" , tve_an, "-tve")
+      # tve_an = int(input("airciet xelaxla:"))
+       while tve_an >= 3 or tve_an <= 10:
+        print("scadet xelaxla")
+        tve_an = int(input("airciet xelaxla:"))
+    else:
+        print("tqven airciet", tve_an, "tve")
+        result_an = input("daweret ok sedegis sanaxavad:")
+        if result_an == "ok":
+           print("anabris tipi:")
+        print(type_an,"tipis")
+        print("anabris sawyisi tanxa:")
+        print(vd_an, "-lari")
+        print("anabris vada:")
+        print(tve_an,"-tve")
+    print("airciet angarisi tanxis camosawrelad:")
+    print("1-GE12345678901234567890GEL")
+    print("2-GEL0987654321098765432GEL")
+    gel_an = input("airciet angarisi:")
+    if gel_an == "1" or gel_an == "2":
+        print("tqven airciet", gel_an, "-angarisi")
+    else:
+        print("angarisi ver moizebna")
+    end_an = input("daweret ok proceduris dasasruleblad:")
+    if end_an == "ok":
+        print("gmadlobt rom sargeblobt cveni bankit")
+        while end_an != "ok":
+            print("scadet xelaxla")
+            end_an = input("daweret ok proceduris dasasruleblad")
+
+    
+    
+
+elif type_an == "2":
+    print("tqven airciet segrovebadi")
+    seg_an = int(input("airciet anabris sawyisi tanxa:"))
+    while seg_an > 10000 or seg_an < 500:
+        print("tqven ar segizliat 10000 larze meti an 500 larze naklebis anabris areba")
+        seg_an = int(input("gtxovt xelaxla seiyvanot sawyisi tanxa:"))
+    else:
+        print("tqven airciet", seg_an, "lari")
+    print("gtxovt exla seiyvanot tu ramdeni tvit gsurt anabris ageba:")
+
+    tve_an = int(input("3 4 5 6 7 8 9 10-tve:"))
+
+    if tve_an < 3  or tve_an > 10:
+       print("tqven ar segizliat airciot" , tve_an, "-tve")
+      # tve_an = int(input("airciet xelaxla:"))
+       while tve_an >= 3 or tve_an <= 10:
+        print("scadet xelaxla")
+        tve_an = int(input("airciet xelaxla:"))
+    else:
+        print("tqven airciet", tve_an, "tve")
+        result_an = input("daweret ok sedegis sanaxavad:")
+        if result_an == "ok":
+           print("anabris tipi:")
+        print(type_an,"tipis")
+        print("anabris sawyisi tanxa:")
+        print(seg_an, "-lari")
+        print("anabris vada:")
+        print(tve_an,"-tve")
+    print("airciet angarisi tanxis camosawrelad:")
+    print("1-GE12345678901234567890GEL")
+    print("2-GEL0987654321098765432GEL")
+    gel_an = input("airciet angarisi:")
+    if gel_an == "1" or gel_an == "2":
+        print("tqven airciet", gel_an, "-angarisi")
+    else:
+        print("angarisi ver moizebna")
+    end_an = input("daweret ok proceduris dasasruleblad:")
+    if end_an == "ok":
+        print("gmadlobt rom sargeblobt cveni bankit")
+        while end_an != "ok":
+            print("scadet xelaxla")
+            end_an = input("daweret ok proceduris dasasruleblad")
+
+
+
+
+
+
+
+
+
+        
+ 
+
+    
+    
+
+
+
