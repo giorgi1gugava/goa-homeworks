@@ -1,25 +1,37 @@
-#test div{
+#test{
+    width: 1300px;
+    height: 800px;
+    border:solid blue 3px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.t1{
+    width: 300px;
+    height: 300px;
+    border: solid black 1px;
+    display: flex;
+    justify-content: space-around;
+    
+    
+}
+#child1{
+    padding-top: 50px;
+}
+#child2{
+    flex-direction: column;
+    padding-left: 50px;
+}
+#child3{
+    flex-direction: row-reverse;
+}
+.t1 div{
     width: 50px;
     height: 50px;
-    border:solid black 1px;
+    background-color: red;
+    color: white;
+    display: flex;
     justify-content: center;
-
-    
-
-}
-#test{
-    width: 200px;
-    height: 200px;
-    border:solid blue 3px;
-    display: flex;
-    flex-direction: row;
-    
-}
-
-#test1{
-    width: 200px;
-    height: 200px;
-    border:solid blue 3px;
-    display: flex;
-    flex-direction: row;
+    align-items: center;
 }

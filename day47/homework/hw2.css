@@ -1,0 +1,35 @@
+#test{
+    width: 350px;
+    height: 600px;
+    background-color: rgb(39, 38, 38);
+    border-radius: 5%;
+}
+#img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+#text1{
+    font-size: 30px;
+    margin-top: 5px;
+    color: white;
+}
+
+#text{
+    color: greenyellow;
+    margin-top: -20px;
+}
+body{
+    background-color: rgb(24, 24, 24);
+}
+.t1{
+    width: 300px;
+    height: 50px;
+    background-color: rgb(78, 76, 76);
+    margin: 8px;
+    border-radius: 10px;
+    margin-top: 30px;
+    color: white;
+}
+

@@ -1,0 +1,58 @@
+body{
+    background-color:  gold;
+}
+#box{
+    background-color: white;
+    width: 300px;
+    height: 420px;
+    border: solid black 2px;
+    border-radius: 5%;
+}
+
+#div{
+    margin-left: -175px;
+    width: 70px;
+    height: 25px;
+    border: none;
+    border-radius: 10%;
+    background-color: gold;
+
+
+}
+#txt{
+    margin: -1px;
+    color: black;
+    text-align: center;
+}
+
+#img{
+    margin: 20px;
+    width: 250px;
+    height: 160px;
+    border-radius: 5%;
+}
+#txt1{
+    color: black;
+    margin-left: -130px;
+    font-size: 14px;
+}
+#txt2{
+    margin: -5px;
+    margin-left: -50px;
+    color: black;
+    font-size: 20px;
+}
+#txt3{
+    color: gray;
+}
+#img1{
+    margin-top: -110px;
+    margin-left: -190px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: solid black 2px;
+}
+#txt4{
+    font-size: 20px;
+}

@@ -1,0 +1,38 @@
+#test{
+    height: 250px;
+    width: 360px;
+    border: solid rgb(255, 255, 255) 2px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+
+    
+}
+.t1{
+    border: solid rgb(255, 0, 0) 2px;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    text-align: center;
+}
+.t2{
+    border: solid rgb(72, 0, 255) 2px;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    text-align: center;
+    
+}
+
+.t2 p{
+    color: blue;
+    font-size: 20px;
+}
+.t1 p{
+    color: red;
+    font-size: 20px;
+}
