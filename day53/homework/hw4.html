@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            width: 1000px;
+            height: 50px;
+            background-color: gray;
+            position: fixed;
+            top: -5px;
+            z-index: 2;
+        }
+
+        #p1{
+            display: flex;
+            justify-content: center;
+            color: white;
+            font-size: 20px;
+        }
+
+        #box1{
+            position: relative;
+            top: 50px;
+            height: 800px;
+            
+            border: 2px solid black;
+
+        }
+        #img{
+            width: 400px;
+            height: 300px;
+            z-index: 1;
+            border: 2px solid black;
+            
+            
+        }
+        #p2{
+            font-size: 40px;
+        }
+        #p3{
+            font-size: 20px;
+        }
+
+
+
+        
+    </style>
+</head>
+<body>
+    <!--4)შექმენი ვებგვერდი, სადაც გამოყენებული იქნება CSS პოზიციონირების ოთხივე ტიპი: static, relative, absolute და fixed. გვერდის ზედა ნაწილში განათავსე ფიქსირებული ჰედერი (fixed), რომელშიც ეწერება „ჩემი პროფილი“ და რომელიც დარჩება ეკრანზე გადახვევის დროს. ჰედერის ქვემოთ შექმენი პროფილის ბლოკი (relative), სადაც იქნება ფოტო, სახელი და აღწერა. ამ ბლოკის შიგნით ფოტოს მარჯვენა ზედა კუთხეში დაამატე წითელი ბეიჯი (absolute) შეტყობინებების რიცხვით (მაგალითად, 3). ბოლოს დაამატე ჩვეულებრივი ტექსტის აბზაცი (static), რომელიც გვერდზე დარჩება ჩვეულებრივ დოკუმენტის ნაკადში. თითოეულ ბლოკს გამოიყენე განსხვავებული ფერი და ზომები, რათა პოზიციონირების ეფექტები თვალსაჩინო იყოს-->
+    <header>
+        <div id="box">
+            
+            <p id="p1">MY PROFILE</p>
+        </div>
+    </header>
+    <div id="box1">
+        <center>
+            <p id="p2">GUSTAVO</p>
+        <img src="https://i.uai.com.br/QKUOHZ1IPjvjevBdak0ka3uDAOk=/750x0/imgsapp2.uai.com.br/app/noticia_133890394703/2022/07/19/293483/gus-fring-em-breaking-bad_1_48389.jpg" id="img">
+        <p id="p3">Hello, and welcome to the Los Pollos Hermanos family! My name is Gustavo, but you can call me Gus</p>
+        </center>
+    </div>
+
+
+</body>
+</html>

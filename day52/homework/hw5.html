@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent{
+            height: 200px;
+            border: solid black 2px;
+        }
+        #child{
+            height: 50px;
+            width: 50px;
+            position: static;
+            right: 30px;
+            top: 30px;
+            border: solid black 2px;
+        }
+    </style>
+</head>
+<body>
+    <!--შექმენით ერთ დივი და მიეცით სიმაღლე და სიგანე 200px,ამ დივში მოათავსეთ ერთ დივი რომლის სიმაღლე და სიგანე იქნება 50px და ამ შვილ დივს მიეცით position static,ასევე უთარით რომ მარჯვნიდან და ზემოდან დაშორება იყოს 30px,და ნახეთ შედეგი(position static = default location)-->
+    <div id="parent">
+        <div id="child"></div>
+    </div>
+</body>
+</html>
