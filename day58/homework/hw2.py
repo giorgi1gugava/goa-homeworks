@@ -1,0 +1,1 @@
+#2) ნასწავლ მეთოდებზე შეასრულეთ 3-3 მაგალითი: lower, upper, capitalize, find, len, append, insert, pop

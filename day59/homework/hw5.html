@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<style>
+    body{
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100wh;
+        margin: 0;
+    }
+    .b{
+        text-align: center;
+        color: white;
+        font-family: Arial,sans-serif;
+    }
+    
+    .b1{
+        font-size: 45px;
+        margin-top: 200px;
+        color: gray;
+    }
+    .b2{
+        width: 300px;
+        height: 20px;
+        background-color: gray;
+        border-radius: 10px;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+    .b3{
+        width: 0;
+        height: 100%;
+        background-color: white;
+        transition: width 0.5s;
+    }
+
+    .b :hover .b3{
+        width: 100%;
+    }
+    .b4{
+        margin-top: 10px;
+        font-size: 15px;
+        color: gray;
+    }
+    #pic{
+        margin-top: 80px;
+        margin-right: -270px;
+    }
+</style>
+<body>
+    <img src="/day59/homework/Screenshot 2025-04-28 210541.png" width="250" id="pic">
+    <div class="b">
+      
+        <div class="b1">
+        <div class="b2">
+            <div class="b3"></div>
+        </div>
+        </div>
+        <div class=b4>
+            loading...
+        </div>
+    </div>
+</body>
+</html>
