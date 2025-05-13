@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 80vh;
+        }
+        @keyframes thesun {
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        #sun{
+            width: 50px;
+            height:50px;
+            background-image: url(https://static.vecteezy.com/system/resources/thumbnails/021/667/312/small/sun-emoji-line-icon-outline-icon-sun-emoji-on-white-background-vector.jpg);
+            background-size: 50px 50px;
+            
+            border: 1px solid red;
+            border-radius: 50%;
+            animation-name:  thesun;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-duration: 2s;
+        }
+        #orbita{
+            padding: 75px;
+            border: 1px solid black;
+            
+            border-radius: 50%;
+            position: absolute;
+            animation-name: thesun;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            
+        }
+        #planeta{
+            padding: 15px;
+            background-color: red;
+            border-radius: 50%; 
+            top: 185px;
+            position: absolute;
+            
+        }
+        #orbita1{
+            padding: 130px;
+            border: 1px solid black;
+            
+            border-radius: 50%;
+            position: relative;
+            animation-name: thesun;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            margin-top: -30px;
+            margin-left: -25px;
+
+        }
+        #planeta1{
+            padding: 15px;
+            background-color: rgb(0, 0, 0);
+            border-radius: 50%; 
+            top: 245px;
+            position: absolute;
+
+        }
+        #orbita2{
+            position: absolute;
+            padding: 160px;
+            border: 1px solid black;
+            border-radius: 50%;
+            margin-top: -290px;
+            margin-left: -55px;
+            animation-name: thesun;
+            animation-duration: 8s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+
+        }
+        #planeta2{
+            padding: 20px;
+            background-color: rgb(255, 153, 0);
+            border-radius: 50%; 
+            top: -16px;
+            position: absolute;
+            
+
+        }
+
+        #img{
+            margin-left: -200px;
+           
+            
+        }
+        #main{
+            margin-left: 300px;
+            transition: 5s;
+        }
+        #img1{
+            width: 180px;
+            height: 170px; 
+            position: relative;
+            transition: 4s;
+        }
+        :hover #img1{
+            margin-left: 200px;
+            position: absolute;
+
+        }
+        :hover #main{
+            margin-left: 500px;
+        }
+        
+    </style>
+</head>
+<body>
+    <img src="https://i.pinimg.com/736x/47/cb/4f/47cb4f76412bd1499647db780368ede1.jpg" width="300" height="300" id="img">
+    <img src="https://thumbs.dreamstime.com/b/colorful-fire-blue-red-yellow-flames-shooting-out-sky-surrounded-white-background-concept-energy-318605056.jpg" id="img1">
+    
+    <div id="main">
+        
+        
+        <div id="orbita">
+            <div id="sun"></div>
+                <div id="planeta">
+            </div>
+        </div>
+        <div id="orbita1">
+            <div id="planeta1">
+            </div>
+        </div>
+
+        <div id="orbita2">
+            <div id="planeta2">
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
