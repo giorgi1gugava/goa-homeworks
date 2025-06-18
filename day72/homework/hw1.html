@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Profile card component</title>
+
+  
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    body{
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(25, 161, 173);
+    }
+    #box{
+      width: 400px;
+      height: 450px;
+      background-color: white;
+      border-radius: 10px;
+      
+    }
+    #pr{
+      width: 400px;
+      height: 150px;
+      background-image: url(/images/bg-pattern-card.svg);
+      background-size: 400px 150px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+    img{
+      width: 120px;
+      height: 120px;
+      margin-left: 140px;
+      border: 5px solid white;
+      border-radius: 50%;
+      margin-top: -65px;
+    }
+    #pr2{
+      width: 300px;
+      height: 80px;
+      
+      display: flex;
+      margin-left: 50px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+     
+    }
+    
+    #ch{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+    #par{
+      font-size: 27px;
+      color: hsl(227, 10%, 46%);;
+    }
+    #par1{
+      color:hsl(227, 10%, 46%);
+      margin-top: 10px;
+      font-size: 20px;
+    }
+    h2{
+      color:hsl(229, 23%, 23%);
+    }
+
+    #pr1{
+      margin-top: 50px;
+      width: 400px;
+      height: 100px;
+      border-top: 1px solid rgb(220, 220, 220);
+      display: flex;
+      flex-direction: row;
+      gap: 60px;
+      justify-content: center;
+      align-items: center;
+
+    }
+   
+    .txt{
+      margin-top: -12px;
+      font-size: 15px;
+      color:hsl(227, 10%, 46%);
+      
+    }
+    #par2{
+      margin-left: -10px;
+    }
+    h3{
+      color: hsl(229, 23%, 23%);
+      font-size: 24px;
+    }
+  </style>
+</head>
+<body>
+  <div id="box">
+    <div id="pr"></div>
+    <img src="/day72/homework/image-victor.jpg">
+
+  <div id="pr2">
+    <div id="ch">
+  <h2>Victor Crest</h2>
+  <p id="par">26</p>
+  </div>
+  
+ 
+  <p id="par1">London</p>
+  </div>
+  
+  <div id="pr1">
+  <div id="ch1">
+  <h3>80K</h3>
+  <br>
+  <p class="txt" id="par2">Followers</p>
+  </div>
+  
+  <div id="ch2">
+  <h3>803K</h3>
+  <br>
+  <p class="txt">Likes</p>
+  </div>
+  
+  <div id="ch3">
+  <h3>1.4K</h3>
+  <br>
+  <p class="txt">Photos</p>
+  </div>
+
+  </div>
+
+  </div>
+</body>
+</html>

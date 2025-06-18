@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .pr{
+            width: 800px;
+            height: 800px;
+            border: 1px solid red;
+            display: grid;
+            grid-template-columns: 200px 200px 200px;
+            grid-template-rows: 200px 200px 200px;
+            
+        }
+        .ch{
+            width: 80px;
+            height: 80px;
+            background-color: green;
+            gap: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #two{
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 4;
+           background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <!--წინა დავალებაში დივებში ჩაწერეთ რიცხევი,თქვენი დავალებაა მეორე დივი გადმოიტანოთ და გაანაწილოთ  8 და 9 დივის ადგილზე-->
+   
+    <div class="pr">
+        <div class="ch">1</div>
+        <div class="ch " id="two">2</div>
+        <div class="ch">3</div>
+        <div class="ch">4</div>
+        <div class="ch">5</div>
+        <div class="ch">6</div>
+        <div class="ch">7</div>
+        <div class="ch">8</div>
+        <div class="ch">9</div>
+    </div>
+</body>
+</html>

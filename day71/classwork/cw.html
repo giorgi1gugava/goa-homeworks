@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Order summary card</title>
+
+  
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+    }
+    body{
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(214, 225, 255);
+    }
+    #box{
+      width: 400px;
+      height: 580px;
+       
+      display: flex;
+      flex-direction: column;
+      border-radius: 20px;
+      background-color: white;
+
+      
+    }
+    #pr{
+      background-image: url(/day71/classwork/illustration-hero.svg);
+      background-size: 400px 200px;
+      width: 400px;
+      height: 200px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+    #pr1{
+      width: 300px;
+      display: flex;
+      height: 100px;
+      
+      flex-direction: column;
+      
+      margin-left: 50px;
+      margin-top: 40px;
+    }
+    h1{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #txt{
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color:  gray;
+    }
+    #txt1{
+      margin-left: 80px;
+      color:  gray;
+      font-size: 18px;
+    }
+
+
+    #pr2{
+      width: 350px;
+      height: 70px;
+      
+      margin-left: 20px;
+      display: flex;
+      background-color: rgb(248, 249, 254);
+      border-radius: 10px;
+      margin-top: 20px;
+      
+    }
+    button{
+      width: 350px;
+      height: 45px;
+      background-color: rgb(118, 108, 240);
+      margin-left: 20px;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      margin-top: 30px;
+    }
+    img{
+      width: 40px;
+      height: 40px;
+      margin-left: 20px;
+      margin-top: 15px;
+    }
+    #ch{
+      display: flex;
+      flex-direction: column;
+      margin-left: 15px;
+    }
+    #txt2{
+      margin-left: 110px;
+      margin-top: 25px;
+      color: hsl(245, 75%, 52%);
+      font-size: 18px;
+    }
+    #txt3{
+      margin-top: 15px;
+      gap: 1px;
+      font-weight: bolder;
+      font-size: 18px;
+    }
+    #txt4{
+      margin-left: 150px;
+      margin-top: 25px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div id="box">
+   <div id="pr"></div>
+  <div id="pr1">
+  <h1>Order Summary</h1>
+
+  <p id="txt">You can now listen to millions of songs, audiobooks, and podcasts on any 
+  device </p><p id="txt1">anywhere you like!</p>
+  </div>
+
+   <div id="pr2">
+  <img src="/day71/classwork/icon-music.svg">
+  <div id="ch">
+  <p id="txt3">Annual Plan</p>
+  
+  <p class="txt">$59.99/year</p>
+  </div>
+
+  <p id="txt2">Change</p>
+  </div>
+
+  <button>Proceed to Payment</button>
+  <p id="txt4">Cancel Order</p>
+
+
+  </div>
+</body>
+</html>
