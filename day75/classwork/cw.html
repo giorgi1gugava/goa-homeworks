@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .pr{
+            width: 600px;
+            border: 1px solid red;
+            display: grid;
+            grid-template-columns: 100px 100px 100px 100px 100px 100px;
+            grid-template-rows: 100px 100px 100px 100px 100px; 
+            
+        }
+        .ch{
+            width: 100%;
+            height: 100%;
+            background-color: red;
+            gap: 10px;
+        }
+       .fir{
+        grid-row: 2/4;
+        grid-column: 3/5;
+        
+       }
+       .sec{
+        grid-row: 4/6;
+        grid-column: 1/3;
+       }
+    </style>
+</head>
+<body>
+    <!--შექმენით ერთი დიდი დივი,რომელსაც ბორდერი ექნება წითელი ფერის,ამ დივში შექმენით 9 დივი,თქვენი დავალებაა ეს 9 დივი გადაანაწილეთ გრიდის დახმარებით სამ როუში და სამ ქოლუმნში-->
+    <div class="pr">
+        <div class="ch fir"></div>
+        <div class="ch sec"></div>
+        
+    </div>
+</body>
+</html>

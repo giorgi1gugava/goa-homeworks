@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        #box{
+            width: 600px;
+            display: grid;
+            grid-template-columns: 100px 100px 100px 100px 100px 100px;
+            grid-template-rows: 100px 100px 100px 100px;
+        }
+        #ch{
+            background-color: green;
+            width: 100%;
+            height: 100%;
+            grid-row: 2/4;
+            grid-column: 1/6;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div id="ch"></div>
+    </div>
+</body>
+</html>
