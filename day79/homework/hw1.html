@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #pr{
+            height: 600px;
+            width: 600px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+        }
+        .ch{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <!--შექმენი ფერენთ დივი,ამ დივში მოათავსეთ შვილი ელემენტები და ამ შვილ ელემენტებში ჩაწერეთ რიცხვებიც საჩვენებლად,თქვენი დავალებაა გამოიყენოთ (repeat(),fr,auto-fit,minmax())რომ შენი საიტი იდეალურად მოერგოს ყველა მოწყობილობას-->
+    <div id="pr">
+        <div class="ch">1</div>
+        <div class="ch">2</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #pr{
+            width: 600px;
+            height: 600px;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(2,1fr);
+        }
+        .sec{
+            width: 100%;
+            height: 100%;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <!--შექმენით ფერენთ დივი,ამ დივში მოათავსეთ შვილობილი ელემენტები,თქვენი დავალებაა რომ გმაოიყენოთ repeat ფუნქცია და fr  ები რომ თქვენს მიერ შექმნილი გრიდი იდეალურად ერფებოდეს ყველა მოწყობილობას-->
+    <div id="pr">
+        <div class="sec"></div>
+        <div class="fir"></div>
+    </div>
+</body>
+</html>
