@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; 
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(229, 229, 229);
+        }
+       
+        #pr{
+            width: 1200px;
+            height: 50px;
+            
+            display: flex;
+            flex-direction: row;
+            background-color: white;
+        }
+        #box{
+            width: 1200px;height: 4450px;
+            border: 2px solid red;
+            box-shadow: 0px 0px 5px rgb(190, 190, 190);
+        }
+        #pr1{
+            width: 1200px;
+            height: 500px;
+            border: 1px solid rgb(240, 239, 235);
+            background-color: rgb(240, 239, 235);
+        }
+        #p{
+            font-size: 45px;
+            font-weight: 800;
+            margin-left: 180px;
+            margin-top: 80px;
+        }
+        #p1{
+            font-size: 45px;
+            font-weight: 800;
+            margin-left: 180px;
+        }
+        #p2{
+            margin-left: 180px;
+            margin-top: 50px;
+            font-size: 20px;
+        }
+        #but{
+            width: 100px;
+            height: 30px;
+            border: none;
+            background-color: black;
+            color: white;
+            border-radius: 50px;
+            margin-left: 175px;
+            margin-top: 30px;
+        }
+        #img{
+            height: 500px;
+            width: 550px;
+            margin-left: 600px;
+            margin-top: -395px;
+        }
+        #pr2{
+            height: 1000px;
+            width: 1200px;
+           
+            background-color: white;
+            margin-top: -50px;
+        }
+        .p{
+            margin-left: 30px;
+            margin-top: 10px;
+            font-weight: 600;
+            font-size: 18px;
+        }
+        #pp{
+            margin-left: 180px;
+            
+        }
+        #pp1{
+            margin-left: 100px;
+            margin-top: 10px;
+            font-size: 20px;
+            font-weight: 600;
+        }
+        #p7{
+            margin-left: 350px;
+            font-size: 30px;
+            font-weight: 600;
+            margin-top: 50px;
+        }
+        #p8{
+            margin-left: 450px;
+           margin-top: 100px;
+            font-size: 20px;
+
+        }
+        #p9{
+            margin-left: 500px;
+            font-weight: 600;
+            font-size: 30px;
+            margin-top: 100px;
+        }
+        .img{
+            width: 300px;
+            height: 400px;
+            margin: 30px;
+            margin-top: 50px;
+        }
+        #img1{
+            margin-left: 70px;
+        }
+        #pp3{
+            color: black;
+            font-weight: 600;
+            margin-left: 150px;
+        }
+        #pp4{
+            margin-left: 150px;
+            margin-top: 20px;
+        }
+        #a{
+            margin-left: 150px;
+            margin-top: 20px;
+        }
+        #pp5{
+            margin-left: 500px;
+            margin-top: -110px;
+            font-weight: 600;
+        }
+        #pp6{
+            margin-left: 500px;
+            margin-top: 17px;
+        }
+        #a1{
+            margin-left: 500px;
+        }
+        #pp7{
+            margin-left: 900px;
+            margin-top: -110px;
+            font-weight: 600;
+        }
+        #pp8{
+            margin-left: 900px;
+            margin-top: 17px;
+        }
+        #a2{
+            margin-left: 900px;
+        }
+        #pr3{
+            height: 500px;
+            width: 1200px;
+            background-color: rgb(240, 240, 240);
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        #img2{
+              height: 420px;
+              width: 320px;
+              margin-left: -300px;
+        }
+        #p10{
+            width: 350px;
+            font-size: 25px;
+            font-weight: 500;
+            margin-left: -200px;
+        }
+        h3{
+            font-size: 28px;
+            margin-top: -300px;
+        }
+        #pr4{
+             width: 1200px;
+             height: 500px;
+             background-color: rgb(224, 224, 224);
+             display: flex;
+             flex-direction: row;
+             justify-content: center;
+             align-items: center;
+             position: relative;
+        }
+        #img3{
+            height: 420px;
+            width: 320px;
+            margin-left: 20px;
+            
+        }
+        h4{
+            font-size: 30px;
+            margin-top: -300px;
+            margin-left: 1px;
+            position: absolute;
+            
+        }
+        #p11{
+            font-size: 25px;
+            font-weight: 500;
+            width: 350px;
+            margin-left: 300px;
+        }
+        #pr5{
+            width: 1200px;
+            height: 500px;
+            background-color: rgb(240, 240, 240);
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        #img4{
+            height: 420px;
+            width: 320px;
+            margin-left: -250px;
+        }
+        #p12{
+            width: 350px;
+            font-size: 25px;
+            font-weight: 500;
+            margin-left: -200px;
+        }
+        h2{
+            font-size: 28px;
+            margin-top: -300px;
+        }
+        #pr6{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        #ch{
+            width: 600px;
+            height: 350px;
+            
+            display: grid;
+            grid-template-columns: auto auto auto ;
+            margin-top: 100px;
+            margin-left: 100px;
+            
+            
+        }
+        #f{
+            background-color: aqua;
+            border-radius: 50%;
+            width: 70px;
+            height: 70px;
+        }
+        #f1{
+            background-color: rgb(51, 211, 188);
+            border-radius: 50%;
+            width: 70px;
+            height: 70px;
+        }
+        #f2{
+            background-color: rgb(24, 165, 198);
+            border-radius: 50%;
+            width: 70px;
+            height: 70px;
+        }
+        #f3{
+            background-color: rgb(211, 143, 98);
+            border-radius: 50%;
+            width: 70px;
+            height: 70px;
+        }
+        #f4{
+            background-color: rgb(249, 76, 67);
+            border-radius: 50%;
+            width: 70px;
+            height: 70px;
+        }
+        #f5{
+            background-color: rgb(211, 153, 255);
+            border-radius: 50%;
+            width: 70px;
+            height: 70px;
+        }
+        .pp9{
+            font-size: 25px;
+            font-weight: 600;
+            margin-top: 80px;
+        }
+
+        #pr7{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            margin-top: 100px;
+            gap: 80px;
+        }
+        .img11{
+            width: 220px;
+            height: 320px;
+        }
+        .pp10{
+            margin-top: 50px;
+            font-weight: 500;
+            margin-left: 10px;
+        }
+        .para{
+            font-size: 20px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div id="pr">
+            
+            <p class="p" id="pp">shop</p>
+            <p class="p">collections</p>
+            <p class="p">try a free guide</p>
+            <p class="p">stories</p>
+
+            <p id="pp1">thalby</p>
+            
+        </div>
+        <div id="pr1">
+            <p id="p">fall deeper in love <br>with</p>
+            <p id="p1">humanity.</p>
+            <p id="p2">Get to know the world through on consice,<br>informative and inspiring giudes. </p>
+            <button id="but">Shop Now</button>
+            <img src="/day83/homework/ed8e5f0563dcce516d3b5c8c8e1a30e1250890ec.png" id="img">
+        </div>
+        <div id="pr2">
+            <p id="p7">our guides explain countries and culturies.</p>
+            <p id="p8">Avalible as ebooks here on amazon.</p>
+            <p id="p9">Our best sellers</p>
+            <img src="/day83/homework/c5b3763c2e1dff5c756b04a47363c0e3d98157bb.png" class="img" id="img1">
+            <img src="/day83/homework/579f4c110d33af82ab9dc2419ffd5b42337ece1b.png" class="img">
+            <img src="/day83/homework/dc7f3922ec572b23434479499c0970cdb5e2a40c.png" class="img">
+            <p id="pp3">thalby guide to <br>french culture and <br>Heritage</p>
+            <p id="pp4">USD 6.99</p>
+            <a href="" id="a">add to cart</a>
+
+            <p id="pp5">thalby guide to <br>french people and <br>society</p>
+            <p id="pp6">USD 6.99</p>
+            <a href="" id="a1">add to cart</a>
+
+            <p id="pp7">thalby guide to <br>German culture and <br>Heritage</p>
+            <p id="pp8">USD 6.99</p>
+            <a href="" id="a2">add to cart</a>
+        </div> 
+        <div id="pr3">
+            <img src="/day85/homewoek/efb19814d05ac2930ecf2e357c40577f7e9f5910.png" id="img2">
+            <h3>people and society</h3>
+            <br>
+            <p id="p10">
+                Our guides to society deliver all the social insight you need, helping you understand how people live, love and play today and why communities are the way they are.
+                Shop Society Guides</p>
+        </div>
+        <div id="pr4">
+            <h4>culture and Heritage</h3>
+                <p id="p11">
+                    As well as covering heritage and tradition, our guides to culture introduce you to the designers, artists and chefs creating at the forefront of today's culture.
+                    Shop Culture Guides</p>
+            <img src="/day85/homewoek/2f5626f44009374b1fc4a9aa814e3f7cb62f2f01 (1).png" id="img3">
+             
+             
+        </div>
+        <div id="pr5">
+            <img src="/day85/homewoek/bacfbe0063f610f9dfd433c9f7f0c934a65451cc.png" id="img4">
+            <h2>Power and Politics</h2>
+            <p id="p12">
+                Our guides to power take you behind the scenes to explore the power dynamics, policies and politics shaping a country's future and its global position.
+                Coming 2022!</p>
+        </div>
+        <div id="pr6">
+                <p class="pp9">Some of the features that<br>make Thalby guides unique</p>
+                <div id="ch">
+
+                    <div>
+                    <div id="f">
+                    </div>
+                    <p>written by<br>locals</p>
+                    </div>
+
+                    <div>
+                    <div id="f1">
+                    </div>
+                    <p>back witch <br>insigh</p>
+                    </div>
+                     
+                    <div>
+                    <div id="f2"></div>
+                    <p>interview witch<br>diverce voices</p>
+                    </div>
+
+                    <div>
+                    <div id="f3"></div>
+                    <p>kay facts and<br>etiquette tips</p>
+                    </div>
+
+                    <div>
+                    <div id="f4"></div>
+                    <p>A consise <br>1-hour read</p>
+                    </div>
+
+                    <div>
+                    <div id="f5"></div>
+                    <p>instant<br>digital acess</p>
+                    </div>
+                </div>
+                <p class="pp9">Each Thalby guide includes interviews with<br>a range of fascinating voices, such as</p>
+                <div id="pr7">
+                    <div>
+                    <img src="/day86/homework/c0bb718c4e700a294821ce675c519d91fc659083.png" class="img11">
+                
+                    <p class="para">"I don’t like things to be<br> conventional. If it’s too nice,<br> I bring disorder."</p>
+                    
+                    <p class="pp10">Camille Muller,<br>Landscape Designer, France</p>
+                    </div>
+                    <div>
+                    <img src="/day86/homework/8b66eaf266e3a22bd8a2c939b8dd316279a21dbd.png" class="img11">
+                    <p class="para">"Magic is not magic in<br> the sense that I can just<br> wish for anything."</p>
+                    <p class="pp10">Sonia Kowalewski,<br>Witch, Germany</p>
+                    </div>
+                    <div>
+                    <img src="/day86/homework/a7f21f0c68c87e19cae09308d563390467cfb9b9.png" class="img11">
+                    <p class="para">"I was eight years old<br> when I entered my first<br> competition. I won it."</p>
+                    <p class="pp10">Lilly Stoephasius,<br>Skateboarder, Germany</p>
+                    </div>
+                </div>
+        </div>
+    </div>
+</body>
+</html>

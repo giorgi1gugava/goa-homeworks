@@ -1,0 +1,7 @@
+let name = prompt("enter name")
+let saurname = prompt("enter saurname") 
+let age = prompth("enter your age")
+let place = prompth("enter your place")
+let birthDate = prompth("enter your birth date")
+let height = prompth("enter your height")
+let weight = prompth("enter your weight")

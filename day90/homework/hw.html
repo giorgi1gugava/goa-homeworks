@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+           
+            font-family: sans-serif;
+        }
+        
+        header{
+          
+            
+            width: 100%;
+            height: 1310px;
+
+            background-color: rgb(0, 0, 0);
+            border-bottom-left-radius: 60px;
+            border-bottom-right-radius: 60px;
+        }
+        ul{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            margin-left: 200px;
+            width: 687px;
+            height: 80px;
+            background-color: white;
+            border-radius: 100px;
+
+        }
+        li{
+            
+            list-style-type: none;
+            font-size: 20px;
+            font-weight: 400;
+        }
+        #box{
+            display: flex;
+            padding: 40px 100px;
+            
+            flex-direction: row;
+        }
+        #coin{
+            font-weight: 500;
+            font-size: 30px;
+            color: rgb(77, 61, 220);
+        }
+        #box1{
+            
+            width: 987px;
+            height: 517px;
+             
+            margin-left: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            
+        }
+        #button{
+            width: 353px;
+            height: 72px;
+            border-radius: 100px;
+            background-color: rgb(88, 70, 251);
+            color: white;
+            margin-top: 30px;
+        }
+        .bit{
+            font-size: 136px;
+            font-weight: 500;
+            color: white;
+        }
+        .bit1{
+            font-size: 24px;
+            font-weight: 400;
+            color: white;
+        
+        }
+         .up{
+              margin-top: 30px;
+        }
+        #box2{
+            width: 100%;
+            padding: 40px 100px;
+            margin-top: 300px;
+           
+           
+        }
+        #p{
+            color: white;
+            margin-left: 10px;
+            font-weight: 500;
+            font-size: 30px;
+             
+        }
+        .box{
+            width: 412px;
+            height: 163px;
+            background-color: #1F2123;
+            border-radius: 100px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            
+        }
+        #pr{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .img{
+            width: 72px;
+            height: 72px;
+
+        }
+        .para{
+            color: white;
+            font-weight: 400;
+            font-size: 22px;
+        }
+        #pr2{
+            width: 1286px;
+            height: 563px;
+             
+            display: flex;
+            margin-top: 208px;
+            gap: 50px;
+        }
+        #ch{
+            width: 543px;
+            height: 663px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        #ch1{
+            width: 543px;
+            height: 663px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        #p2{
+            font-size: 100px;
+            font-weight: 500;
+        }
+        #p1{
+            font-size: 20px;
+            font-weight: 400;
+
+            
+        }
+        #start{
+            width: 200px;
+            height: 60px;
+            border-radius: 100px;
+            background-color: rgb(88, 70, 251);
+            color: white;
+            border: none;
+            font-size: 20px;
+            font-weight: 600;
+            margin-left: 20px;
+        }
+
+        #img1{
+            width: 160px;
+            height: 160px;
+            border-radius: 100px;
+        }
+        #box3{
+            width: 290px;
+            height: 160px;
+            border-radius: 100px;
+            background-color: rgb(240, 240, 240);
+            justify-content: center;
+            align-content: center;
+            
+        }
+        #box33{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+        #pro{
+            font-size: 72px;
+            font-weight: 400;
+        }
+
+        #box4{
+            width: 740px;
+            height: 160px;
+            border-radius: 100px;
+            background-color: rgb(88, 70, 251);
+            display: flex;
+            flex-direction: row;
+            
+            justify-content: center;
+            align-content: center;
+            gap: 40px;
+        }
+        #eight{
+            font-size: 70px;
+            font-weight: 400;
+            color: white;
+        }
+        #tota{
+            font-size: 20px;
+            font-family: 400;
+            color: white;
+        }
+        #div1{
+            width: 374px;
+            height: 160px;
+            background-color: #F0F0F0;
+            border-radius: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #box5{
+            display: flex;
+            flex-direction: row;
+            margin-left: 100px;
+
+        }
+        #data{
+            font-size: 26px;
+            font-weight: 600;
+        }
+        #pr3{
+            margin-top: 250px;
+            width: 1286px;
+        }
+        #bitcoin{
+            font-size: 90px;
+            font-weight: 700;
+        }
+        .square{
+            width: 550px;
+            height: 580px;
+            background-color: rgb(240, 240, 240);
+            border-radius: 40px;
+            display: flex;
+            flex-direction: column;
+        }
+        #ch2{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+        .circle{
+            width: 80px;
+            height: 80px;
+            
+            margin-left: 50px;
+            margin-top: 50px;
+
+        }
+        #f{
+            width: 100%;
+            height: 800px;
+            margin-top: 200px;
+        }
+        .id{
+            width: 100%;
+            height: 1200px;
+            margin-top: 200px;
+        }
+        .text{
+            display: flex;
+            align-items: start;
+            flex-direction: column;
+            padding: 50px;
+            margin-top: 100px;
+            gap: 10px;
+        }
+        .proof{
+            font-weight: 400;
+            font-size: 70px;
+            display: flex;
+             
+        }
+        .the{
+            font-weight: 400;
+            font-size: 20px;
+        }
+        .more{
+            font-size: 15px;
+            font-weight: 600;
+            color: #5846FB;
+        }
+        .to{
+            display: flex;
+            align-items: start;
+            flex-direction: column;
+            padding: 50px;
+            margin-top: 100px;
+            gap: 10px;
+        }
+        #pr4{
+            width: 1286px;
+            display: flex;
+            flex-direction: row;
+            margin-top: 200px;
+        }
+        #ch3{
+            display: flex;
+            flex-direction: column;
+        }
+        #serie{
+            width: 225px;
+            height: 60px;
+            border-radius: 100px;
+            background-color: #5846FB;
+            color: white;
+            border: none;
+            font-weight: 600;
+            font-size: 18px;
+        }
+        #why{
+            display: flex;
+            flex-direction: row;
+        }
+        #it{
+            font-size: 38px;
+            font-weight: 400;
+            width: 650px;
+        
+        }
+        #most{
+            display: flex;
+            align-items: start;
+        }
+        #ch3{
+            width: 735px;
+             display: flex;
+             gap: 35px; 
+        }
+        #b{
+            width: 600px;
+            height: 500px;
+            margin-top: -100px;
+        }
+         
+    </style>
+</head>
+<body>
+    
+    <header>
+            <div id="box">
+            <p id="coin">CoinFusion</p>
+            <nav>
+                <ul>
+                    <li>learn</li>
+                    <li>build</li>
+                    <li>explore</li>
+                    <li>join</li>
+                    <li>help</li>
+                </ul>
+            </nav>
+            </div>
+            <div id="box1">
+                <p class="bit">Unleash Bitcoin</p>
+                <p class="bit">full potential</p>
+
+                <p class="bit1 up">Stacks enables DeFi, NFTs, apps, and</p>
+                <p class="bit1">smart contracts for bitcoin</p>
+                <button id="button">See whats built on stock</button>
+
+            </div>
+            <div id="box2">
+                <p id="p">Latest Ecosystem news</p>
+                <div id="pr">
+                    <div class="box">
+                        <img src="/day89/homework/Vector.png" class="img">
+                        
+                        <p class="para">Alex rasises $8.6M to<br>bring Defi to the..</p>
+                        
+                    </div >
+                    <div class="box">
+                        <img src="/day89/homework/Vector (1).png" class="img">
+                        <p class="para">Nyc get own<br>
+                            cryptocurrancy after</p>
+                    </div>
+                    <div class="box" >
+                        <img src="/day89/homework/Vector (2).png" class="img">
+                        <p class="para">Alex rasises $8.6M to<br>
+                            bring Defi to the.</p>
+                    </div>
+                    <div class="box" >
+                        <img src="/day89/homework/Component 128.png" class="img">
+                        <p class="para">Alex rasises $8.6M to<br>
+                            bring Defi to the.</p>
+                    </div>
+                </div>
+            </div>
+        
+
+    </header>
+    
+    <main>
+        <center><div id="pr2">
+            <div id="ch">
+                <p id="p2">Stacking, a<br>
+                    new way to<br>
+                    earn bitcoin</p>
+                <p id="p1">Hold and temporarily lock STX, stacks native currency, and<br>
+                    support the networks security and consensus. As a rewards,<br>
+                    you`ll earn BTC</p>
+                    <button id="start">start stacking</button>
+            </div>
+            <div id="ch1">
+                <div id="box33">
+                     <div id="box3"><p id="pro">9.5%</p></div>
+                    <img src="/day89/homework/Rectangle 699.png" id="img1">
+                </div>
+                <div id="box4"><p id="eight">$864,896,126</p> <p id="tota">Total value locked</p></div>
+                <div id="box5">
+                    <img src="/day89/homework/image 60.png">
+                    <div id="div1">
+                        <p id="data">Data courtesy of<br>
+                            stacking club</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div id="pr3">
+            <p id="bitcoin">Stacks unleashed<br>
+                Bitcoin</p>
+            <div id="ch2">
+                <div class="square">
+                    <img src="/day89/homework/Ellipse 271.png" class="circle" >
+                     
+                    <div class="text">
+                    <p class="proof">Proof of<br>
+                        transfer</p>
+                    <p class="the">The consensus mechanism that<br>
+                        conneects stacks and bitcoiin.</p>
+                    <p class="more">learn more</p>
+                    </div>
+                </div>
+                <div class="square">
+                    <img src="/day89/homework/Ellipse 271.png" class="circle">
+                    <div class="text">
+                    <p class="proof">Bitcoin to<br>
+                        NFTs</p>
+                    <p class="the">NFTs is secured by bitcoin by exploding
+                        on the network</p>
+                    <p class="more">learn more</p>
+                    </div>
+                </div>
+                <div class="square">
+                    <img src="/day89/homework/Ellipse 271.png" class="circle">
+                    <div class="to">
+                    <p class="proof">Bitcoin to
+                        DeFi</p>
+                    <p class="the">Stacks bring DeFi to bitcoin, unlocking
+                        over $2 trillion in capital</p>
+                    <p class="more">learn more</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="/day89/homework/Frame 1618872970.png" class="id">
+
+
+        <div id="pr4">
+            <div id="ch3">
+                <div id="most">
+                <p id="it">Stacks mission to create a better, user-owned
+                    decenterlized internet .To do it we`re unleashing
+                    Bitcoin, the most battle - tested and valueable 
+                    blockchain in the world.</p>
+                </div>
+                <div id="why">
+                    <button id="serie">Learn about series</button>
+                     
+                </div>
+            </div>
+            <div id="ch4">
+                <img src="/day89/homework/right side.png" id="b">
+                 
+            </div>
+
+        </div>
+        
+         
+    </main>
+    <img src="/day89/homework/footer (1).png" id="f">
+    
+</center>
+</body>
+</html>

@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            font-family: sans-serif;
+             
+             
+        }
+        nav{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+        ul{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 17px;
+        }
+        li{
+            list-style-type: none;
+            font-size: 16px;
+            font-weight: 400;
+        }
+        header{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding: 11px 150px;
+             
+        }
+        #verb{
+            font-weight: 700;
+            font-size: 30px;
+        }
+        #register{
+            font-size: 18px;
+            font-weight: 700;
+            width: 180px;
+            height: 60px;
+            background-color: #FFCE31;
+            border-radius: 100px;
+            border: none;
+            
+        }
+        #head{
+            width: 1230px;
+            height: 1px  ;
+            border:1px solid #A8A8A8;
+        }
+        #pr{
+            display: flex;
+            flex-direction: row;
+            gap: 100px;
+            padding: 100px 50px;
+        }
+        #ch{
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+             
+
+        }
+        #we{
+            font-size: 100px;
+            font-weight: 700;
+        }
+        #help{
+            font-size: 20px;
+            font-weight: 400;
+        }
+        input{
+            width: 415px;
+            height: 70px;
+            border-radius: 40px;
+            border: none;
+            background-color: #F5F5F5;
+            text-align: left;
+            padding: 20px;
+            font-size: 18px;
+            font-weight: 400;
+        }
+        #start{
+            width: 215px;
+            height: 70px;
+            background-color: #FFCE31;
+            border-radius: 100px;
+            border: none;
+            font-weight: 700;
+            font-size: 20px;
+        }
+        #img{
+            width: 610px;
+            height: 480px;
+        }
+        #get{
+            display: flex;
+            gap: 20px;
+        }
+        span{
+            display: flex;
+            align-items: start;
+
+        }
+        #pr1{
+            display: flex;
+            flex-direction: row;
+            gap: 150px;
+        }
+        #ch3{
+            display: flex;
+            gap: 50px;
+            margin-left: 330px;
+        }
+        #l{
+            width: 65px;
+            height: 17px;
+            margin-top: 10px;
+        }
+        #spot{
+            width: 140px;
+            height: 38px;
+        }
+        #ss{
+            width: 130px;
+            height: 33px;
+        }
+        #io{
+            width: 130px;
+            height: 38px;
+        }
+        #face{
+            margin-left: 70px;
+        }
+        #line{
+            height: 1px;
+            width: 100%;
+            border: 1px solid  #A8A8A8;
+            margin-top: 150px;
+        }
+        #pr2{
+            display: flex;
+            flex-direction: row;
+            gap: 150px;
+            padding: 150px 50px;
+        }
+        #why{
+            font-size: 70px;
+            font-weight: 700;
+        }
+        #for{
+            font-size: 20px;
+            font-weight: 400;
+        }
+        #pr3{
+            display: flex;
+            flex-direction: row;
+            padding: 0px 150px;
+            gap: 100px;
+        }
+        .gg{
+            width: 570px;
+            height: 670px;
+        }
+
+        #pr4{
+            margin-top: 200px;
+            padding: 0px 150px;
+             
+        }
+        #prr{
+            display: flex;
+            flex-direction: column;
+            gap: 80px;
+        }
+        #a{
+            font-size: 70px;
+            font-weight: 700;
+        }
+        #your{
+            font-size: 20px;
+            font-weight: 400;
+        }
+        #ch4{
+            display: flex;
+            flex-direction: row;
+            margin-top: 50px;
+            gap: 200px;
+        }
+        .k{
+            font-size: 100px;
+            font-weight: 700;
+        }
+        .from{
+            font-size: 20px;
+            font-weight: 400;
+        }
+        #pr5{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 750px;
+            background-color: #FFCE31;
+            margin-top: 200px;
+            align-items: center;
+            justify-content: center;
+        }
+        .learn{
+            font-size: 90px;
+            font-weight: 700;
+             
+        }
+        #apple{
+            margin-top: 80px;
+        }
+        footer{
+            margin-top: 100px;
+            display: flex;
+            flex-direction: row;
+            padding: 0px 150px;
+            gap: 400px;
+             
+        }
+        #verba{
+            font-size: 34px;
+            font-weight: 700;
+        }
+        #aaa{
+            display: flex;
+            gap: 30px;
+            flex-direction: column;
+            align-items: start;
+        }
+        .end{
+            font-size: 20px;
+            font-weight: 400;
+        }
+
+        #ch5{
+            display: flex;
+            flex-direction: row;
+            gap: 100px;
+        }
+        .its{
+             
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+         
+        
+         
+
+    </style>
+</head>
+<body>
+    
+    <header>
+         
+        <p id="verb">Verbalizent</p>
+        <nav>
+        <ul>
+            <li>Service</li>
+            <li>Blog</li>
+            <li>About us</li>
+            <li>Contact</li>
+        </ul>
+        </nav>
+        <button id="register">Register</button>
+         
+    </header>
+
+     <center>
+
+    <div id="head"></div>
+
+    <main>
+        <div id="pr">
+            <div id="ch">
+                <p id="we">We make you<br>
+                    learn language<br>
+                    <span>easily!</span></p>
+                <p id="help">We help you learn language easily, witjh small lessons , you`ll<br>
+                    earn points and unlock new levels while improving you rel world<br>
+                    communications.</p>
+                <div id="get">
+                <input placeholder="Enter your email">
+                <button id="start">Get started</button>
+                </div>
+
+            </div>
+            <div id="ch1">
+                <img src="/day91/homework/mobile.png" id="img">
+            </div>
+        </div>
+
+        <div id="pr1">
+            <div id="ch2">
+                <img src="/day91/homework/pic.png" id="face">
+            </div>
+            <div id="ch3">
+                <img src="/day91/homework/Component 50.png" id="l">
+                <img src="/day91/homework/spotify-seeklogo.com 2.png" id="spot">
+                <img src="/day91/homework/Component 51.png" id="ss">
+                <img src="/day91/homework/zoom-seeklogo.com-1.png" id="io">
+            </div>
+        </div>
+        <div id="line"></div>
+        <div id="pr2">
+            <p id="why">Why you`ll love learning<br>
+                <span>with Verbalizelt</span></p>
+            <p id="for">
+            Feach your goals  your whay with features<br>
+designed for the fastets, most fun way to learn a <br>
+language.
+            </p>
+        </div>
+        <div id="pr3">
+            <img src="/day91/homework/Group 466.png" class="gg">
+            <img src="/day91/homework/Rectangle 773 (2).png" class="gg">
+        </div>
+
+
+        <div id="pr4">
+            <div id="prr">
+            <p id="a">Learn a new language the fun way</p>
+            <p id="your">Reach your language goals fast with the world`s #1 education app</p>
+            <img src="/day91/homework/Component 138 (1).png" id="world">
+            </div>
+             
+            <div id="ch4">
+                <div id="new">
+                <p class="k">4.5k+</p>
+                <p class="from ">Daily register from new users</p>
+                </div>
+                <div id="the">
+                <p class="k">1.5k+</p>
+                <p class="from">Language In the world</p>
+                </div>
+                <div id="in">
+                <p class="k">1000+</p>
+                <p class="from">Total learners in the world</p>
+                </div>
+
+            </div>
+        </div>
+        <div id="pr5">
+            <p class="learn">Learn a new language for</p>
+            <p class="learn">free downlaod app Now!</p>
+            <img src="/day91/homework/Group 474.png" id="apple">
+
+        </div>
+
+    </main>
+    <footer>
+        <div id="aaa">
+            <p id="verba">VerbalizeIt</p>
+            <p>Learning is  a global training provider<br>
+                based across the UK that specialises<br>
+                in accrodited and bespoke training<br>
+                course</p>
+        </div>
+        <div id="ch5">
+            <div class="its">
+                <p class="end">about us</p>
+                <p class="end">service</p>
+                <p class="end">blog</p>
+            </div>
+            <div class="its">
+                <p class="end">terms & conditions</p>
+                <p class="end">privacy policy</p>
+                <p class="end">become partner</p>
+            </div>
+            <div class="its">
+                <p class="end">Twitter</p>
+                <p class="end">Facebook</p>
+                <p class="end">Instagram</p>
+            </div>
+        </div>
+        
+    </footer>
+
+
+
+    </center>
+     
+</body>
+</html>

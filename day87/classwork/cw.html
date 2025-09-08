@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            font-family: sans-serif;
+        }
+
+        header{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding: 11px 100px;
+            
+        }
+        nav{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+        ul{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 17px;
+        }
+        li{
+            list-style-type: none;
+            font-size: 11px;
+            font-weight: 500;
+        }
+        #logo{
+            width: 107px;
+            height: 17px;
+        }
+        .button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            height: 37px;
+            width: 134px;
+            background-color: rgb(76, 175, 79);
+            color: white;
+            border-radius: 3px;
+            border: none;
+
+        }
+        #burger{
+            display: none;
+        }
+
+
+        main{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+
+        #pr{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px 100px;
+            background-color: rgb(245, 247, 250);
+        }
+        #lesson{
+            font-size: 45px;
+            font-weight: 600;
+            color: rgb(77, 77, 77);
+            max-width: 500px;
+        }
+        span{
+            color: rgb(76, 175, 79);
+
+        }
+        #site{
+            font-weight: 400;
+            font-size: 11px;
+            color: #717171;
+            max-width: 457px;
+        }
+        #ch{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .pr1{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            width: 100%;
+            margin-top: 50px;
+        }
+        .clients{
+            font-weight: 600;
+            font-size: 25px;
+            color: #4D4D4D;
+        }
+        .work{
+            font-weight: 400;
+            font-size: 11px;
+            color: #717171;
+        }
+        .icons{
+            display: flex;
+            flex-direction: row;
+            
+        }
+        @media(max-width:730px){
+            header{
+                padding: 11px 20px;
+            }
+            #pr{
+                padding: 50px 20px;
+            }
+        }
+        @media(max-width: 560px){
+            nav{
+                display: none;
+            }
+            #burger{
+                display: block;
+            }
+        }
+        @media(max-width: 765px){
+            #lesson{
+                font-size: 35px;
+            }
+            
+            #pc{
+                width: 200px;
+            }
+        }
+        @media(max-width:460px){
+            #pr{
+                flex-direction: column;
+                gap: 40px;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <img src="/day87/homework/Logo-.png" id="logo">
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Features</li>
+                <li>Community</li>
+                <li>Blog</li>
+                <li>Pricing</li>
+            </ul>
+            <button class="button">Register Now <img src="./Right.png"></button>
+        </nav>
+        <img src="./dehaze_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" id="burger">
+    </header>
+    <main>
+        <div id="pr">
+            <div id="ch">
+                <p id="lesson">Lessons and insights <span>from 8 years</span></p>
+                <p id="site">Where to grow your business as a photographer: site or social media?</p>
+                <button class="button" style="width: 90px;">Register</button>
+            </div>
+            <img src="./Illustration.png" style="padding-left: 20px;" id="pc">
+        </div>
+        <div class="pr1">
+            <p class="clients">Our Clients</p>
+            <p class="work">We have been working with some Fortune 500+ clients</p>
+            <div class="icons">
+                <img src="">
+                <img src="">
+                <img src="">
+                <img src="">
+                <img src="">
+                <img src="">
+                <img src="">
+            </div>
+            
+        </div>
+    </main>
+</body>
+</html>
