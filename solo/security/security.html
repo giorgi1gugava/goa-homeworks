@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>security</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(25, 25, 25);
+            height: 100vh;
+            font-family: sans-serif;
+            overflow-x: hidden;
+        }
+
+        header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            max-width: 1200px;
+            width: 90%;
+            height: 73px;
+            background-color: red;
+            position: relative;
+            top: 30px;
+            left: 80px;
+            border-radius: 100px;
+            padding: 14px 24px;
+            background-color: #1C1C1C;
+            border: 1px solid #262626;
+
+
+
+        }
+
+        #ch {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 5px;
+        }
+
+        #shape {
+            width: 30px;
+            height: 30px;
+        }
+
+        #bank {
+            color: white;
+
+        }
+
+        nav {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 26px;
+        }
+
+        li {
+            list-style-type: none;
+            font-size: 14px;
+            font-weight: 400;
+            color: white;
+        }
+
+        #burger {
+            display: none;
+        }
+
+        #ch1 {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 20px;
+        }
+
+        #button {
+            width: 87px;
+            height: 45px;
+            background-color: #CAFF33;
+            border: none;
+            border-radius: 82px;
+        }
+        #li {
+            display: flex;
+            width: 77px;
+            align-items: center;
+            padding: 0px 15px;
+            height: 41px;
+            border-radius: 82px;
+            background-color: #262626;
+        }
+
+        #sign {
+            font-size: 14px;
+            font-weight: 400;
+            color: white;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 0px 80px;
+
+        }
+        span {
+            color: #CAFF33;
+        }
+        #pr {
+            display: flex;
+            position: relative;
+            top: 100px;
+            width: 1200px;
+            position: relative;
+
+            border: none;
+            padding: 40px;
+            background-color: rgb(28, 28, 28);
+            border-radius: 20px;
+            height: 608px;
+            background-image: url(./Abstract\ Design\ \(5\).png);
+
+            background-repeat: no-repeat;
+            background-position-x: right;
+
+        }
+
+        #ch2 {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+
+            text-align: start;
+            background-color: rgb(25, 25, 25);
+            gap: 20px;
+            padding: 20px 60px;
+            width: 658px;
+            height: 330px;
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border-top-left-radius: 20px;
+            z-index: 2;
+
+
+
+        }
+
+        #Join {
+            font-size: 16px;
+            font-weight: 300;
+            color: #B3B3B3;
+            max-width: 538px;
+        }
+
+        #Welcome {
+            font-size: 48px;
+            font-weight: 500;
+            color: #FFFFFF;
+            max-width: 538px;
+        }
+
+        #img1 {
+            width: 665px;
+            height: 538px;
+            border-radius: 16px;
+            left: 500px;
+            position: absolute;
+            z-index: 1;
+        }
+        #pr1{
+            display: flex;
+            flex-direction: column;
+            gap: 120px;
+            margin-top: 300px;
+        }
+        #ch3{
+            display: flex;
+            flex-direction: column;
+
+
+        }
+        #ch3 div{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        #text{
+            color: #FFFFFF;
+            font-size: 38px;
+            font-weight: 500;
+        }
+        #text1{
+            color: #B3B3B3;
+            font-size: 16px;
+            font-weight: 300;
+            max-width: 1030px;
+        }
+        #ch4{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            
+            
+        }
+        #ch4-1{
+            max-width: 1269px;
+            height: 600px;
+            background-color: rgb(28, 28, 28);
+            border-radius: 40px;
+            
+        }
+        
+        .row{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            align-items: center;
+            justify-content: center;
+            margin-top: 80px;
+        }
+        .boxes{
+            display: flex;
+            flex-direction:
+             column;
+             height: 296px;
+            background-color: rgb(28, 28, 28);
+            border: 1px solid #262626;
+            gap: 20px;
+            border-radius: 20px;
+            padding: 40px;
+        }
+        .boxes div{
+            display: flex;
+            flex-direction: row;
+            gap: 14px;
+            align-items: center;
+        }
+        .boxes div p{
+            font-size: 20px;
+            font-weight: 400;
+            color: #FFFFFF;
+        }
+        .boxes div img{
+            width: 76px;
+            height: 76px;
+        }
+        .boxes p{
+            max-width: 470px;
+            color: #B3B3B3;
+            font-size: 16px;
+            font-weight: 300;
+        }
+        .fir{
+            margin-top: 20px;
+        }
+        #pr2{
+            display: flex;
+            flex-direction: column;
+            gap: 60px;
+            padding: 200px 0px;
+        }
+        #ch5{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        #text2{
+            color: #FFFFFF;
+            font-size: 38px;
+            font-weight: 500;
+        }
+        #text3{
+            font-size: 16px;
+            color: #B3B3B3;
+            font-weight: 300;
+            max-width: 979px;
+        }
+        #ch6{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .boxes1{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+        .minibox{
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #262626;
+            background-color: rgb(25, 25, 25);
+            padding: 40px;
+            gap: 24px;
+            border-radius: 10px;
+           
+        }
+        .txt1{
+            font-size: 18px;
+            font-weight: 500;
+            color: #FFFFFF;
+            height: 40px;
+            border-bottom: 1px solid #262626;
+        }
+        .txt2{
+            font-size: 16px;
+            font-weight: 300;
+            color: #B3B3B3;
+            max-width: 549.5px;
+        }
+        footer{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            background-color: rgb(28, 28, 28);
+            gap: 40px;
+            padding: 60px;
+            margin-top: 100px;
+            align-items: center;
+            justify-content: center;
+        }
+        #ch24{
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            align-items: center;
+        }
+        #ch21 div{
+            display: flex;
+            flex-direction: row;
+            gap:14px;
+        }
+        #ch21 img{
+            width: 132px;
+            height: 34px; 
+
+        }
+        #ch21 div p{
+            font-size: 16px;
+            font-weight: 400;
+            color: #E4E4E7;
+        }
+        
+        #ch25{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        #ch25 div{
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+            align-items: center;
+        }
+        #ch25 div p{
+            font-size: 16px;
+            font-weight: 400;
+            color: #E4E4E7;
+        }
+        #ch21{
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            align-items: center;
+        }
+        #ch24 div{
+            display: flex;
+            flex-direction: row;
+            gap:14px;
+        }
+        #ch24 img{
+            width: 132px;
+            height: 34px; 
+
+        }
+        #ch24 div p{
+            font-size: 16px;
+            font-weight: 400;
+            color: #E4E4E7;
+        }
+        #ch26{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background-color: rgb(25, 25, 25);
+            border: 1px solid #262626;
+            border-radius: 100px;
+            height: 68px;
+            width: 90%;
+            align-items: center;
+            padding: 20px;
+             
+
+        }
+        #ch26 p{
+            font-size: 14px;
+            font-weight: 300;
+            color: #B3B3B3;
+
+        }
+        a{
+            text-decoration: none;
+        }
+
+
+
+        @media(max-width: 1160px) {
+            #pr {
+                width: 600px;
+                height: 350px;
+                justify-content: center;
+                align-items: center;
+
+            }
+
+            #ch2 {
+                width: 529px;
+                height: 315px;
+            }
+
+            #img1 {
+                display: none;
+
+            }
+        }
+        @media(max-width: 700px) {
+            nav {
+                display: none;
+            }
+             
+
+
+
+
+            #burger {
+                display: block;
+
+            }
+
+            #ch1 {
+                display: none;
+            }
+            .minibox{
+                padding: 20px;
+                width: 400px;
+            }
+            .txt1{
+                font-size: 16px;
+            }
+            .txt2{
+                font-size: 14px;
+                
+            }
+        }
+        @media(max-width: 809px) {
+            header {
+                margin-left: -50px;
+            }
+
+            #pr {
+                left: -45px;
+            }
+            .text4{
+                border-bottom: none;
+            }
+            #pr1{
+                margin-left: -30px;
+                gap: 60px;
+            }
+            #pr2{
+                margin-left: -30px;
+            }
+            #ch26{
+                flex-direction: column;
+                height: 200px;
+                border-radius: 50px;
+            }
+            
+        }
+        @media(max-width: 650px) {
+            #pr {
+                width: 400px;
+                height: 150px;
+
+
+            }
+            
+
+            #ch2 {
+                width: 459px;
+                height: 215px;
+                left: -45px;
+
+            }
+
+            #Join {
+                max-width: 300px;
+            }
+            #pr1{
+                margin-top: 400px;
+            }
+        }
+        @media(max-width: 1160px) {
+            #pr {
+                width: 600px;
+                height: 350px;
+                justify-content: center;
+                align-items: center;
+
+            }
+
+            #ch2 {
+                width: 529px;
+                height: 315px;
+            }
+
+            #img1 {
+                display: none;
+
+            }
+            #pr1{
+                gap: 30px;
+            }
+        }
+        @media(max-width: 650px) {
+            #pr {
+                width: 400px;
+                height: 150px;
+
+
+            }
+        
+
+            #ch2 {
+                width: 459px;
+                height: 215px;
+                left: -45px;
+
+            }
+
+            #Join {
+                max-width: 300px;
+            }
+        }
+        @media(max-width: 1169px){
+            #ch4-1{
+                background-color: rgb(25, 25, 25);
+                
+            }
+            .row{
+                flex-direction: column;
+            }
+            #ch4{
+                align-items: start;
+                justify-content: start;
+            }
+            #pr2{
+                margin-top: 700px;
+            }
+            .boxes1{
+                flex-direction: column;
+                width: 600px;
+            }
+            
+        }
+        @media(max-width: 500px){
+            .boxes p{
+                font-size: 14px;
+            }
+        }
+        @media(max-width: 475px){
+            .minibox{
+                width: 300px;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div id="ch">
+            <img src="/solo/home/shape-30@4x.png" id="shape">
+            <p id="bank">YourBanK</p>
+        </div>
+        <nav>
+            <ul>
+                <a href="/solo/home/home.html"><li>Home</li></a>
+                <a href="/solo/carrers/carrers.html"><li>Careers</li></a>
+                <a href="/solo/about/about.html"><li>About</li></a>
+                <a href="/solo/security/security.html"><li id="li">Security</li></a>
+
+            </ul>
+        </nav>
+        <img src="/day87/homework/dehaze_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" id="burger">
+        <div id="ch1">
+            <a href="/solo/signup/signup.html"><p id="sign">Sign up</p></a>
+            <a href="/solo/login/login.html"><button id="button">Login</button></a>
+        </div>
+    </header>
+    <main>
+        <div id="pr">
+            <div id="ch2">
+                <p id="Welcome">Your Security is Our <br><span>Top Priority</span></p>
+                <p id="Join">At YourBank, we understand the importance of keeping your financial information secure. We employ robust security measures and advanced technologies to protect your personal and financial data. Rest assured that when you bank with us, your security is our utmost priority.</p>
+
+            </div>
+            <img src="./Image (11).png" id="img1">
+        </div>
+        <div id="pr1">
+            <div id="ch3">
+                <div>
+                    <p id="text">How We <span>Protect You</span></p>
+                    <p id="text1">At YourBank, we prioritize the security and confidentiality of your financial information. Our state-of-the-art encryption technology and stringent data protection measures ensure your assets and transactions are safeguarded at all times</p>
+                </div>
+            </div>
+            <div id="ch4">
+                
+                <div id="ch4-1">
+                    <div>
+                    <div class="row">
+                        <div class="boxes">
+                            <div>
+                                <img src="./Icon Container (22).png">
+                                <p>Secure Online Banking Platform</p>
+                            </div>
+                            <p>Our online banking platform is built with multiple layers of security to safeguard your information. We utilize industry-standard encryption protocols to ensure that your data remains confidential and protected during transmission.</p>
+                        </div>
+                        <div class="boxes">
+                            <div>
+                                <img src="./Icon Container (23).png">
+                                <p>Multi-Factor Authentication</p>
+                            </div>
+                            <p>To enhance the security of your online banking experience, we employ multi-factor authentication. This additional layer of security requires you to provide multiple pieces of identification, such as a password and a one-time verification code, to access your account.</p>
+                        </div>
+                    </div>
+                    <div class="row fir">
+                        <div class="boxes">
+                            <div>
+                                <img src="./Icon Container (24).png">
+                                <p>Secure Online Banking Platform</p>
+                            </div>
+                            <p>Our online banking platform is built with multiple layers of security to safeguard your information. We utilize industry-standard encryption protocols to ensure that your data remains confidential and protected during transmission.</p>
+                        </div>
+                        <div class="boxes">
+                            <div>
+                                <img src="./Icon Container (25).png">
+                                <p>Multi-Factor Authentication</p>
+                            </div>
+                            <p>To enhance the security of your online banking experience, we employ multi-factor authentication. This additional layer of security requires you to provide multiple pieces of identification, such as a password and a one-time verification code, to access your account.</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>   
+                
+            </div>
+        </div>
+        <div id="pr2">
+            <div id="ch5">
+                <p id="text2"><span>Frequently</span> Asked Questions</p>
+                <p id="text3">Still you have any questions? Contact our Team via support@yourbank.com</p>
+            </div>
+            <div id="ch6">
+                <div class="boxes1">
+                    <div class="minibox">
+                        <p class="txt1">How do I open an account with YourBank?</p>
+                        <p class="txt2">Opening an account with YourBank is easy. Simply visit our website and click on the "Open an Account" button. Follow the prompts, provide the required information, and complete the application process. If you have any questions or need assistance, our customer support team is available to help.</p>
+                    </div>
+                    <div class="minibox">
+                        <p class="txt1">What documents do I need to provide to apply for a loan?</p>
+                        <p class="txt2">The documents required for a loan application may vary depending on the type of loan you are applying for. Generally, you will need to provide identification documents (such as a passport or driver's license), proof of income (such as pay stubs or tax returns), and information about the collateral (if applicable). Our loan officers will guide you through the specific requirements during the application process.</p>
+                    </div>
+                </div>
+                <div class="boxes1">
+                    <div class="minibox">
+                        <p class="txt1">How can I access my accounts online?</p>
+                        <p class="txt2">Accessing your accounts online is simple and secure. Visit our website and click on the "Login" button. Enter your username and password to access your accounts. If you haven't registered for online banking, click on the "Enroll Now" button and follow the registration process. If you need assistance, our customer support team is available to guide you.</p>
+                    </div>
+                    <div class="minibox">
+                        <p class="txt1">Are my transactions and personal information secure?</p>
+                        <p class="txt2">At YourBank, we prioritize the security of your transactions and personal information. We employ industry-leading encryption and multi-factor authentication to ensure that your data is protected. Additionally, we regularly update our security measures to stay ahead of emerging threats. You can bank with confidence knowing that we have robust security systems in place.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="ch24">
+            <img src="/solo/home/Logo (3).png">
+            <div>
+                <a href="/solo/home/home.html"><li>Home</li></a>
+                <a href="/solo/carrers/carrers.html"><li>Careers</li></a>
+                <a href="/solo/about/about.html"><li>About</li></a>
+                <a href="/solo/security/security.html"><li>Security</li></a>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div id="ch25">
+             
+            <div>
+                <img src="/solo/home/Icon (16).png">
+                <p>hello@skillbirdge.com</p>
+            </div>
+            <div>
+                <img src="/solo/home/Icon (14).png">
+                <p>+91 91813 23 2309</p>
+            </div>
+            <div>
+                <img src="/solo/home/Icon (15).png">
+                <p>Somewhere in the World</p>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div id="ch26">
+            <div>
+                <img src="/solo/home/Button.png">
+                <img src="/solo/home/Button (1).png">
+                <img src="/solo/home/Button (2).png">
+            </div>
+            <p>YourBank All Rights Reserve</p>
+            <p>Privacy Policy l Terms of service</p>
+        </div>
+    </footer>
+</body>
+</html>

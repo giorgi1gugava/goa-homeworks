@@ -1,52 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        body{
+
+        body {
             height: 100vh;
             font-family: sans-serif;
         }
 
-        header{
+        header {
             display: flex;
             flex-direction: row;
             align-items: center;
             justify-content: space-between;
             padding: 11px 100px;
-            
+
         }
-        nav{
+
+        nav {
             display: flex;
             flex-direction: row;
             align-items: center;
             justify-content: center;
             gap: 20px;
         }
-        ul{
+
+        ul {
             display: flex;
             flex-direction: row;
             align-items: center;
             justify-content: center;
             gap: 17px;
         }
-        li{
+
+        li {
             list-style-type: none;
             font-size: 11px;
             font-weight: 500;
         }
-        #logo{
+
+        #logo {
             width: 107px;
             height: 17px;
         }
-        .button{
+
+        .button {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -59,19 +66,20 @@
             border: none;
 
         }
-        #burger{
+
+        #burger {
             display: none;
         }
 
 
-        main{
+        main {
             display: flex;
             flex-direction: column;
             width: 100%;
         }
 
 
-        #pr{
+        #pr {
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -79,28 +87,33 @@
             padding: 50px 100px;
             background-color: rgb(245, 247, 250);
         }
-        #lesson{
+
+        #lesson {
             font-size: 45px;
             font-weight: 600;
             color: rgb(77, 77, 77);
             max-width: 500px;
         }
-        span{
+
+        span {
             color: rgb(76, 175, 79);
 
         }
-        #site{
+
+        #site {
             font-weight: 400;
             font-size: 11px;
             color: #717171;
             max-width: 457px;
         }
-        #ch{
+
+        #ch {
             display: flex;
             flex-direction: column;
             gap: 20px;
         }
-        .pr1{
+
+        .pr1 {
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -109,18 +122,20 @@
             width: 100%;
             margin-top: 50px;
         }
-        .clients{
+
+        .clients {
             font-weight: 600;
             font-size: 25px;
             color: #4D4D4D;
         }
-        .work{
+
+        .work {
             font-weight: 400;
             font-size: 11px;
             color: #717171;
         }
-         
-        .icons{
+
+        .icons {
             display: flex;
             gap: 100px;
             justify-content: space-between;
@@ -129,7 +144,8 @@
             padding: 0px 100px;
             flex-wrap: wrap;
         }
-        #pr2{
+
+        #pr2 {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -137,31 +153,35 @@
             flex-direction: column;
             gap: 20px;
         }
-        #manage{
+
+        #manage {
             color: #4D4D4D;
             max-width: 370px;
             font-weight: 600;
             font-size: 25px;
             text-align: center;
-            
+
         }
-        #is{
+
+        #is {
             font-size: 10px;
             font-weight: 400;
             color: #717171;
         }
-        #ch1{
+
+        #ch1 {
             display: flex;
-            flex-direction: row; 
+            flex-direction: row;
             justify-content: space-between;
             align-items: center;
             width: 100%;
             padding: 20px 100px;
-            
+
             gap: 50px;
             text-align: center;
         }
-        .clubs{
+
+        .clubs {
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -170,59 +190,68 @@
             gap: 5px;
             width: 100%;
         }
-        .img1{
+
+        .img1 {
             width: 45px;
             height: 38px;
         }
-        .group{
+
+        .group {
             font-weight: 700;
             font-size: 19px;
             color: #4D4D4D;
             width: 185px;
         }
-        .full{
+
+        .full {
             font-size: 9px;
             font-weight: 400;
             color: #717171;
             width: 174px;
         }
-        .pr3{
+
+        .pr3 {
             display: flex;
             flex-direction: row;
-            padding: 100px 100px ;
+            padding: 100px 100px;
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
             gap: 50px;
         }
-        .ch2{
+
+        .ch2 {
             display: flex;
             flex-direction: column;
             align-items: start;
-             
+
             gap: 20px;
         }
-        .at{
+
+        .at {
             max-width: 418px;
             font-weight: 600;
             font-size: 25px;
             color: #4D4D4D;
         }
-        .sit{
+
+        .sit {
             max-width: 418px;
             color: #717171;
             font-size: 9px;
             font-weight: 400;
-         }
-         .learn{
+        }
+
+        .learn {
             width: 105px;
             height: 38px;
             color: white;
             border-radius: 3px;
             background-color: #4CAF4F;
             border: none;
-         }
-         #pr4{
+        }
+
+        #pr4 {
             display: flex;
             flex-direction: row;
             padding: 100px 100px;
@@ -232,74 +261,86 @@
             align-items: center;
             flex-wrap: wrap;
             gap: 50px;
-         }
-         #loc{
+        }
+
+        #loc {
             font-size: 25px;
             font-weight: 600;
             max-width: 280px;
             color: #4D4D4D;
-         }
-         span{
+        }
+
+        span {
             font-size: 25px;
             font-weight: 600;
             width: 280px;
             color: #4CAF4F;
-         }
-         #we{
+        }
+
+        #we {
             max-width: 375px;
             color: #18191F;
             font-size: 11px;
             font-weight: 400;
-         }
-         #ch3{
+        }
+
+        #ch3 {
             display: flex;
             flex-direction: column;
             gap: 10px;
             align-items: start;
             justify-content: center;
-             
-         }
-         #ch4{
+
+        }
+
+        #ch4 {
             display: grid;
-            grid-template-columns: repeat(auto-fit,minmax(170px,1fr));
+            grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
             grid-template-rows: 43px 43px;
             width: 400px;
             align-items: start;
             justify-items: start;
             gap: 27px;
-            
-         }
-         .itrem div{
+             
+
+        }
+
+        .itrem div {
             display: flex;
             align-items: start;
             justify-content: center;
             gap: 5px;
-         }
-         .txt{
+        }
+
+        .txt {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: start;
-            
-         }
-         .itrem{
+
+        }
+
+        .itrem {
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 10px;
 
-         }
-         .num{
+        }
+
+        .num {
             font-size: 18px;
             font-weight: 700;
             color: #4D4D4D;
-         }
-         .nums{
+        }
+
+        .nums {
             font-size: 10px;
             font-weight: 400;
             color: #717171;
-         }
-         #divv{
+        }
+
+        #divv {
             display: flex;
             flex-direction: row;
             padding: 100px 100px;
@@ -308,69 +349,82 @@
             background-color: #F5F7FA;
             flex-wrap: wrap;
             align-items: center;
-         }    
-         .down{
+        }
+
+        .down {
             font-size: 11px;
             font-weight: 500;
             color: #717171;
             max-width: 520px;
-         }
-         #tim{
+        }
+
+        #tim {
             color: #4CAF4F;
             font-size: 13px;
             font-weight: 600;
-         }
-        #boat{
+        }
+
+        #boat {
             font-weight: 400;
             font-size: 11px;
             color: #89939E;
         }
-        #cust{
+
+        #cust {
             color: #4CAF4F;
             font-size: 13px;
             font-weight: 600;
         }
-        #ch5{
+
+        #ch5 {
             display: flex;
             flex-direction: row;
-             
+
             gap: 30px;
             align-items: center;
             justify-content: start;
             flex-wrap: wrap;
-             
+
         }
-        .log{
+
+        .log {
             width: 27px;
             height: 27px;
         }
-        .log1{
+
+        .log1 {
             width: 27px;
             height: 22px;
         }
-        .log2{
+
+        .log2 {
             width: 38px;
             height: 20px;
         }
-        .log3{
+
+        .log3 {
             width: 32px;
             height: 20px;
         }
-        .log4{
+
+        .log4 {
             width: 28px;
-            height: 18px; 
+            height: 18px;
         }
-        .log5{
+
+        .log5 {
             width: 36px;
             height: 13px;
         }
-    #id{
+
+        #id {
             display: flex;
             flex-direction: column;
             gap: 15px;
 
         }
-        #pr4{
+
+        #pr4 {
             width: 100%;
             display: flex;
             flex-direction: column;
@@ -380,7 +434,8 @@
             align-items: center;
 
         }
-        .ch6{
+
+        .ch6 {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -389,29 +444,33 @@
             width: 100%;
 
         }
-        #market{
+
+        #market {
             font-size: 25px;
             font-weight: 600;
             color: #4D4D4D;
             text-align: center;
         }
-        #late{
+
+        #late {
             color: #717171;
             font-size: 11px;
             font-weight: 400;
             max-width: 437px;
             text-align: center;
         }
-        .caring{
+
+        .caring {
             display: flex;
             flex-direction: row;
             align-items: center;
             justify-content: space-between;
             width: 100%;
             gap: 40px;
-        
+
         }
-        .three{
+
+        .three {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -420,10 +479,12 @@
             height: 255px;
             position: relative;
         }
-        .picture{
+
+        .picture {
             width: 256px;
         }
-        .three div{
+
+        .three div {
             display: flex;
             flex-direction: column;
             gap: 11px;
@@ -440,12 +501,14 @@
             top: 160px;
             box-shadow: 0px 5px 11px #ABBED166;
         }
-        .one{
+
+        .one {
             color: #717171;
             font-size: 13px;
             font-weight: 600;
         }
-        .model{
+
+        .model {
             color: #4CAF4F;
             font-size: 13px;
             font-weight: 600;
@@ -454,78 +517,219 @@
             justify-content: center;
             gap: 5px;
         }
-        .model img{
-            width: 16px; 
+
+        .model img {
+            width: 16px;
+        }
+
+        #pr5 {
+            width: 100%;
+            background-color: #F5F7FA;
+            display: flex;
+            flex-direction: column;
+            padding: 50px 0px;
+            align-items: center;
+            justify-content: center;
+            gap: 22px;
+            margin-top: 70px;
+        }
+
+        #eu {
+            font-size: 44px;
+            font-weight: 600;
+            color: #263238;
+            max-width: 617px;
+            text-align: center;
+        }
+
+        #demo {
+            width: 124px;
+            height: 36px;
+            background-color: #4CAF4F;
+            border: none;
+            border-radius: 2px;
+            color: white;
+        }
+        footer{
+            width: 100%;
+            background-color: rgb(38, 50, 56);
+            padding: 50px 100px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 70px;
+        }
+        #ch7{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: start;
+            width: 243px;
+            height: 132px;
+            gap: 27px;
+        }
+        #ch7 p{
+            color: #F5F7FA;
+            line-height: 30px;
+        }
+        #logoo{
+            width: 132px;
+        }
+        .icons3{
+            width: 30px;
+            height: 30px;
+        }
+        #iconss{
+            display: flex;
+            gap: 11px;
+        }
+        .pr6{
+            display: flex;
+            flex-direction: row;
+            align-items: start;
+            gap: 50px;
+            flex-wrap: wrap;
+        }
+        .pr6 div{
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        h5{
+            color: #FFFFFF;
+            font-size: 16px;
+            font-weight: 600;
+        }
+        .pr6 div p{
+            color: #F5F7FA;
+            font-size: 12px;
+            font-weight: 400;
+        }
+        .pr6 div p:first-of-type{
+            margin-top: 10px;
+        }
+        input{
+            width: 177px;
+            height: 27px;
+            background-color: rgb(81, 91, 96);
+            border-radius: 5px;
+            border: none;
+            padding-left: 10px;
+        }
+        input::placeholder{
+            font-size: 12px;
+            font-weight: 400;
+            color: #D9DBE1;
+        }
+        form{
+            position: relative;
+            display: flex;
+            align-items: center;
+             
+        }
+        #vector{
+            position: absolute;
+            right: 10px;
         }
          
-        
-         
-        @media(max-width: 1040px){
-            .caring{
-                  flex-wrap: wrap;
-                  justify-content: center;
-                  align-items: center;
+
+
+
+
+        @media(max-width: 1040px) {
+            .caring {
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
             }
         }
-        @media(max-width:730px){
-            header{
+
+        @media(max-width:730px) {
+            header {
                 padding: 11px 20px;
             }
-            #pr{
+
+            #pr {
                 padding: 50px 20px;
             }
-             
+            #ch4{
+                grid-template-rows: repeat(4,50px);
+                grid-template-columns: 200px;
+                width: 200px;
+                 
+            }
+            #pr4{
+                justify-content: start;
+                align-items: start;
+            }
+
         }
-        @media(max-width: 560px){
-            nav{
+
+        @media(max-width: 560px) {
+            nav {
                 display: none;
-                
+
             }
-            #divv{
-                padding: 50px 50px;  
+            footer{
+                padding: 30px 30px;
             }
-            #burger{
+
+            #divv {
+                padding: 50px 50px;
+            }
+
+            #burger {
                 display: block;
             }
-            .icons{ 
-                 padding: 0px 20px;
-                 }
+
+            .icons {
+                padding: 0px 20px;
+            }
+
+            #eu {
+                font-size: 30px;
+            }
         }
-        @media(max-width: 765px){
-            #lesson{
+
+        @media(max-width: 765px) {
+            #lesson {
                 font-size: 35px;
             }
-            
-            #pc{
+
+            #pc {
                 width: 200px;
             }
-            #ch1{
+
+            #ch1 {
                 flex-wrap: wrap;
             }
-             
+
         }
-        @media(max-width:460px){
-            #pr{
+
+        @media(max-width:460px) {
+            #pr {
                 flex-direction: column;
                 gap: 40px;
             }
 
-            .pr3{
+            .pr3 {
                 padding: 100px 30px;
             }
-             
-            #pr4{
+
+            #pr4 {
                 padding: 100px 30px;
             }
-            .pr4{
+
+            .pr4 {
                 padding: 30px 30px;
             }
-             
+
         }
-         
-         
     </style>
 </head>
+
 <body>
     <header>
         <img src="/day87/homework/Logo-.png" id="logo">
@@ -562,34 +766,40 @@
                 <img src="/day87/homework/Logo-5.png">
                 <img src="/day87/homework/Logo-2.png">
             </div>
-            
+
         </div>
         <div id="pr2">
             <h1 id="manage">Manage your entire community in a single system</h1>
             <p id="is">Who is Nextcent suitable for?</p>
             <div id="ch1">
-            <div class="clubs">
-                <img src="/day87/homework/Icon (1).png" class="img1">
-                <p class="group">Membership Organisations</p>
-                <p class="full">Our membership management software provides full automation of membership renewals and payments</p>
-            </div>
-            <div class="clubs">
-                <img src="Icon (2).png" class="img1">
-                <p class="group">National Associations</p>
-                <p class="full">Our membership management software provides full automation of membership renewals and payments</p>
-            </div>
-            <div class="clubs">
-                <img src="Icon (3).png" class="img1">
-                <p class="group">Clubs And Groups</p>
-                <p class="full">Our membership management software provides full automation of membership renewals and payments</p>
-            </div>
+                <div class="clubs">
+                    <img src="/day87/homework/Icon (1).png" class="img1">
+                    <p class="group">Membership Organisations</p>
+                    <p class="full">Our membership management software provides full automation of membership renewals
+                        and payments</p>
+                </div>
+                <div class="clubs">
+                    <img src="Icon (2).png" class="img1">
+                    <p class="group">National Associations</p>
+                    <p class="full">Our membership management software provides full automation of membership renewals
+                        and payments</p>
+                </div>
+                <div class="clubs">
+                    <img src="Icon (3).png" class="img1">
+                    <p class="group">Clubs And Groups</p>
+                    <p class="full">Our membership management software provides full automation of membership renewals
+                        and payments</p>
+                </div>
             </div>
         </div>
         <div class="pr3">
             <img src="rafiki.png" class="image">
             <div class="ch2">
                 <h1 class="at">The unseen of spending three years at Pixelgrade</h1>
-                <p class="sit">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed porta. Nullam mattis tristique iaculis. Nullam pulvinar sit amet risus pretium auctor. Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec elementum pulvinar odio.</p>
+                <p class="sit">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed
+                    accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed porta. Nullam
+                    mattis tristique iaculis. Nullam pulvinar sit amet risus pretium auctor. Etiam quis massa pulvinar,
+                    aliquam quam vitae, tempus sem. Donec elementum pulvinar odio.</p>
                 <button class="learn">Learn more</button>
             </div>
         </div>
@@ -597,7 +807,7 @@
             <div id="ch3">
                 <p id="loc">Helping a local <span>business reinvent itself</span></p>
                 <p id="we">We reached here with our hard work and dedication</p>
-                 
+
             </div>
             <div id="ch4">
                 <div class="itrem fir">
@@ -634,16 +844,27 @@
             <img src="pana.png" class="image">
             <div class="ch2">
                 <h1 class="at">How to design your site footer like we did</h1>
-                <p class="sit">Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor, augue nec tincidunt molestie, massa nunc varius arcu, at scelerisque elit erat a magna. Donec quis erat at libero ultrices mollis. In hac habitasse platea dictumst. Vivamus vehicula leo dui, at porta nisi facilisis finibus. In euismod augue vitae nisi ultricies, non aliquet urna tincidunt. Integer in nisi eget nulla commodo faucibus efficitur quis massa. Praesent felis est, finibus et nisi ac, hendrerit venenatis libero. Donec consectetur faucibus ipsum id gravida.</p>
+                <p class="sit">Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor, augue nec tincidunt
+                    molestie, massa nunc varius arcu, at scelerisque elit erat a magna. Donec quis erat at libero
+                    ultrices mollis. In hac habitasse platea dictumst. Vivamus vehicula leo dui, at porta nisi facilisis
+                    finibus. In euismod augue vitae nisi ultricies, non aliquet urna tincidunt. Integer in nisi eget
+                    nulla commodo faucibus efficitur quis massa. Praesent felis est, finibus et nisi ac, hendrerit
+                    venenatis libero. Donec consectetur faucibus ipsum id gravida.</p>
                 <button class="learn">Learn more</button>
             </div>
         </div>
         <div id="divv">
             <img src="image 9.png" class="image">
             <div id="id">
-                 
+
                 <p class="down">
-                    Maecenas dignissim justo eget nulla rutrum molestie. Maecenas lobortis sem dui, vel rutrum risus tincidunt ullamcorper. Proin eu enim metus. Vivamus sed libero ornare, tristique quam in, gravida enim. Nullam ut molestie arcu, at hendrerit elit. Morbi laoreet elit at ligula molestie, nec molestie mi blandit. Suspendisse cursus tellus sed augue ultrices, quis tristique nulla sodales. Suspendisse eget lorem eu turpis vestibulum pretium. Suspendisse potenti. Quisque malesuada enim sapien, vitae placerat ante feugiat eget. Quisque vulputate odio neque, eget efficitur libero condimentum id. Curabitur id nibh id sem dignissim finibus ac sit amet magna.
+                    Maecenas dignissim justo eget nulla rutrum molestie. Maecenas lobortis sem dui, vel rutrum risus
+                    tincidunt ullamcorper. Proin eu enim metus. Vivamus sed libero ornare, tristique quam in, gravida
+                    enim. Nullam ut molestie arcu, at hendrerit elit. Morbi laoreet elit at ligula molestie, nec
+                    molestie mi blandit. Suspendisse cursus tellus sed augue ultrices, quis tristique nulla sodales.
+                    Suspendisse eget lorem eu turpis vestibulum pretium. Suspendisse potenti. Quisque malesuada enim
+                    sapien, vitae placerat ante feugiat eget. Quisque vulputate odio neque, eget efficitur libero
+                    condimentum id. Curabitur id nibh id sem dignissim finibus ac sit amet magna.
                 </p>
                 <p id="tim">Tim Smith</p>
                 <p id="boat">British Dragon Boat Racing Association</p>
@@ -656,21 +877,23 @@
                     <img src="Logo-5.png" class="log5">
                     <p id="cust">Meet all customers</p>
                 </div>
-                 
+
 
             </div>
         </div>
         <div id="pr4">
             <div class="ch6">
                 <p id="market">Caring is the new marketing</p>
-                <p id="late">The Nextcent blog is the best place to read about the latest membership insights, trends and more. See who's joining the community, read about how our community are increasing their membership income and lot's more.</p>
+                <p id="late">The Nextcent blog is the best place to read about the latest membership insights, trends
+                    and more. See who's joining the community, read about how our community are increasing their
+                    membership income and lot's more.</p>
             </div>
             <div class="caring">
                 <div class="three">
                     <img src="./image 18.png" class="picture">
                     <div>
                         <p class="one">Creating Streamlined Safeguarding Processes with OneRen</p>
-                        <p class="model">Readmore<img src="./Right.png" ></p>
+                        <p class="model">Readmore<img src="./Right.png"></p>
                     </div>
                 </div>
                 <div class="three">
@@ -689,6 +912,50 @@
                 </div>
             </div>
         </div>
+        <div id="pr5">
+            <p id="eu">Pellentesque suscipit fringilla libero eu.</p>
+
+            <button id="demo">Get a Demo <img src="./Down.png" id="right1"></button>
+        </div>
     </main>
+    <footer>
+        <div id="ch7">
+            <img src="./Logoo.png" id="logoo">
+
+            <p>Copyright © 2020 Landify UI Kit. All rights reserved</p>
+            <div id="iconss">
+                <img src="./Social Iconss.png" class="icons3">
+                <img src="./Social Icons.png" class="icons3">
+                <img src="./Social Icons-1.png" class="icons3">
+                <img src="./Social Icons-2.png" class="icons3">
+            </div>
+        </div>
+        <div class="pr6">
+            <div>
+                <h5>company</h5>
+                <p >about us</p>
+                <p>blog</p>
+                <p>contact us</p>
+                <p>pricing</p>
+                <p>testimonials</p>
+            </div>
+            <div>
+                <h5>Support</h5>
+                <p>help center</p>
+                <p>terms of service</p>
+                <p>legal</p>
+                <p>private policy</p>
+                <p>status</p>
+            </div>
+            <div>
+                <h5>stay up to date</h5>
+                <form>
+                    <input placeholder="Your email adress">
+                    <img src="./Vector.png" id="vector">
+                </form>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>

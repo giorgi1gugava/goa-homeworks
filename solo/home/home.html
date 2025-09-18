@@ -1,0 +1,1833 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(25, 25, 25);
+            height: 100vh;
+            font-family: sans-serif;
+            overflow-x: hidden;
+        }
+
+        header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            max-width: 1200px;
+            width: 90%;
+            height: 73px;
+            background-color: red;
+            position: relative;
+            top: 30px;
+            left: 80px;
+            border-radius: 100px;
+            padding: 14px 24px;
+            background-color: #1C1C1C;
+            border: 1px solid #262626;
+
+
+
+        }
+
+        #img {
+            width: 546px;
+            height: 440px;
+            position: absolute;
+
+        }
+
+        #ch {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 5px;
+        }
+
+        #shape {
+            width: 30px;
+            height: 30px;
+        }
+
+        #bank {
+            color: white;
+
+        }
+
+        nav {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 26px;
+        }
+
+        li {
+            list-style-type: none;
+            font-size: 14px;
+            font-weight: 400;
+            color: white;
+        }
+
+        #ch1 {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 20px;
+        }
+
+        #button {
+            width: 87px;
+            height: 45px;
+            background-color: #CAFF33;
+            border: none;
+            border-radius: 82px;
+        }
+
+        #sign {
+            font-size: 14px;
+            font-weight: 400;
+            color: white;
+        }
+
+        #li {
+            display: flex;
+            width: 77px;
+            align-items: center;
+            padding: 0px 20px;
+            height: 41px;
+            border-radius: 82px;
+            background-color: #262626;
+        }
+
+        #burger {
+            display: none;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+
+        #pr {
+            display: flex;
+
+            gap: 50px;
+            padding: 30px 5%;
+            justify-content: space-between;
+            position: relative;
+            top: 80px;
+        }
+        a{
+            text-decoration: none;
+        }
+
+
+
+
+
+
+        #prr {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        #ch2 {
+            display: flex;
+            flex-direction: row;
+            width: 278px;
+            height: 40px;
+            background-color: #262626;
+            border-radius: 61px;
+            padding: 10px;
+            gap: 5px;
+            align-items: center;
+        }
+
+        #img2 {
+            width: 20px;
+            height: 20px;
+        }
+
+        #llc {
+            color: #FFFFFF;
+            font-size: 14px;
+            font-weight: 300;
+        }
+
+        #welcome {
+            color: white;
+            font-size: 38px;
+            font-weight: 500;
+            max-width: 649px;
+
+        }
+
+        span {
+            color: #CAFF33;
+        }
+
+        #at {
+            color: #E4E4E7;
+            font-size: 17px;
+            font-weight: 300;
+            max-width: 649px;
+
+        }
+
+        #open {
+            width: 144px;
+            height: 49px;
+            background-color: #CAFF33;
+            border: none;
+            border-radius: 82px;
+        }
+
+        #pr1 {
+            display: flex;
+            flex-direction: column;
+            width: 410px;
+            padding: 27px;
+            border: 1px solid #262626;
+
+            background-color: rgb(26, 26, 26);
+
+
+        }
+
+        #ch3 {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+        }
+
+        .box {
+            display: flex;
+            flex-direction: row;
+            width: 355px;
+            height: 62px;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #262626;
+            bottom: 50px;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(25, 25, 25);
+        }
+
+        .box div {
+            display: flex;
+            flex-direction: row;
+            gap: 6px;
+        }
+
+        .img {
+            width: 30px;
+            height: 30px;
+        }
+
+        #divv {
+            display: flex;
+            flex-direction: row;
+            height: 60px;
+            width: 149px;
+            background-color: rgb(34, 37, 27);
+            margin-left: -70px;
+            margin-top: -40px;
+            border-radius: 8px;
+            padding: 10px;
+            gap: 10px;
+            align-items: center;
+        }
+
+        #divv div {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        #dollar {
+            color: #FFFFFF;
+            font-size: 13.77px;
+            font-weight: 400;
+        }
+
+        #mont {
+            color: white;
+            font-size: 11.02px;
+            font-weight: 300;
+        }
+
+        .zer {
+            position: relative;
+            margin-top: 50px;
+
+
+        }
+
+        #your {
+            margin-top: 10px;
+        }
+
+        #Monay {
+            color: #FFFFFF;
+            font-size: 13.77px;
+            font-weight: 500;
+        }
+
+        .boxes {
+            display: flex;
+            flex-direction: column;
+            width: 177px;
+            gap: 6px;
+            border: 1px solid #262626;
+            padding: 13px;
+        }
+
+        .country {
+            display: flex;
+            flex-direction: row;
+            gap: 6px;
+            align-items: center;
+        }
+
+        #test {
+            display: flex;
+            flex-direction: row;
+        }
+
+        #mainbox {
+            width: 355px;
+            border-radius: 8.26px;
+
+        }
+
+        .rup {
+            color: white;
+            font-size: 11.02px;
+            font-weight: 300;
+        }
+
+        .inr {
+            color: white;
+            font-size: 12.4px;
+            font-weight: 400;
+        }
+
+        .minibox {
+            display: flex;
+            width: 177px;
+            height: 62px;
+            border: 1px solid #262626;
+            text-align: start;
+            align-items: center;
+            padding: 15px;
+
+        }
+
+        #boxx {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .num {
+            color: white;
+            font-size: 13.77px;
+            font-weight: 500;
+        }
+
+        #ex {
+            width: 355px;
+            height: 41px;
+            border: none;
+            background-color: rgb(34, 37, 27);
+            border-radius: 56.47px;
+            color: #D1FF4D;
+            font-size: 12.4px;
+            font-weight: 400;
+        }
+
+        #ch4 {
+            display: flex;
+            gap: 19.97px;
+            flex-direction: column;
+        }
+
+        #bar {
+
+            width: 294px;
+            height: 55px;
+            background-color: red;
+
+            border-radius: 55.09px;
+
+
+        }
+
+        #pr2 {
+            display: flex;
+            flex-direction: column;
+            padding: 200px 80px;
+            gap: 80px;
+        }
+
+        #ch5 {
+            display: flex;
+            flex-direction: row;
+            gap: 150px;
+
+        }
+
+        #chh {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        #business {
+            display: flex;
+            flex-direction: row;
+            width: 299px;
+            border: 1px solid #262626;
+            height: 65px;
+            border-radius: 82px;
+            align-items: center;
+            padding: 10px;
+            gap: 10px;
+
+        }
+
+        #range {
+            color: #B3B3B3;
+            font-size: 16px;
+            font-weight: 300;
+            max-width: 831px;
+        }
+
+        #prod {
+            color: #FFFFFF;
+            font-size: 38px;
+            font-weight: 500;
+        }
+
+        #button1 {
+            width: 139px;
+            height: 41px;
+            border: none;
+            background-color: rgb(202, 255, 51);
+            border-radius: 140px;
+
+        }
+
+        .icons {
+            width: 72px;
+            height: 72px;
+        }
+
+        .text {
+            font-size: 20px;
+            font-weight: 400;
+            color: #FFFFFF;
+        }
+
+        .maxtxt {
+            color: #B3B3B3;
+            max-width: 373px;
+            font-size: 16px;
+            font-weight: 300;
+        }
+
+        #ch6 {
+            display: flex;
+            flex-direction: row;
+            gap: 40px;
+        }
+
+        .boxes1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 24px;
+            padding: 10px;
+        }
+
+        .first {
+            border-left: 1px solid #262626;
+        }
+
+        .second {
+            border-left: 1px solid #262626;
+        }
+
+        #case {
+            font-size: 38px;
+            font-weight: 500;
+            color: #CAFF33;
+        }
+
+        #alike {
+            color: #B3B3B3;
+            font-size: 16px;
+            font-weight: 300;
+            max-width: 1030px;
+        }
+
+        #pr3 {
+            display: flex;
+            flex-direction: column;
+            padding: 0px 90px;
+            gap: 60px;
+        }
+
+        #just {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        #ch7 {
+            display: flex;
+            flex-direction: row;
+            gap: 60px;
+
+        }
+
+        #ch8 {
+            display: flex;
+            flex-direction: row;
+            gap: 60px;
+        }
+
+        #chh1 {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 610px;
+            height: 414px;
+            background-image: url(./Abstract\ Design\ \(1\).png);
+            background-repeat: no-repeat;
+            background-color: rgb(28, 28, 28);
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+
+        }
+
+        .boxbox {
+            display: flex;
+            flex-direction: column;
+            width: 260px;
+            height: 174px;
+            border: 1px solid #262626;
+            border-radius: 12px;
+            background-color: rgb(25, 25, 25);
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+            gap: 14px;
+        }
+
+        #boxie {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+        }
+
+        #boxie1 {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+
+        }
+
+        .pic {
+            width: 64px;
+            height: 64px;
+        }
+
+        #pp {
+            color: #FFFFFF;
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        .texts {
+            font-size: 16px;
+            font-weight: 400;
+            color: #FFFFFF;
+
+        }
+
+        .nom {
+            text-align: center;
+        }
+
+        #ch9 {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+
+
+        }
+
+        #individual {
+            color: #FFFFFF;
+            font-weight: 500;
+            font-size: 26px;
+        }
+
+        #pave {
+            color: #B3B3B3;
+            font-size: 15px;
+            font-weight: 300;
+            max-width: 610px;
+        }
+
+        #chh9 {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        #proc {
+            display: flex;
+            flex-direction: row;
+            gap: 50px;
+        }
+
+        .proc {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .seven {
+            color: #CAFF33;
+            font-size: 40px;
+            font-weight: 500;
+        }
+
+        .dept {
+            color: #B3B3B3;
+            font-size: 15px;
+            font-weight: 300;
+        }
+
+        #click {
+            width: 118px;
+            height: 49px;
+            border: 1px solid #262626;
+            border-radius: 82px;
+            background-color: rgb(28, 28, 28);
+            font-size: 14px;
+            font-weight: 400;
+            color: #FFFFFF;
+        }
+
+        .onee {
+            background-position-x: right;
+        }
+
+        #pr4 {
+            display: flex;
+            flex-direction: column;
+            gap: 60px;
+            padding: 100px 20px;
+        }
+
+        #ch10 {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        #text1 {
+            font-size: 38px;
+            font-weight: 500;
+            color: #FFFFFF;
+        }
+
+        #text2 {
+            max-width: 1030px;
+            color: #B3B3B3;
+            font-size: 16px;
+            font-weight: 300;
+        }
+
+        #ch11 {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+
+        }
+
+        #buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 40px;
+            background-color: rgb(28, 28, 28);
+            border-radius: 10px;
+            height: 267px;
+        }
+
+        .buttoni {
+            color: #FFFFFF;
+            font-size: 14px;
+            font-weight: 400;
+            border: 1px solid #262626;
+            width: 165px;
+            height: 49px;
+            background-color: rgb(28, 28, 28);
+            border-radius: 100px;
+        }
+
+        #ch12 {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            flex-wrap: wrap;
+
+        }
+
+        .item {
+            display: flex;
+            flex-direction: column;
+            width: 445px;
+            border: 1px solid #262626;
+            gap: 24px;
+            padding: 40px;
+            border-radius: 10px;
+
+
+        }
+
+        .row1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .acac {
+            font-size: 18px;
+            font-weight: 400;
+            color: #FFFFFF;
+        }
+
+        .bills {
+            color: #B3B3B3;
+            max-width: 417.5px;
+            font-size: 16px;
+            font-weight: 300;
+        }
+
+        .wrapi {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+
+        }
+
+        #pr5 {
+            display: flex;
+            flex-direction: column;
+            gap: 60px;
+            padding: 100px 20px;
+
+
+        }
+
+        #faq {
+            display: flex;
+            flex-direction: row;
+            width: 155px;
+            height: 49px;
+            border: 1px solid #262626;
+            border-radius: 100px;
+            align-items: center;
+            justify-content: center;
+            gap: 4px;
+
+        }
+        #parent1 #faq p{
+            color: white;
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+         #ch13 {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+        }
+        #pr5 #parent1{
+            display: flex;
+             
+            justify-content: center;
+
+        }
+
+        #txt {
+            font-size: 38px;
+            font-weight: 500;
+            color: #FFFFFF;
+
+        }
+
+        #txt1 {
+            font-size: 16px;
+            font-weight: 300;
+            color: #B3B3B3;
+            max-width: 979px;
+        }
+
+        #ch14 {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        #ch15 {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+
+        .boxes2 {
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #262626;
+            border-radius: 10px;
+            gap: 24px;
+            padding: 40px;
+
+        }
+
+        .txt2 {
+            font-size: 18px;
+            font-weight: 500;
+            color: #FFFFFF;
+            max-width: 549.5px;
+            border-bottom: 1px solid #262626;
+            height: 40px;
+
+        }
+
+        .txt3 {
+            font-size: 16px;
+            font-weight: 300;
+            color: #B3B3B3;
+            max-width: 549.5px;
+            filter: brightness(1);
+        }
+
+        #ch16 {
+            display: flex;
+            flex-direction: row;
+            margin-top: 20px;
+        }
+
+        #ch17 {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+
+        .boxes3 {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            padding: 40px;
+            border-radius: 10px;
+            border: 1px solid #262626;
+            background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.1));
+
+        }
+
+        .txt4 {
+            font-size: 18px;
+            font-weight: 500;
+            color: #FFFFFF;
+            border-bottom: 1px solid #262626;
+            height: 40px;
+
+
+        }
+
+        .txt5 {
+            font-size: 16px;
+            font-weight: 300;
+            color: #B3B3B3;
+            max-width: 549.5px;
+            filter: brightness(0.5);
+        }
+        #pr6{
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            gap: 80px;
+        }
+        #ch18{
+            display: flex;
+            flex-direction: row;
+            gap: 150px;
+            align-items: center;
+        }
+        #ch19{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        #box1{
+            display: flex;
+            flex-direction: row;
+            padding: 12px;
+            width: 300px;
+            height: 65px;
+            border-radius: 82px;
+            border: 1px solid #262626;
+            gap: 20px;
+        }
+        #box1 button{
+            background-color: #CAFF33;
+            width: 139px;
+            height: 41px;
+            border: none;
+            border-radius: 140px;
+            font-size: 14px;
+            font-weight: 400;
+        }
+        #box1 p{
+            display: flex;
+            font-size: 14px;
+            font-weight: 400;
+            color: #FFFFFF;
+            width: 138px;
+            align-items: center;
+        }
+        #Our{
+            color: #FFFFFF;
+            font-size: 38px;
+            font-weight: 500;
+        }
+        #digital1{
+            color: #B3B3B3;
+            font-size: 14px;
+            font-weight: 300;
+            max-width: 831px;
+        }
+        .minidiv{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            border-radius: 100px;
+            border: 1px solid #262626;
+            background-color: rgb(28, 28, 28);
+        }
+        #ch20{
+            display: flex;
+            flex-direction: row;
+            gap: 40px;
+            align-items: center;
+        }
+        .maindiv{
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            align-items: center;
+        }
+        .maindiv img{
+            width: 44px;
+            height: 44px; 
+        }
+        .txt6{
+            color: #FFFFFF;
+            font-size: 16px;
+            font-weight: 400;
+        }
+        h5{
+            color: #CAFF33;
+            font-size: 16px;
+            font-weight: 500;
+        }
+        #pr7{
+            display: flex;
+            flex-direction: row;
+            gap: 150px;
+            padding: 100px 50px;
+            background-color: rgb(28, 28, 28);
+            border: 1px solid #262626;
+            border-radius: 20px;
+             
+            align-items: center;
+            justify-content: center;
+            background-image: url(./Abstract\ Design\ \(1\).png);
+            background-repeat: no-repeat;
+            background-size: 202px 192px;
+             
+        }
+        #pr7 div{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        #text3{
+            font-size: 30px;
+            font-weight: 400;
+            color: #FFFFFF;
+        }
+        #text4{
+            font-size: 16px;
+            font-weight: 300;
+            color: #B3B3B3;
+            max-width: 874px;
+        }
+        #pr7 button{
+            width: 136px;
+            height: 49px;
+            background-color: #CAFF33;
+            border-radius: 82px;
+            border: none;
+            font-size: 14px;
+            font-weight: 400;
+        }
+        footer{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            background-color: rgb(28, 28, 28);
+            gap: 40px;
+            padding: 60px;
+            margin-top: 100px;
+            align-items: center;
+            justify-content: center;
+        }
+        .line{
+            width: 90%;
+            border: 1px solid #262626;
+        }
+        #ch21{
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            align-items: center;
+        }
+        #ch21 div{
+            display: flex;
+            flex-direction: row;
+            gap:14px;
+        }
+        #ch21 img{
+            width: 132px;
+            height: 34px; 
+
+        }
+        #ch21 div p{
+            font-size: 16px;
+            font-weight: 400;
+            color: #E4E4E7;
+        }
+        #ch22{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        #ch22 div{
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+            align-items: center;
+        }
+        #ch22 div p{
+            font-size: 16px;
+            font-weight: 400;
+            color: #E4E4E7;
+        }
+        #ch22 img{
+            width: 24px;
+            height: 24px;
+        }
+        #ch23{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background-color: rgb(25, 25, 25);
+            border: 1px solid #262626;
+            border-radius: 100px;
+            height: 68px;
+            width: 90%;
+            align-items: center;
+            padding: 20px;
+             
+
+        }
+        #ch23 p{
+            font-size: 14px;
+            font-weight: 300;
+            color: #B3B3B3;
+
+        }
+        #your{
+            font-size: 13.77px;
+            font-weight: 500;
+            color: #FFFFFF;
+        }
+        #sixeight{
+            color: #FFFFFF;
+            font-size: 16.53px;
+            font-weight: 500;
+        }
+        #Joel{
+            font-size: 12.4px;
+            font-weight: 300;
+            color: #FFFFFF;
+        }
+       
+        
+
+
+
+
+
+        @media(max-width: 850px) {
+            .txt2 {
+                font-size: 12px;
+                border: none;
+            }
+
+            .txt3 {
+                font-size: 10px;
+                border: none;
+            }
+
+            .txt4 {
+                font-size: 12px;
+                border: none;
+            }
+
+            .txt5 {
+                font-size: 10px;
+                border: none;
+            }
+            #pr7{
+                flex-wrap: wrap;
+                gap: 80px;
+            }
+
+        }
+
+        @media(max-width: 1200px) {
+            .wrapi {
+                flex-wrap: wrap;
+            }
+        }
+
+        @media(max-width: 700px) {
+            nav {
+                display: none;
+            }
+
+
+
+            #img {
+                width: 446px;
+                height: 340px;
+            }
+
+            #burger {
+                display: block;
+
+            }
+
+            #ch1 {
+                display: none;
+            }
+        }
+        @media(max-width: 512px){
+            .item{
+                width: 300px;
+            }
+        }
+
+        @media (max-width: 465px) {
+            #pr1 {
+                width: 100%;
+                padding: 20px;
+            }
+
+            .box,
+            #mainbox,
+            #ex {
+                width: 100%;
+            }
+
+            #boxx {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .minibox {
+                width: 100%;
+            }
+
+            .boxes {
+                width: 100%;
+            }
+
+            #test {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+
+
+        @media(max-width: 446px) {
+            #img {
+                width: 370px;
+                height: 280px;
+
+            }
+
+            .boxes2 {
+                gap: 70px;
+            }
+
+            .boxes3 {
+                gap: 70px;
+            }
+        }
+
+        @media(max-width: 1056px) {
+            #pr {
+                flex-wrap: wrap;
+                padding: 38px;
+            }
+
+            #divv {
+                display: none;
+            }
+
+            #pr3 {
+                padding: 38px;
+            }
+
+            #pr2 {
+                padding: 38px;
+            }
+
+            #ch11 {
+                flex-wrap: wrap;
+            }
+
+            #pr4 {
+                padding: 10px;
+            }
+
+            #pr5 {
+                padding: 10px;
+            }
+            #pr6{
+                padding: 10px;
+            }
+            footer{
+                padding: 40px;
+            }
+
+        }
+
+        @media (max-width: 662px) {
+            #chh1 {
+                width: 90%;
+
+
+            }
+
+            .boxbox {
+                width: 100%;
+
+                margin: 10px 0;
+
+            }
+
+            .texts {
+                font-size: 12px;
+            }
+
+        }
+
+
+
+        @media (max-width: 375px) {
+            #pr1 {
+                width: 100%;
+                padding: 20px;
+            }
+
+            .box,
+            #mainbox,
+            #ex {
+                width: 100%;
+            }
+
+            #boxx {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .minibox {
+                width: 100%;
+            }
+
+            .boxes {
+                width: 100%;
+            }
+
+            #test {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+
+        @media(max-width: 809px) {
+            #ch5 {
+                flex-wrap: wrap;
+
+            }
+
+            #ch6 {
+                flex-wrap: wrap;
+
+            }
+
+            header {
+                margin-left: -50px;
+            }
+            #ch18{
+                flex-wrap: wrap;
+                gap: 100px;
+            }
+            #ch20{
+                flex-wrap: wrap;
+                gap: 120px;
+            }
+            .minidiv{
+                display: none;
+            }
+            #ch23{
+                flex-direction: column;
+                height: 200px;
+                border-radius: 50px;
+            }
+        }
+
+        @media(max-width: 1124px) {
+            #ch7 {
+                flex-wrap: wrap;
+            }
+
+            #ch8 {
+                flex-wrap: wrap;
+            }
+        }
+
+        @media(max-width: 432px) {
+            #proc {
+                flex-wrap: wrap;
+            }
+
+            .txt2 {
+                font-size: 9px;
+
+            }
+
+            .txt3 {
+                font-size: 8px;
+
+            }
+
+            .txt4 {
+                font-size: 9px;
+
+            }
+
+            .txt5 {
+                font-size: 8px;
+
+            }
+
+            .boxes2 {
+                padding: 20px;
+                gap: 30px;
+            }
+
+            .boxes3 {
+                padding: 20px;
+                gap: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <img src="./Group.png" id="img">
+    <header>
+        <div id="ch">
+            <img src="./shape-30@4x.png" id="shape">
+            <p id="bank">YourBanK</p>
+        </div>
+        <nav>
+            <ul>
+                <a href="/solo/home/home.html"><li id="li">Home</li></a>
+                <a href="/solo/carrers/carrers.html"><li>Careers</li></a>
+                <a href="/solo/about/about.html"><li>About</li></a>
+                <a href="/solo/security/security.html"><li>Security</li></a>
+
+            </ul>
+        </nav>
+        <img src="/day87/homework/dehaze_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" id="burger">
+        <div id="ch1">
+            <a href="/solo/signup/signup.html"><p id="sign">Sign up</p></a>
+            <a href="/solo/login/login.html"><button id="button">Login</button></a>
+        </div>
+    </header>
+    <main>
+        <div id="pr">
+            <div id="prr">
+                <div id="ch2">
+                    <img src="./Icon (8).png" id="img2">
+                    <p id="llc">No LLC Required, No Credit Check.</p>
+                </div>
+                <p id="welcome">Welcome to YourBank
+                    Empowering Your <span>Financial Journey</span></p>
+                <p id="at"> At YourBank, our mission is to provide comprehensive banking solutions that empower
+                    individuals and businesses to achieve their financial goals. We are committed to delivering
+                    personalized and innovative services that prioritize our customers' needs.</p>
+                <button id="open">Open Acount</button>
+            </div>
+
+            <div id="pr1">
+                <div id="divv">
+                    <img src="./Sub Container.png" class="img">
+                    <div>
+                        <p id="dollar">+$5.000</p>
+                        <p id="mont">Monthly Income</p>
+                    </div>
+                </div>
+                <div id="ch3">
+                    <p id="your">Your Transaction</p>
+                    <div class="box zer">
+                        <div>
+                            <img src="./Sub Container.png" class="img">
+                            <p id="Joel">Transaction <br>Joel Kenley</p>
+                        </div>
+                        <p id="sixeight">-$68.000</p>
+                    </div>
+
+                </div>
+                <div id="ch4">
+
+                    <p id="Monay">Monay exchange</p>
+                    <div id="mainbox"><!---->
+                        <div id="test">
+                            <div class="boxes">
+                                <div class="country">
+                                    <img src="./Image.png">
+                                    <p class="inr">INR</p>
+                                </div>
+                                <p class="rup">Indian Rupess</p>
+                            </div>
+                            <div class="boxes">
+                                <div class="country">
+                                    <img src="./Image (2).png">
+                                    <p class="inr">USR</p>
+                                </div>
+
+                                <p class="rup">United States Dollar</p>
+                            </div>
+                        </div>
+                        <div id="boxx">
+                            <div class="minibox">
+                                <p class="num">5,0000</p>
+                            </div>
+                            <div class="minibox">
+                                <p class="num">12.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="ex">Exchange</button>
+                </div>
+
+
+
+            </div>
+
+        </div>
+        <div id="pr2">
+            <div id="ch5"><!---->
+                <div id="chh">
+                    <p id="prod">Our <span>Products</span></p>
+                    <p id="range">Discover a range of comprehensive and customizable banking products at YourBank,
+                        designed to suit your unique financial needs and aspirations</p>
+                </div>
+                <div id="business">
+                    <button id="button1">For Individuals</button>
+                    <p id="pp">For Businesses</p>
+                </div>
+            </div>
+            <div id="ch6"><!---->
+                <div class="boxes1">
+                    <img src="./Icon Container (1).png" class="icons">
+                    <p class="text">Checking Accounts</p>
+                    <p class="maxtxt">njoy easy and convenient access to your funds with our range of checking account
+                        options. Benefit from features such as online and mobile banking, debit cards, and free ATM
+                        access.</p>
+                </div>
+                <div class="boxes1 first">
+                    <img src="./Icon Container (2).png" class="icons">
+                    <p class="text">Savings Accounts</p>
+                    <p class="maxtxt">Build your savings with our competitive interest rates and flexible savings
+                        account options. Whether you're saving for a specific goal or want to grow your wealth over
+                        time, we have the right account for you.</p>
+                </div>
+                <div class="boxes1 second">
+                    <img src="./Icon Container (3).png" class="icons">
+                    <p class="text">Loans and Mortgages</p>
+                    <p class="maxtxt">Realize your dreams with our flexible loan and mortgage options. From personal
+                        loans to home mortgages, our experienced loan officers are here to guide you through the
+                        application process and help you secure the funds you need</p>
+                </div>
+
+            </div>
+        </div>
+        <div id="pr3">
+            <div id="just">
+                <p id="case">Use Cases</p>
+                <p id="alike">At YourBank, we cater to the diverse needs of individuals and businesses alike, offering a
+                    wide range of financial solutions</p>
+            </div>
+            <div id="ch7">
+                <div id="chh1">
+                    <div id="boxie">
+                        <div class="boxbox">
+                            <img src="./Icon Container (4).png" class="pic">
+                            <p class="texts nom">Managing Personal <br>Finances</p>
+
+                        </div>
+                        <div class="boxbox">
+                            <img src="./Icon Container (5).png" class="pic">
+                            <p class="texts">Saving for the Future</p>
+                        </div>
+                    </div>
+                    <div id="boxie1">
+                        <div class="boxbox">
+                            <img src="./Icon Container (6).png" class="pic">
+                            <p class="texts">Homeownership</p>
+                        </div>
+                        <div class="boxbox">
+                            <img src="./Icon Container (7).png" class="pic">
+                            <p class="texts">Education Funding</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="ch9">
+                    <div id="chh9">
+                        <p id="individual">For Individuals</p>
+                        <p id="pave">For individuals, our mortgage services pave the way to homeownership, and our
+                            flexible personal loans provide vital support during various life milestones. We also
+                            prioritize retirement planning, ensuring a financially secure future for our customers</p>
+                    </div>
+                    <div id="proc">
+                        <div class="proc">
+                            <p class="seven">78%</p>
+                            <p class="dept">Secure Retirement Planning</p>
+                        </div>
+                        <div class="proc">
+                            <p class="seven">63%</p>
+                            <p class="dept">Manageable Debt Consolidation</p>
+                        </div>
+                        <div class="proc">
+                            <p class="seven">91%</p>
+                            <p class="dept">Reducing financial burdens</p>
+                        </div>
+                    </div>
+                    <button id="click">Learn More</button>
+                </div>
+            </div>
+            <div id="ch8">
+                <div>
+                    <div id="ch9">
+                        <div id="chh9">
+                            <p id="individual">For Business</p>
+                            <p id="pave">For businesses, we empower growth with working capital solutions that optimize
+                                cash flow, and our tailored financing options fuel business expansion. Whatever your
+                                financial aspirations, YourBank is committed to providing the right tools and support to
+                                achieve them</p>
+                        </div>
+                        <div id="proc">
+                            <div class="proc">
+                                <p class="seven">65%</p>
+                                <p class="dept">Cash Flow <br>Managemen</p>
+                            </div>
+                            <div class="proc">
+                                <p class="seven">70%</p>
+                                <p class="dept">Drive Business <br>Expansion</p>
+                            </div>
+                            <div class="proc">
+                                <p class="seven">45%</p>
+                                <p class="dept">Streamline payroll <br>processing</p>
+                            </div>
+                        </div>
+                        <button id="click">Learn More</button>
+                    </div>
+                </div>
+                <div>
+                    <div id="chh1" class="onee">
+                        <div id="boxie">
+                            <div class="boxbox">
+                                <img src="./Icon Container (8).png" class="pic">
+                                <p class="texts nom">Startups and <br>Entrepreneur</p>
+
+                            </div>
+                            <div class="boxbox">
+                                <img src="./Icon Container (9).png" class="pic">
+                                <p class="texts">Cash Flow Management</p>
+                            </div>
+                        </div>
+                        <div id="boxie1">
+                            <div class="boxbox">
+                                <img src="./Icon Container (10).png" class="pic">
+                                <p class="texts">Business Expansion</p>
+                            </div>
+                            <div class="boxbox">
+                                <img src="./Icon Container (11).png" class="pic">
+                                <p class="texts">Payment Solutions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="pr4">
+                <div id="ch10">
+                    <p id="text1">Our <span>Features</span></p>
+                    <p id="text2">Experience a host of powerful features at YourBank, including seamless online banking,
+                        secure transactions, and personalized financial insights, all designed to enhance your banking
+                        experience</p>
+                </div>
+                <div id="ch11">
+                    <div id="buttons">
+                        <button class="buttoni"><span>Online Banking</span></button>
+                        <button class="buttoni">Financial Tools</button>
+                        <button class="buttoni">Customer Support</button>
+                    </div>
+                    <div id="wrap">
+                        <div id="ch12">
+                            <div class="wrapi"><!---->
+                                <div class="item">
+                                    <div class="row1">
+                                        <p class="acac">24/7 Account Access</p>
+                                        <img src="./Icon (9).png">
+                                    </div>
+                                    <p class="bills">Enjoy the convenience of accessing your accounts anytime, anywhere
+                                        through our secure online banking platform. Check balances, transfer funds, and
+                                        pay bills with ease.</p>
+                                </div>
+                                <div class="item">
+                                    <div class="row1">
+                                        <p class="acac">Mobile Banking App</p>
+                                        <img src="./Icon (9).png">
+                                    </div>
+                                    <p class="bills">Stay connected to your finances on the go with our user-friendly
+                                        mobile banking app. Easily manage your accounts, deposit checks, and make
+                                        payments from your smartphone or tablet.</p>
+                                </div>
+                            </div>
+                            <div class="wrapi">
+                                <div class="item">
+                                    <div class="row1">
+                                        <p class="acac">Secure Transactions</p>
+                                        <img src="./Icon (9).png">
+                                    </div>
+                                    <p class="bills">Rest assured knowing that your transactions are protected by
+                                        industry-leading security measures. We employ encryption and multi-factor
+                                        authentication to safeguard your financial information.</p>
+                                </div>
+                                <div class="item">
+                                    <div class="row1">
+                                        <p class="acac">Bill Pay and Transfers</p>
+                                        <img src="./Icon (9).png">
+                                    </div>
+                                    <p class="bills">Save time and avoid late fees with our convenient bill pay service.
+                                        Set up recurring payments or make one-time transfers between your accounts with
+                                        just a few clicks.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="pr5">
+                <div id="ch13">
+                    <p id="txt"><span>Frequently</span> Asked Questions</p>
+                    <p id="txt1">Still you have any questions? Contact our Team via support@yourbank.com</p>
+                </div>
+
+                <div id="ch14">
+                    <div id="ch15">
+                        <div class="boxes2">
+                            <p class="txt2">How do I open an account with YourBank?</p>
+                            <p class="txt3">Opening an account with YourBank is easy. Simply visit our website and click
+                                on the "Open an Account" button. Follow the prompts, provide the required information,
+                                and complete the application process. If you have any questions or need assistance, our
+                                customer support team is available to help.</p>
+                        </div>
+                        <div class="boxes2">
+                            <p class="txt2">What documents do I need to provide to apply for a loan?</p>
+                            <p class="txt3">The documents required for a loan application may vary depending on the type
+                                of loan you are applying for. Generally, you will need to provide identification
+                                documents (such as a passport or driver's license), proof of income (such as pay stubs
+                                or tax returns), and information about the collateral (if applicable). Our loan officers
+                                will guide you through the specific requirements during the application process</p>
+                        </div>
+                    </div>
+                    <div id="ch16">
+                        <div id="ch17">
+                            <div class="boxes3">
+                                <p class="txt4">How can I access my accounts online?</p>
+                                <p class="txt5">Accessing your accounts online is simple and secure. Visit our website
+                                    and click on the "Login" button. Enter your username and password to access your
+                                    accounts. If you haven't registered for online banking, click on the "Enroll Now"
+                                    button and follow the registration process. If you need assistance, our customer
+                                    support team is available to guide you.</p>
+                            </div>
+                            <div class="boxes3">
+                                <p class="txt4">Are my transactions and personal information secure?</p>
+                                <p class="txt5">At YourBank, we prioritize the security of your transactions and
+                                    personal information. We employ industry-leading encryption and multi-factor
+                                    authentication to ensure that your data is protected. Additionally, we regularly
+                                    update our security measures to stay ahead of emerging threats. You can bank with
+                                    confidence knowing that we have robust security systems in place.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="parent1">
+                    <div id="faq">
+                        <p>Load All FAQ’s</p>
+                        <img src="./Icon (10).png">
+                    </div>
+                </div>
+
+            </div>
+            <div id="pr6">
+                <div id="ch18">
+                    <div id="ch19">
+                        <p id="Our">Our <span>Testimonials</span></p>
+                        <p id="digital1">Discover how YourBank has transformed lives with innovative digital solutions and personalized customer service. See why our clients trust us for a secure and prosperous financial journey</p>
+                    </div>
+                    <div id="box1">
+                        <button>For Individuals</button>
+                        <p>For Businesses</p>
+                    </div>
+                </div>
+                <div id="ch20">
+                    <div class="minidiv">
+                        <img src="./Icon (11).png">
+                    </div>
+                    <div class="maindiv">
+                        <img src="./Icon (13).png">
+                        <p class="txt6">I recently started my own business, and YourBank has been instrumental in helping me set up my business accounts and secure the financing I needed. Their expert guidance and tailored solutions have been invaluable.</p>
+                        <h5>Sara T</h5>
+                    </div>
+                    <div class="maindiv">
+                        <img src="./Icon (13).png">
+                        <p class="txt6">I recently started my own business, and YourBank has been instrumental in helping me set up my business accounts and secure the financing I needed. Their expert guidance and tailored solutions have been invaluable.</p>
+                        <h5>John D</h5>
+                    </div>
+                    <div class="maindiv">
+                        <img src="./Icon (13).png">
+                        <p class="txt6">I recently started my own business, and YourBank has been instrumental in helping me set up my business accounts and secure the financing I needed. Their expert guidance and tailored solutions have been invaluable.</p>
+                        <h5>Emily G</h5>
+                    </div>
+                    <div class="minidiv">
+                        <img src="./Icon (12).png">
+                    </div>
+                </div>
+            </div>
+            <div id="pr7">
+                 
+                <div>
+                    <p id="text3">Start your financial journey with <span>YourBank today!</span></p>
+                    <p id="text4">Lorem ipsum dolor sit amet consectetur. Blandit odio semper risus pellentesque elit. Pellentesque eget ut imperdiet nulla penatibus. Nascetur viverra arcu sed amet cursus purus.</p>
+                </div>
+                <button>Open Account</button>
+                 
+            </div>
+
+    </main>
+    <footer>
+        <div id="ch21">
+            <img src="./Logo (3).png">
+            <div>
+                <a href="/solo/home/home.html"><li>Home</li></a>
+                <a href="/solo/carrers/carrers.html"><li>Careers</li></a>
+                <a href="/solo/about/about.html"><li>About</li></a>
+                <a href="/solo/security/security.html"><li>Security</li></a>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div id="ch22">
+             
+            <div>
+                <img src="./Icon (16).png">
+                <p>hello@skillbirdge.com</p>
+            </div>
+            <div>
+                <img src="./Icon (14).png">
+                <p>+91 91813 23 2309</p>
+            </div>
+            <div>
+                <img src="./Icon (15).png">
+                <p>Somewhere in the World</p>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div id="ch23">
+            <div>
+                <img src="./Button.png">
+                <img src="./Button (1).png">
+                <img src="./Button (2).png">
+            </div>
+            <p>YourBank All Rights Reserve</p>
+            <p>Privacy Policy l Terms of service</p>
+        </div>
+    </footer>
+</body>
+
+</html>

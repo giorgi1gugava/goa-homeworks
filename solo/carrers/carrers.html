@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>careers</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(25, 25, 25);
+            height: 100vh;
+            font-family: sans-serif;
+            overflow-x: hidden;
+        }
+
+        header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            max-width: 1200px;
+            width: 90%;
+            height: 73px;
+            background-color: red;
+            position: relative;
+            top: 30px;
+            left: 80px;
+            border-radius: 100px;
+            padding: 14px 24px;
+            background-color: #1C1C1C;
+            border: 1px solid #262626;
+
+
+
+        }
+
+        #ch {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 5px;
+        }
+
+        #shape {
+            width: 30px;
+            height: 30px;
+        }
+
+        #bank {
+            color: white;
+
+        }
+
+        nav {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 26px;
+        }
+
+        li {
+            list-style-type: none;
+            font-size: 14px;
+            font-weight: 400;
+            color: white;
+        }
+
+        #burger {
+            display: none;
+        }
+
+        #ch1 {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 20px;
+        }
+
+        #button {
+            width: 87px;
+            height: 45px;
+            background-color: #CAFF33;
+            border: none;
+            border-radius: 82px;
+        }
+
+        #sign {
+            font-size: 14px;
+            font-weight: 400;
+            color: white;
+        }
+
+        #li {
+            display: flex;
+            width: 77px;
+            align-items: center;
+            padding: 0px 15px;
+            height: 41px;
+            border-radius: 82px;
+            background-color: #262626;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 0px 80px;
+
+        }
+
+        span {
+            color: #CAFF33;
+        }
+
+        #pr {
+            display: flex;
+            position: relative;
+            top: 100px;
+            width: 1200px;
+            position: relative;
+
+            border: none;
+            padding: 40px;
+            background-color: rgb(28, 28, 28);
+            border-radius: 20px;
+            height: 608px;
+            background-image: url(./Abstract\ Design\ \(2\).png);
+
+            background-repeat: no-repeat;
+            background-position-x: right;
+
+        }
+
+        #ch2 {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+
+            text-align: start;
+            background-color: rgb(25, 25, 25);
+            gap: 20px;
+            padding: 20px 60px;
+            width: 658px;
+            height: 330px;
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border-top-left-radius: 20px;
+            z-index: 2;
+
+
+
+        }
+
+        #Join {
+            font-size: 16px;
+            font-weight: 300;
+            color: #B3B3B3;
+            max-width: 538px;
+        }
+
+        #Welcome {
+            font-size: 48px;
+            font-weight: 500;
+            color: #FFFFFF;
+            max-width: 538px;
+        }
+
+        #img1 {
+            width: 665px;
+            height: 538px;
+            border-radius: 16px;
+            left: 500px;
+            position: absolute;
+            z-index: 1;
+        }
+
+        #pr1 {
+            display: flex;
+            flex-direction: column;
+            gap: 60px;
+            margin-top: 250px;
+        }
+
+        #ch3 {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        #ch4{
+            display: flex;
+            flex-direction: column;
+            gap: 60px;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .box{
+            display: flex;
+            flex-direction: row;
+        }
+        .boxie{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            border-left: 1px solid #CAFF33;
+            padding: 20px;
+        }
+        #value{
+            font-size: 38px;
+            font-weight: 500;
+            color: #FFFFFF;
+        }
+        #guide{
+            max-width: 1130px;
+            font-size: 16px;
+            font-weight: 300;
+            color: #B3B3B3;
+        }
+        .head{
+            font-size: 40px;
+            color: #4C4C4D;
+            font-weight: 500;
+        }
+        .text{
+            font-size: 16px;
+            font-weight: 500;
+            color: #B3B3B3;
+            max-width: 586px;
+        }
+        #pr2{
+            padding: 150px 0px;
+            display: flex;
+            flex-direction: column;
+            gap: 60px;
+        }
+        #ch5{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+        }
+        #ch6{
+            display: flex;
+            flex-direction: column;
+            gap:30px;
+            align-items: center;
+            justify-content: center;
+             
+        }
+        .box1{
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            background-color: rgb(28, 28, 28);
+            padding: 40px;
+        }
+        .boxes{
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+             
+        }
+        .box1 div{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 14px;
+        }
+        .box1 div img{
+            width: 76px;
+            height: 76px;
+        }
+        .box1 div p{
+            font-size: 20px;
+            font-weight: 400;
+            color: #FFFFFF;
+        }
+        .txt{
+            font-size: 16px;
+            font-weight: 300;
+            color: #B3B3B3;
+            max-width: 530px;
+        }
+        #Uor{
+            font-size: 38px;
+            font-weight: 500;
+            color: #FFFFFF;
+        }
+        #VALUE{
+            font-size: 16px;
+            font-weight: 300;
+            color: #B3B3B3;
+            max-width: 1030px;
+        }
+        #pr3{
+            display: flex;
+            flex-direction: column;
+            gap: 60px;
+        }
+        #ch7{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        #ch8{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        #ch8-1{
+            display: flex;
+            flex-direction: row;
+        }
+        #ch8-2{
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(28, 28, 28);
+            gap: 40px;
+            border-radius: 16px;
+            padding: #262626;
+            padding: 40px;
+        }
+        #manager{
+            font-size: 24px;
+            font-weight: 600;
+            color: #FFFFFF;
+        }
+        #india{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+             height: 36px;
+            width: 143px;
+            background-color: rgb(25, 25, 25);
+            border: 1px solid #262626;
+            border-radius: 68px;
+            padding: 15px;
+            font-size: 16px;
+            font-weight: 300;
+            color: #B3B3B3;
+        }
+        #india1{
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            gap: 10px;
+             height: 36px;
+             width: 242px;
+            background-color: rgb(25, 25, 25);
+            border: 1px solid #262626;
+            border-radius: 68px;
+            font-size: 16px;
+            font-weight: 300;
+            color: #B3B3B3;
+        }
+        #indi{
+            display: flex;
+            flex-direction: row;
+            gap: 8px;
+        }
+        #ch8-3{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .ch8-4{
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+
+        }
+        #About{
+            font-size:20px;
+            font-weight: 600;
+            color: #FFFFFF;
+        }
+        #text1{
+            font-size: 16px;
+            font-weight: 300;
+            color: #B3B3B3;
+            max-width: 550px;
+        }
+        .minidiv{
+            display: flex;
+            flex-direction: row;
+            gap: 16px;
+        }
+        .minidiv img{
+            height: 20px;
+            width: 20px;
+        }
+        .ch8-5{
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            justify-content: center;
+        }
+        .pp{
+            font-size: 20px;
+            font-weight: 600;
+            color: #FFFFFF;
+        }
+        .paragraph{
+            font-size: 16px;
+            font-weight: 300;
+            color: #B3B3B3;
+            max-width: 510px;
+        }
+        .Now{
+            width: 115px;
+            height: 45px;
+            background-color: #CAFF33;
+            border: none;
+            border-radius: 82px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        #ch9{
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(28, 28, 28);
+            gap: 40px;
+            border-radius: 16px;
+            padding: #262626;
+            padding: 40px;
+        }
+        #two{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+        .divv{
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        #ch10{
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            align-items: center;
+            justify-content: center;
+        }
+        #text2{
+            font-size: 38px;
+            font-weight: 500;
+            color: #CAFF33;
+            }
+        #text3{
+            font-size: 16px;
+            font-weight: 300;
+            color: #B3B3B3;
+            max-width: 1030px;
+        }
+        #pr4{
+            display: flex;
+            flex-direction: column;
+            gap: 60px;
+            padding: 100px 0px;
+            align-items: center;
+        }
+        #boxiee{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        #txt1{
+            font-size: 38px;
+            font-weight: 500;
+            color: #FFFFFF;
+        }
+        #txt2{
+            font-size: 16px;
+            font-weight: 300;
+            color: #B3B3B3;
+            max-width: 979px;
+        }
+        #ch10{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        #box2{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+        #box3{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+
+        }
+        .divs{
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            padding: 40px;
+            border: 1px solid #262626;
+            border-radius: 10px;
+        }
+        .text4{
+            font-size: 18px;
+            font-weight: 500;
+            color: #FFFFFF;
+            height: 45px;
+            border-bottom: 1px solid #262626;
+
+        }
+        .text5{
+            font-size: 16px;
+            font-weight: 300;
+            color: #B3B3B3;
+            max-width: 549.5px;
+            filter: brightness(0.5);
+        }
+        #faq{
+            width: 155px;
+            height: 49px;
+            border: 1px solid #262626;
+            border-radius: 100px;
+            background-color: rgb(28, 28, 28);
+            font-size: 14px;
+            font-weight: 400;
+            color: #FFFFFF;
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            gap: 10px;
+        }
+         .fir{
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            padding: 40px;
+            border-radius: 10px;
+            border: 1px solid #262626;
+            background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.1));
+         }
+         #pr5{
+            display: flex;
+            flex-direction: row;
+            gap: 150px;
+            padding: 60px;
+            background-image: url(/solo/home/Abstract\ Design\ \(1\).png);
+            background-repeat: no-repeat;
+            background-size: 202px 192px;
+            border-radius: 20px;
+            border: 1px solid #262626;
+            align-items: center;
+            
+         }
+         #text6{
+            font-size: 30px;
+            font-weight: 400;
+            color: #FFFFFF;
+            max-width: 874px;
+         }
+         #text7{
+            font-size: 16px;
+            font-weight: 300;
+            color: #B3B3B3;
+            max-width: 874px;
+         }
+         #ch11{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+         }
+         #pr5 button{
+            width: 136px;
+            height: 49px;
+            background-color: #CAFF33;
+            border: none;
+            border-radius: 82px;
+         }
+         .line{
+            width: 90%;
+            border: 1px solid #262626;
+        }
+        footer{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            background-color: rgb(28, 28, 28);
+            gap: 40px;
+            padding: 60px;
+            margin-top: 100px;
+            align-items: center;
+            justify-content: center;
+        }
+        #ch24{
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            align-items: center;
+        }
+        #ch21 div{
+            display: flex;
+            flex-direction: row;
+            gap:14px;
+        }
+        #ch21 img{
+            width: 132px;
+            height: 34px; 
+
+        }
+        #ch21 div p{
+            font-size: 16px;
+            font-weight: 400;
+            color: #E4E4E7;
+        }
+        
+        #ch25{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        #ch25 div{
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+            align-items: center;
+        }
+        #ch25 div p{
+            font-size: 16px;
+            font-weight: 400;
+            color: #E4E4E7;
+        }
+        #ch21{
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            align-items: center;
+        }
+        #ch24 div{
+            display: flex;
+            flex-direction: row;
+            gap:14px;
+        }
+        #ch24 img{
+            width: 132px;
+            height: 34px; 
+
+        }
+        #ch24 div p{
+            font-size: 16px;
+            font-weight: 400;
+            color: #E4E4E7;
+        }
+        #ch26{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background-color: rgb(25, 25, 25);
+            border: 1px solid #262626;
+            border-radius: 100px;
+            height: 68px;
+            width: 90%;
+            align-items: center;
+            padding: 20px;
+             
+
+        }
+        #ch26 p{
+            font-size: 14px;
+            font-weight: 300;
+            color: #B3B3B3;
+
+        }
+        a{
+            text-decoration: none;
+        }
+          
+
+        
+
+        @media(max-width: 1050px){
+            #two{
+                flex-wrap: wrap;
+            }
+        }
+        @media(max-width: 1160px) {
+            #pr {
+                width: 600px;
+                height: 350px;
+                justify-content: center;
+                align-items: center;
+
+            }
+
+            #ch2 {
+                width: 529px;
+                height: 315px;
+            }
+
+            #img1 {
+                display: none;
+
+            }
+        }
+        @media(max-width: 809px){
+            #ch26{
+                flex-direction: column;
+                height: 200px;
+                border-radius: 50px;
+            }
+        }
+
+        @media(max-width: 700px) {
+            nav {
+                display: none;
+            }
+             
+
+
+
+
+            #burger {
+                display: block;
+
+            }
+
+            #ch1 {
+                display: none;
+            }
+        }
+
+        @media(max-width: 809px) {
+            header {
+                margin-left: -50px;
+            }
+
+            #pr {
+                left: -45px;
+            }
+            .text4{
+                border-bottom: none;
+            }
+        }
+
+        @media(max-width: 650px) {
+            #pr {
+                width: 400px;
+                height: 150px;
+
+
+            }
+            #pr5{
+                padding: 30px;
+            }
+
+            #ch2 {
+                width: 459px;
+                height: 215px;
+                left: -45px;
+
+            }
+
+            #Join {
+                max-width: 300px;
+            }
+            #pr1{
+                margin-top: 400px;
+                margin-left: -45px;
+            }
+            .box{
+                flex-wrap: wrap;
+                gap: 50px;
+            }
+            .boxes{
+                flex-wrap: wrap;
+            }
+            #pr2{
+                margin-left: -45px;
+            }
+            #ch8-2{
+                margin-left: -45px;
+                padding: 20px;
+            }
+            #ch7{
+                margin-left: -45px;
+            }
+
+            #text1{
+                font-size: 12px;
+            }
+            #india1{
+                width: 150px;
+                font-size: 12px;
+            }
+            #india{
+                width: 120px;
+                font-size: 12px;
+            }
+            .paragraph{
+                font-size: 12px;
+            }
+            .pp{
+                font-size: 16px;
+            }
+            #pr4{
+                margin-left: -45px;
+            }
+            #box2{
+                flex-wrap: wrap;
+
+            }
+            #box3{
+                flex-wrap: wrap;
+                
+            }
+            .divs{
+                padding: 20px;
+            }
+            .fir{
+                padding: 20px;
+            }
+            #pr5{
+                margin-left: -45px;
+                flex-wrap: wrap;
+            }
+            footer{
+                padding: 40px;
+            }
+             
+
+        }
+        @media(max-width: 840px){
+            #pr5{
+                flex-wrap: wrap;
+                gap: 50px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="ch">
+            <img src="/solo/home/shape-30@4x.png" id="shape">
+            <p id="bank">YourBanK</p>
+        </div>
+        <nav>
+            <ul>
+                <a href="/solo/home/home.html"><li>Home</li></a>
+                <a href="/solo/carrers/carrers.html"><li id="li">Careers</li></a>
+                <a href="/solo/about/about.html"><li>About</li></a>
+                <a href="/solo/security/security.html"><li>Security</li></a>
+
+            </ul>
+        </nav>
+        <img src="/day87/homework/dehaze_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" id="burger">
+        <div id="ch1">
+            <a href="/solo/signup/signup.html"><p id="sign">Sign up</p></a>
+            <a href="/solo/login/login.html"><button id="button">Login</button></a>
+        </div>
+    </header>
+    <main>
+        <div id="pr">
+            <div id="ch2">
+                <p id="Welcome">Welcome to <span>YourBank</span> Careers!</p>
+                <p id="Join">Join our team and embark on a rewarding journey in the banking industry. At YourBank, we
+                    are committed to fostering a culture of excellence and providing opportunities for professional
+                    growth. With a focus on innovation, customer service, and integrity, we strive to make a positive
+                    impact in the lives of our customers and communities. Join us today and be a part of our mission to
+                    shape the future of banking.</p>
+
+            </div>
+            <img src="./Image (3).png" id="img1">
+        </div>
+        <div id="pr1">
+            <div id="ch3">
+                 
+                <p id="value">Our <span>Values</span></p>
+                <p id="guide">At YourBank, our values form the foundation of our organization and guide our actions. We believe in
+                    upholding the highest standards of integrity, delivering exceptional service, and embracing
+                    innovation. These values define our culture and shape the way we work together to achieve our goals.
+                </p>
+                 
+            </div>
+            <div id="ch4">
+                <div class="box">
+                <div class="boxie">
+                    <p class="head">Integrity</p>
+                    <p class="text">We conduct ourselves with utmost honesty, transparency, and ethical behavior. We believe in doing
+                    what is right for our customers, colleagues, and stakeholders, even when faced with difficult
+                    choices.</p>
+                </div>
+                <div class="boxie">
+                    <p class="head">Customer Centricity</p>
+                    <p class="text">Our customers are at the heart of everything we do. We are dedicated to understanding their needs, providing personalized solutions, and delivering exceptional service that exceeds expectations.</p>
+                </div>
+                </div>
+                <div class="box">
+                <div class="boxie">
+                    <p class="head">Collaboration</p>
+                    <p class="text">We foster a collaborative and inclusive work environment, where teamwork and diversity are celebrated. By leveraging the unique strengths and perspectives of our employees, we drive innovation and achieve greater success together.</p>
+                </div>
+                <div class="boxie">
+                    <p class="head">Innovation</p>
+                    <p class="text">We embrace change and constantly seek innovative solutions to meet the evolving needs of our customers. We encourage our employees to think creatively, challenge conventions, and explore new ideas to drive the future of banking.</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div id="pr2">
+            <div id="ch5">
+                <p id="Uor">Our <span>Benefits</span></p>
+                <p id="VALUE">At YourBank, we value our employees and are dedicated to their well-being and success. We offer a comprehensive range of benefits designed to support their personal and professional growth.</p>
+            </div>
+            <div id="ch6">
+                <div class="boxes">
+                    <div class="box1">
+                        <div>
+                            <img src="./Icon Container (12).png">
+                            <p>Competitive Compensation</p>
+                        </div>
+                        <p class="txt">We provide a competitive salary package that recognizes the skills and expertise of our employees. YourBank believes in rewarding exceptional performance and offering opportunities for financial growth.</p>
+                    </div>
+                    <div class="box1">
+                        <div>
+                            <img src="./Icon Container (13).png">
+                            <p>Health and Wellness</p>
+                        </div>
+                        <p class="txt">We prioritize the health and well-being of our employees by providing comprehensive medical, dental, and vision insurance plans. We also offer wellness programs, gym memberships, and resources to support a healthy lifestyle.</p>
+                    </div>
+                </div>
+            <div class="boxes">
+                <div class="box1">
+                    
+                        <div>
+                            <img src="./Icon Container (14).png">
+                            <p>Retirement Planning</p>
+                        </div>
+                        <p class="txt">YourBank is committed to helping employees plan for their future. We offer a retirement savings plan with a generous employer match to help them build a secure financial foundation for the long term.</p>
+                    </div>
+                    <div class="box1">
+                        <div>
+                            <img src="./Icon Container (15).png">
+                            <p>Work-Life Balance</p>
+                        </div>
+                        <p class="txt">We understand the importance of maintaining a healthy work-life balance. YourBank offers flexible work arrangements, paid time off, parental leave, and other programs that support employees in managing their personal and professional commitments.</p>
+                     
+                </div>
+                
+            </div>
+            </div>
+        </div>
+        <div id="pr3">
+            <div id="ch7">
+                <p id="text2">Job Openings</p>
+                <p id="text3">Explore exciting job openings at YourBank, where we value talent, innovation, and a passion for customer service. Join our team and be part of shaping a brighter future in the banking industry</p>
+            </div>
+            <div id="ch8">
+                <div ic="ch8-1">
+                    <div  id="two">
+                    <div id="ch8-2">
+                        <div id="ch8-3">
+                            <p id="manager">Relationship Manager</p>
+                            <div id="indi">
+                            <div id="india">Location: India</div>
+                            <div id="india1"> Department: Retail Banking</div>
+                            </div>
+                        </div>
+                        <div class="ch8-4">
+                            <p id="About">About This Job</p>
+                            <p id="text1">As a Relationship Manager at YourBank, you will be responsible for developing and maintaining relationships with our valued customers. You will proactively identify their financial needs and offer tailored solutions to help them achieve their goals. We are seeking individuals with excellent communication skills, a strong sales acumen, and a passion for delivering exceptional customer service.</p>
+                        </div>
+                        <div class="ch8-5">
+                            <p class="pp">Requirements & Qualifications</p>
+                            <div class="minidiv">
+                                <img src="./Icon (17).png">
+                                <p class="paragraph">Bachelor's degree in Business, Finance, or a related field</p>
+                            </div>
+                            <div class="minidiv">
+                                <img src="./Icon (17).png">
+                                <p class="paragraph">Minimum of 3 years of experience in sales or relationship management in the banking industry</p>
+                            </div>
+                            <div class="minidiv">
+                                <img src="./Icon (17).png">
+                                <p class="paragraph">Proven track record of meeting and exceeding sales targets</p>
+                            </div>
+                            <div class="minidiv">
+                                <img src="./Icon (17).png">
+                                <p class="paragraph">Excellent interpersonal and negotiation skills</p>
+                            </div>
+                            <div class="minidiv">
+                                <img src="./Icon (17).png">
+                                <p class="paragraph">Strong knowledge of banking products and services</p>
+                            </div>
+                        </div>
+                        <button class="Now">Apply Now</button>
+                    </div>
+
+                    <div  id="two">
+                        <div id="ch8-2">
+                            <div id="ch8-3">
+                                <p id="manager">Risk Analyst</p><!------->
+                                <div id="indi">
+                                <div id="india">Location: India</div>
+                                <div id="india1"> Department: Retail Banking</div>
+                                </div>
+                            </div>
+                            <div class="ch8-4">
+                                <p id="About">About This Job</p>
+                                <p id="text1">As a Risk Analyst at YourBank, you will play a vital role in identifying and assessing potential risks to our organization. You will analyze data, conduct risk assessments, and develop strategies to mitigate risks. We are looking for detail-oriented individuals with strong analytical skills and a solid understanding of risk management principles.</p>
+                            </div>
+                            <div class="ch8-5">
+                                <p class="pp">Requirements & Qualifications</p>
+                                <div class="minidiv">
+                                    <img src="./Icon (17).png">
+                                    <p class="paragraph">Bachelor's degree in Finance, Economics, or a related field</p>
+                                </div>
+                                <div class="minidiv">
+                                    <img src="./Icon (17).png">
+                                    <p class="paragraph">Minimum of 2 years of experience in risk management or a similar role</p>
+                                </div>
+                                <div class="minidiv">
+                                    <img src="./Icon (17).png">
+                                    <p class="paragraph">Proficiency in risk analysis tools and techniques</p>
+                                </div>
+                                <div class="minidiv">
+                                    <img src="./Icon (17).png">
+                                    <p class="paragraph">Strong analytical and problem-solving skills</p>
+                                </div>
+                                <div class="minidiv">
+                                    <img src="./Icon (17).png">
+                                    <p class="paragraph">Knowledge of regulatory requirements and industry best practices</p>
+                                </div>
+                            </div>
+                            <button class="Now">Apply Now</button>
+                        </div>
+                    </div>
+                    </div>
+                     
+                    
+                </div><!---->
+                <div  id="two">
+                    <div id="ch8-2">
+                        <div id="ch8-3">
+                            <p id="manager">IT Security Specialist</p>
+                            <div id="indi">
+                            <div id="india">Location: India</div>
+                            <div id="india1"> Department: Retail Banking</div>
+                            </div>
+                        </div>
+                        <div class="ch8-4">
+                            <p id="About">About This Job</p>
+                            <p id="text1">As a Relationship Manager at YourBank, you will be responsible for developing and maintaining relationships with our valued customers. You will proactively identify their financial needs and offer tailored solutions to help them achieve their goals. We are seeking individuals with excellent communication skills, a strong sales acumen, and a passion for delivering exceptional customer service.</p>
+                        </div>
+                        <div class="ch8-5">
+                            <p class="pp">Requirements & Qualifications</p>
+                            <div class="minidiv">
+                                <img src="./Icon (17).png">
+                                <p class="paragraph">Bachelor's degree in Computer Science, Information Security, or a related field</p>
+                            </div>
+                            <div class="minidiv">
+                                <img src="./Icon (17).png">
+                                <p class="paragraph">Minimum of 5 years of experience in IT security or a similar role</p>
+                            </div>
+                            <div class="minidiv">
+                                <img src="./Icon (17).png">
+                                <p class="paragraph">In-depth knowledge of network security protocols and technologies</p>
+                            </div>
+                            <div class="minidiv">
+                                <img src="./Icon (17).png">
+                                <p class="paragraph">Familiarity with regulatory frameworks such as PCI DSS and GDPR</p>
+                            </div>
+                            <div class="minidiv">
+                                <img src="./Icon (17).png">
+                                <p class="paragraph">Professional certifications such as CISSP or CISM are preferred</p>
+                            </div>
+                        </div>
+                        <button class="Now">Apply Now</button>
+                    </div>
+            </div>
+        </div>
+        <div id="pr4">
+            <div id="boxiee">
+                <p id="txt1"><span>Frequently</span> Asked Questions</p>
+                <p id="txt2">Still you have any questions? Contact our Team via support@yourbank.com</p>
+            </div>
+            <div id="ch10">
+                <div id="box2">
+                    <div class="divs">
+                        <p class="text4">How do I open an account with YourBank?</p>
+                        <p class="text5">Opening an account with YourBank is easy. Simply visit our website and click on the "Open an Account" button. Follow the prompts, provide the required information, and complete the application process. If you have any questions or need assistance, our customer support team is available to help</p>
+                    </div>
+                    <div class="divs">
+                        <p class="text4">What documents do I need to provide to apply for a loan?</p>
+                        <p class="text5">The documents required for a loan application may vary depending on the type of loan you are applying for. Generally, you will need to provide identification documents (such as a passport or driver's license), proof of income (such as pay stubs or tax returns), and information about the collateral (if applicable). Our loan officers will guide you through the specific requirements during the application process.</p>
+                    </div>
+                </div>
+                <div id="box3">
+                    <div class="fir">
+                        <p class="text4">How can I access my accounts online?</p>
+                        <p class="text5">Accessing your accounts online is simple and secure. Visit our website and click on the "Login" button. Enter your username and password to access your accounts. If you haven't registered for online banking, click on the "Enroll Now" button and follow the registration process. If you need assistance, our customer support team is available to guide you.</p>
+                    </div>
+                    <div class="fir">
+                        <p class="text4">Are my transactions and personal information secure?</p>
+                        <p class="text5">At YourBank, we prioritize the security of your transactions and personal information. We employ industry-leading encryption and multi-factor authentication to ensure that your data is protected. Additionally, we regularly update our security measures to stay ahead of emerging threats. You can bank with confidence knowing that we have robust security systems in plac</p>
+                    </div>
+                </div>
+            </div>
+            <button id="faq">Load All FAQ’s <img src="/solo/home/Icon (10).png"></button>
+        </div>
+        <div id="pr5">
+            <div id="ch11">
+                <p id="text6">Start your Career with <span>YourBank today!</span></p>
+                <p id="text7">Lorem ipsum dolor sit amet consectetur. Blandit odio semper risus pellentesque elit. Pellentesque eget ut imperdiet nulla penatibus. Nascetur viverra arcu sed amet cursus purus.</p>
+            </div>
+            <button>Open Account</button>
+        </div>
+    </main>
+    <footer>
+        <div id="ch24">
+            <img src="/solo/home/Logo (3).png">
+            <div>
+                <a href="/solo/home/home.html"><li>Home</li></a>
+                <a href="/solo/carrers/carrers.html"><li>Careers</li></a>
+                <a href="/solo/about/about.html"><li>About</li></a>
+                <a href="/solo/security/security.html"><li>Security</li></a>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div id="ch25">
+             
+            <div>
+                <img src="/solo/home/Icon (16).png">
+                <p>hello@skillbirdge.com</p>
+            </div>
+            <div>
+                <img src="/solo/home/Icon (14).png">
+                <p>+91 91813 23 2309</p>
+            </div>
+            <div>
+                <img src="/solo/home/Icon (15).png">
+                <p>Somewhere in the World</p>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div id="ch26">
+            <div>
+                <img src="/solo/home/Button.png">
+                <img src="/solo/home/Button (1).png">
+                <img src="/solo/home/Button (2).png">
+            </div>
+            <p>YourBank All Rights Reserve</p>
+            <p>Privacy Policy l Terms of service</p>
+        </div>
+    </footer>
+</body>
+
+</html>

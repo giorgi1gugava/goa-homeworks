@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(25, 25, 25);
+            height: 100vh;
+            font-family: sans-serif;
+            overflow-x: hidden;
+        }
+
+        header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            max-width: 1200px;
+            width: 90%;
+            height: 73px;
+            background-color: red;
+            position: relative;
+            top: 30px;
+            left: 80px;
+            border-radius: 100px;
+            padding: 14px 24px;
+            background-color: #1C1C1C;
+            border: 1px solid #262626;
+
+
+
+        }
+
+        #ch {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 5px;
+        }
+
+        #shape {
+            width: 30px;
+            height: 30px;
+        }
+
+        #bank {
+            color: white;
+
+        }
+
+        nav {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 26px;
+        }
+
+        li {
+            list-style-type: none;
+            font-size: 14px;
+            font-weight: 400;
+            color: white;
+        }
+
+        #burger {
+            display: none;
+        }
+
+        #ch1 {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 20px;
+        }
+
+        #button {
+            width: 87px;
+            height: 45px;
+            background-color: #CAFF33;
+            border: none;
+            border-radius: 82px;
+        }
+
+        #sign {
+            font-size: 14px;
+            font-weight: 400;
+            color: white;
+        }
+
+
+        main {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 0px 80px;
+
+        }
+
+        #pr {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            top: 100px;
+            align-items: center;
+            justify-content: center;
+            gap: 80px;
+
+            border: 1px solid #262626;
+            padding: 80px;
+            background-color: rgb(28, 28, 28);
+            border-radius: 20px;
+            background-image: url(./Abstract\ Design\ \(2\).png);
+            background-repeat: no-repeat;
+            background-size: 300px 280px;
+            background-position-x: right;
+
+        }
+
+        #ch3 {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #login {
+            font-size: 48px;
+            font-weight: 500;
+            color: #CAFF33;
+        }
+
+        #back {
+            font-size: 18px;
+            font-weight: 300;
+            color: #4C4C4C;
+        }
+
+        input {
+            display: flex;
+            width: 498px;
+            height: 75px;
+            background-color: rgb(25, 25, 25);
+            border: 1px solid #262626;
+            gap: 10px;
+            border-radius: 88px;
+            text-align: start;
+            padding: 24px;
+            color: #59595A;
+            font-size: 18px;
+            font-weight: 300;
+            outline: none;
+        }
+
+        #ch4 {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #ch5 {
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+
+        }
+        #eye{
+            width: 24px;
+            height: 24px;
+            margin-left: -90px;
+            margin-top: 25px;
+        }
+         
+        #password {
+            font-size: 18px;
+            font-weight: 400;
+            color: #FFFFFF;
+
+            text-decoration: underline;
+        }
+
+        .button {
+            width: 518px;
+            height: 63px;
+            background-color: #CAFF33;
+            border-radius: 63px;
+            border: none;
+            gap: 10px;
+            color: #262626;
+            font-size: 18px;
+            font-weight: 400;
+        }
+
+        .zero {
+            width: 518px;
+            height: 63px;
+            border-radius: 63px;
+            border: 1px solid #333333;
+            background-color: rgb(38, 38, 38);
+            color: #FFFFFF;
+            font-size: 18px;
+            font-weight: 400;
+        }
+
+        #with {
+            font-size: 18px;
+            font-weight: 400;
+            color: #B3B3B3;
+        }
+
+        .line {
+            width: 165.5px;
+            height: 1px;
+            border: 1px solid #B3B3B3;
+        }
+
+        #minidiv {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 20px;
+        }
+
+        #minidiv1 {
+            display: flex;
+            flex-direction: row;
+            gap: 24px;
+        }
+
+        #minidiv1 img {
+            width: 94px;
+            height: 94px;
+        }
+        span{
+            color: #CAFF33;
+        }
+        #pr1{
+            display: flex;
+            flex-direction: column;
+            padding: 200px 0px;
+            gap: 100px;
+        }
+        #ch6{
+            display: flex;
+            flex-direction: row;
+            gap: 100px;
+            align-items: center;
+            
+        }
+        #minidiv2{
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+        #box{
+            display: flex;
+            flex-direction: row;
+            width: 366px;
+            height: 83px;
+            padding: 14px;
+            gap: 20px;
+            background-color: rgb(28, 28, 28);
+            border: 1px solid #262626;
+            border-radius: 82px;
+             
+        }
+        #box button{
+            height: 55px;
+            width: 181px;
+            background-color: #CAFF33;
+            border-radius: 140px;
+            border: none;
+            font-size: 17px;
+            font-weight: 400;
+            color: #1C1C1C;
+        }
+        #box div p{
+            width: 177px;
+            height: 55px;
+            font-size: 17px;
+            font-weight: 400;
+            color: #FFFFFF;
+            margin-top: 15px;
+        }
+        #text{
+            font-size: 38px;
+            font-weight: 500;
+            color: #FFFFFF;
+        }
+        #text1{
+            font-size: 14px;
+            font-weight: 300;
+            color: #B3B3B3;
+            max-width: 831px;
+        }
+        #ch7{
+            display: flex;
+            flex-direction: row;
+            gap: 50px;
+        }
+        #ch8{
+            display: flex;
+            flex-direction: row;
+            gap: 50px;
+            align-items: center;
+        }
+        .maindiv{
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            align-items: center;
+             
+        }
+        .maindiv img{
+            width: 44px;
+            height: 44px;
+
+        }
+        .direction{
+            width:62px;
+            height: 62px;
+            padding: 14px;
+            border: 1px solid #262626;
+            border-radius: 100px;
+
+        }
+        .text2{
+            font-size: 16px;
+            font-weight: 400;
+            color: #FFFFFF;
+            max-width: 404px;
+        }
+        .John{
+            color: #CAFF33;
+            font-size: 18px;
+            font-weight: 500;
+        }
+        footer{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            background-color: rgb(28, 28, 28);
+            gap: 40px;
+            padding: 60px;
+            margin-top: 100px;
+            align-items: center;
+            justify-content: center;
+        }
+        #ch24{
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            align-items: center;
+        }
+        #ch21 div{
+            display: flex;
+            flex-direction: row;
+            gap:14px;
+        }
+        #ch21 img{
+            width: 132px;
+            height: 34px; 
+
+        }
+        #ch21 div p{
+            font-size: 16px;
+            font-weight: 400;
+            color: #E4E4E7;
+        }
+        
+        #ch25{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        #ch25 div{
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+            align-items: center;
+        }
+        #ch25 div p{
+            font-size: 16px;
+            font-weight: 400;
+            color: #E4E4E7;
+        }
+        #ch21{
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            align-items: center;
+        }
+        #ch24 div{
+            display: flex;
+            flex-direction: row;
+            gap:14px;
+        }
+        #ch24 img{
+            width: 132px;
+            height: 34px; 
+
+        }
+        #ch24 div p{
+            font-size: 16px;
+            font-weight: 400;
+            color: #E4E4E7;
+        }
+        #ch26{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background-color: rgb(25, 25, 25);
+            border: 1px solid #262626;
+            border-radius: 100px;
+            height: 68px;
+            width: 90%;
+            align-items: center;
+            padding: 20px;
+             
+
+        }
+        #ch26 p{
+            font-size: 14px;
+            font-weight: 300;
+            color: #B3B3B3;
+
+        }
+        a{
+            text-decoration: none;
+        }
+          
+
+
+
+
+
+        @media(max-width: 700px) {
+            nav {
+                display: none;
+            }
+
+
+
+
+
+            #burger {
+                display: block;
+
+            }
+
+            #ch1 {
+                display: none;
+            }
+        }
+
+        @media(max-width: 809px) {
+            header {
+                margin-left: -50px;
+            }
+            #ch5 input{
+                width: 350px;
+                height: 40px;
+            }
+            #pr{
+                padding: 50px;
+                margin-left: -45px;
+            }
+            .button{
+                width: 350px;
+                height: 40px;
+            }
+            .zero{
+                width: 350px;
+                height: 40px;
+                 
+            }
+            #pass{
+                margin-left: -35px;
+            }
+            .line{
+                width: 80px;
+            }
+            #eye{
+                margin-top: 15px;
+            }
+            #ch8{
+                flex-wrap: wrap;
+                gap: 120px;
+            }
+            #ch6{
+                flex-wrap: wrap;
+            }
+            .direction{
+                display: none;
+                
+
+            }
+            #pr1{
+                margin-left: -45px;
+            }
+            #ch26{
+                flex-direction: column;
+                height: 200px;
+                border-radius: 50px;
+            }
+
+
+
+        }
+        @media(max-width: 1169px){
+            #ch5{
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            #pass{
+                margin-left: -25px;
+            }
+        }
+        @media(max-width: 500px){
+            .button{
+                width: 250px;
+                height: 30px;
+            }
+            .zero{
+                width: 250px;
+                height: 30px;
+            }
+            #ch5 input{
+                width: 250px;
+                height: 30px;
+            }
+            .line{
+                width: 40px;
+            }
+            #with{
+                font-size: 15px;
+            }
+            #minidiv1 img{
+                width: 64px;
+                height: 64px;
+
+            }
+            #password{
+                font-size: 15px;
+            }
+            #eye{
+                display: none;
+                
+            }
+            #pass{
+                margin-left: 5px;
+            }
+            
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="ch">
+            <img src="/solo/home/shape-30@4x.png" id="shape">
+            <p id="bank">YourBanK</p>
+        </div>
+        <nav>
+            <ul>
+                <a href="/solo/home/home.html"><li>Home</li></a>
+                <a href="/solo/carrers/carrers.html"><li>Careers</li></a>
+                <a href="/solo/about/about.html"><li>About</li></a>
+                <a href="/solo/security/security.html"><li>Security</li></a>
+
+            </ul>
+        </nav>
+        <img src="/day87/homework/dehaze_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" id="burger">
+        <div id="ch1">
+            <a href="/solo/signup/signup.html"><p id="sign">Sign up</p></a>
+            <a href="/solo/login/login.html"><button id="button">Login</button></a>
+        </div>
+    </header>
+    <main>
+        <div id="pr">
+            <div id="ch3">
+                <p id="login">Login</p>
+                <p id="back">Welcome back! Please log in to access your account.</p>
+            </div>
+            <div id="ch4">
+                <div id="ch5">
+                    <input placeholder="Enter your Email" type="email">
+                    <input placeholder="Enter your Password" type="password" id="pass"><img src="./Icon (19).png" id="eye">
+                </div>
+                 
+                    <p id="password">Forgot Password? </p>
+                    <button class="button">Login</button>
+                    <button class="zero">Sign Up</button>
+                    <div id="minidiv">
+                        <div class="line"></div>
+                        <p id="with">Or Continue with </p>
+                        <div class="line"></div>
+                    </div>
+                    <div id="minidiv1">
+                        <img src="./Icon Container (16).png">
+                        <img src="./Icon Container (17).png">
+                        <img src="./Icon Container (18).png">
+                    </div>
+            </div>
+        </div>
+        <div id="pr1">
+            <div id="ch6">
+                <div  id="minidiv2">
+                <p id="text">Our <span>Testimonials</span></p>
+                <p id="text1">Discover how YourBank has transformed lives with innovative digital solutions and personalized customer service. See why our clients trust us for a secure and prosperous financial journey</p>
+                </div>
+                <div id="box">
+                    <button>For Individuals</button>
+                    <div><p>For Businesses</p></div>
+                </div>
+            </div>
+            <div id="ch7">
+                
+                <div id="ch8">
+                    <div class="direction"><img src="/solo/home/Icon (11).png"></div>
+                    <div class="maindiv">
+                         
+                        <img src="/solo/home/Icon (13).png">
+                        <p class="text2">I recently started my own business, and YourBank has been instrumental in helping me set up my business accounts and secure the financing I needed. Their expert guidance and tailored solutions have been invaluable.</p>
+                        <p class="John">Sara T</p>
+                    </div>
+                    <div class="maindiv">
+                        <img src="/solo/home/Icon (13).png">
+                        <p class="text2">I recently started my own business, and YourBank has been instrumental in helping me set up my business accounts and secure the financing I needed. Their expert guidance and tailored solutions have been invaluable.</p>
+                        <p class="John">John D</p>
+                    </div>
+                    <div class="maindiv">
+                        <img src="/solo/home/Icon (13).png">
+                        <p class="text2">I recently started my own business, and YourBank has been instrumental in helping me set up my business accounts and secure the financing I needed. Their expert guidance and tailored solutions have been invaluable.</p>
+                        <p class="John">Emily G</p>
+                    </div>
+                    <div class="direction"><img src="/solo/home/Icon (12).png"></div>
+                </div>
+                 
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="ch24">
+            <img src="/solo/home/Logo (3).png">
+            <div>
+                <a href="/solo/home/home.html"><li>Home</li></a>
+                <a href="/solo/carrers/carrers.html"><li>Careers</li></a>
+                <a href="/solo/about/about.html"><li>About</li></a>
+                <a href="/solo/security/security.html"><li>Security</li></a>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div id="ch25">
+             
+            <div>
+                <img src="/solo/home/Icon (16).png">
+                <p>hello@skillbirdge.com</p>
+            </div>
+            <div>
+                <img src="/solo/home/Icon (14).png">
+                <p>+91 91813 23 2309</p>
+            </div>
+            <div>
+                <img src="/solo/home/Icon (15).png">
+                <p>Somewhere in the World</p>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div id="ch26">
+            <div>
+                <img src="/solo/home/Button.png">
+                <img src="/solo/home/Button (1).png">
+                <img src="/solo/home/Button (2).png">
+            </div>
+            <p>YourBank All Rights Reserve</p>
+            <p>Privacy Policy l Terms of service</p>
+        </div>
+    </footer>
+</body>
+
+</html>

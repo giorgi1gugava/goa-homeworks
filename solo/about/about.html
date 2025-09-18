@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(25, 25, 25);
+            height: 100vh;
+            font-family: sans-serif;
+            overflow-x: hidden;
+        }
+
+        header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            max-width: 1200px;
+            width: 90%;
+            height: 73px;
+            background-color: red;
+            position: relative;
+            top: 30px;
+            left: 80px;
+            border-radius: 100px;
+            padding: 14px 24px;
+            background-color: #1C1C1C;
+            border: 1px solid #262626;
+
+
+
+        }
+
+        #ch {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 5px;
+        }
+
+        #shape {
+            width: 30px;
+            height: 30px;
+        }
+
+        #bank {
+            color: white;
+
+        }
+
+        nav {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 26px;
+        }
+
+        li {
+            list-style-type: none;
+            font-size: 14px;
+            font-weight: 400;
+            color: white;
+        }
+
+        #burger {
+            display: none;
+        }
+
+        #ch1 {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 20px;
+        }
+
+        #button {
+            width: 87px;
+            height: 45px;
+            background-color: #CAFF33;
+            border: none;
+            border-radius: 82px;
+        }
+        #li {
+            display: flex;
+            width: 77px;
+            align-items: center;
+            padding: 0px 19px;
+            height: 41px;
+            border-radius: 82px;
+            background-color: #262626;
+            
+        }
+
+        #sign {
+            font-size: 14px;
+            font-weight: 400;
+            color: white;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 0px 80px;
+
+        }
+        span {
+            color: #CAFF33;
+        }
+
+        #pr {
+            display: flex;
+            position: relative;
+            top: 100px;
+            width: 1200px;
+            position: relative;
+
+            border: none;
+            padding: 40px;
+            background-color: rgb(28, 28, 28);
+            border-radius: 20px;
+            height: 608px;
+            background-image: url(/solo/carrers/Abstract\ Design\ \(2\).png);
+
+            background-repeat: no-repeat;
+            background-position-x: right;
+
+        }
+
+        #ch2 {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+
+            text-align: start;
+            background-color: rgb(25, 25, 25);
+            gap: 20px;
+            padding: 20px 60px;
+            width: 658px;
+            height: 370px;
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border-top-left-radius: 20px;
+            z-index: 2;
+
+
+
+        }
+        #Welcomee{
+            font-size: 17px;
+            font-weight: 400;
+            color: #FFFFFF;
+        }
+
+        #Join {
+            font-size: 16px;
+            font-weight: 300;
+            color: #B3B3B3;
+            max-width: 538px;
+        }
+
+        #Welcome {
+            font-size: 48px;
+            font-weight: 500;
+            color: #FFFFFF;
+            max-width: 538px;
+        }
+
+        #img1 {
+            width: 665px;
+            height: 538px;
+            border-radius: 16px;
+            left: 500px;
+            position: absolute;
+            z-index: 1;
+        }
+        #pr1{
+            display: flex;
+            flex-direction: column;
+            gap: 60px;
+            margin-top: 200px;
+        }
+        #ch3{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        #mission{
+            color: #CAFF33;
+            font-size: 38px;
+            font-weight: 400;
+        }
+        #txt{
+            color: #B3B3B3;
+            
+            font-size: 16px;
+            font-weight: 300;
+            max-width: 1000px;
+        }
+        #ch4{
+            display: flex;
+            flex-direction: column;
+            
+        }
+        .pict{
+            width: 425px;
+            height: 440px;
+        }
+        .div{
+            padding: 60px;
+             
+            width: 545px;
+            height: 500px;
+            background-color: rgb(28, 28, 28);
+            border: 1px solid #262626;
+            border-radius: 50px;
+            background-image: url(./Abstract\ Design\ \(4\).png);
+            background-repeat: no-repeat;
+            background-size: 545px 500px;
+        }
+        .divv{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            
+           
+            
+        }
+        .ch1{
+            display: flex;
+            flex-direction: column;
+            border-left: 1px solid #CAFF33;
+            gap: 10px;
+            padding: 20px;
+        }
+        .texts{
+            font-size: 32px;
+            font-weight: 500;
+            color: #FFFFFF;
+        }
+        .chh1{
+            display: flex;
+            flex-direction: column;
+            border-right: 1px solid #CAFF33;
+            gap: 10px;
+            padding: 20px;
+        }
+        .texts1{
+            color: #B3B3B3;
+            font-size: 16px;
+            font-weight: 300;
+            max-width: 695px;
+        }
+        #pr2{
+            display: flex;
+            flex-direction: column;
+            gap: 60px;
+            padding: 100px 0px;
+        }
+        #ch5{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        #ch6{
+            display: flex;
+            flex-direction: column;
+            gap: 60px;
+        }
+        .box{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+        #press{
+            color: #CAFF33;
+            font-size: 38px;
+            font-weight: 400;
+            
+
+        }
+        #stay{
+            max-width: 1030px;
+            color: #B3B3B3;
+            font-size: 16px;
+            font-weight: 400;
+
+        }
+        .minibox{
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            padding: 24px;
+            border: 1px solid #262626;
+            border-radius: 20px;
+        }
+        .image{
+            width: 582px;
+            height: 277px;
+        }
+        .new{
+            font-size: 20px;
+            font-weight: 400;
+            color: #FFFFFF;
+            max-width: 534px;
+        }
+        .minidiv1{
+            display: flex;
+            flex-direction: row;
+            gap: 6px;
+            text-align: center;
+        }
+        .india{
+            width: 143px;
+            height: 36px;
+            border: 1px solid #262626;
+            border-radius: 68px;
+            
+        }
+        .india p{
+            margin-top: 7px;
+            color: #B3B3B3;
+            font-size: 16px;
+            font-weight: 300;
+        }
+        .pleased{
+            font-size: 16px;
+            font-weight: 300;
+            color: #B3B3B3;
+            max-width: 534px;
+        }
+        footer{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            background-color: rgb(28, 28, 28);
+            gap: 40px;
+            padding: 60px;
+            margin-top: 100px;
+            align-items: center;
+            justify-content: center;
+        }
+        #ch24{
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            align-items: center;
+        }
+        #ch21 div{
+            display: flex;
+            flex-direction: row;
+            gap:14px;
+        }
+        #ch21 img{
+            width: 132px;
+            height: 34px; 
+
+        }
+        #ch21 div p{
+            font-size: 16px;
+            font-weight: 400;
+            color: #E4E4E7;
+        }
+        
+        #ch25{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        #ch25 div{
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+            align-items: center;
+        }
+        #ch25 div p{
+            font-size: 16px;
+            font-weight: 400;
+            color: #E4E4E7;
+        }
+        #ch21{
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            align-items: center;
+        }
+        #ch24 div{
+            display: flex;
+            flex-direction: row;
+            gap:14px;
+        }
+        #ch24 img{
+            width: 132px;
+            height: 34px; 
+
+        }
+        #ch24 div p{
+            font-size: 16px;
+            font-weight: 400;
+            color: #E4E4E7;
+        }
+        #ch26{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background-color: rgb(25, 25, 25);
+            border: 1px solid #262626;
+            border-radius: 100px;
+            height: 68px;
+            width: 90%;
+            align-items: center;
+            padding: 20px;
+             
+
+        }
+        #ch26 p{
+            font-size: 14px;
+            font-weight: 300;
+            color: #B3B3B3;
+
+        }
+        a{
+            text-decoration: none;
+        }
+          
+
+
+
+        
+        
+
+
+        @media(max-width: 809px) {
+            header {
+                margin-left: -50px;
+            }
+            #pr {
+                left: -45px;
+            }
+            #ch26{
+                flex-direction: column;
+                height: 200px;
+                border-radius: 50px;
+            }
+        }
+
+        @media(max-width: 650px) {
+            #pr {
+                width: 300px;
+                height: 150px;
+                background-color: rgb(25, 25, 25);
+                background-image: none;
+
+
+            }
+            #Welcome{
+                max-width: 370px;
+            }
+            #pr1{
+                margin-left: -30px;
+                margin-top: 400px;
+            }
+            #pr2{
+                margin-left: -30px;
+            }
+             
+             
+
+            #ch2 {
+                width: 459px;
+                height: 215px;
+                left: -45px;
+
+            }
+
+            #Join {
+                max-width: 300px;
+            }
+        }
+        @media(max-width: 700px) {
+            nav {
+                display: none;
+            }
+
+
+
+
+
+            #burger {
+                display: block;
+
+            }
+
+            #ch1 {
+                display: none;
+            }
+        }
+        @media(max-width: 1160px) {
+            #pr {
+                width: 600px;
+                height: 380px;
+                justify-content: center;
+                align-items: center;
+
+            }
+
+            #ch2 {
+                width: 529px;
+                height: 380px;
+            }
+
+            #img1 {
+                display: none;
+
+            }
+        }
+        @media(max-width: 1168px){
+            .divv{
+                flex-direction: column;
+                align-items: start;
+            }
+            .ch1{
+                border-left: none;
+            }
+            .chh1{
+                border-right: none;
+            }
+            #ch4{
+                gap: 100px;
+            }
+            .box{
+                flex-direction: column;
+            }
+            .minibox{
+                width: 630px; 
+
+            }
+        }
+        @media(max-width: 600px){
+            .div{
+                width: 400px;
+                height: 380px;
+                background-size: 400px 380px;
+            }
+            .pict{
+                width: 300px;
+                height: 319px;
+            }
+        }
+        @media(max-width: 470px){
+            .div{
+                width: 300px;
+                height: 280px;
+                background-size: 300px 280px;
+            }
+            .pict{
+                width: 200px;
+                height: 219px;
+            }
+        }
+        @media(max-width: 730px){
+            .image{
+                width: 382px;
+                height: 180px;
+            }
+            .minibox{
+                width: 430px;
+
+            }
+        }
+        @media(max-width: 500px){
+            .image{
+                width: 280px;
+                height: 130px;
+            }
+            .minibox{
+                width: 360px;
+
+            }
+        }
+        @media(max-width: 430px){
+            .image{
+                width: 240px;
+                height: 110px;
+            }
+            .minibox{
+                width: 302px;
+                padding: 20px;
+
+            }
+            .minidiv1{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="ch">
+            <img src="/solo/home/shape-30@4x.png" id="shape">
+            <p id="bank">YourBanK</p>
+        </div>
+        <nav>
+            <ul>
+                <a href="/solo/home/home.html"><li>Home</li></a>
+                <a href="/solo/carrers/carrers.html"><li>Careers</li></a>
+                <a href="/solo/about/about.html"><li id="li">About</li></a>
+                <a href="/solo/security/security.html"><li>Security</li></a>
+
+            </ul>
+        </nav>
+        <img src="/day87/homework/dehaze_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" id="burger">
+        <div id="ch1">
+            <a href="/solo/signup/signup.html"><p id="sign">Sign up</p></a>
+            <a href="/solo/login/login.html"><button id="button">Login</button></a>
+        </div>
+    </header>
+    <main>
+        <div id="pr">
+            <div id="ch2">
+                <p id="Welcomee">Welcome to YourBank</p>
+                <p id="Welcome">Where Banking Meets <span>Excellence!</span></p>
+                <p id="Join">At YourBank, we believe that banking should be more than just transactions. It should be an experience that empowers individuals and businesses to thrive and reach their financial goals. As a trusted financial institution, we are committed to delivering exceptional banking services that go beyond expectations. With a focus on innovation, personalized solutions, and unwavering integrity, we strive to provide the best banking experience for our valued customers. Join us on this exciting journey and discover a new level of banking excellence.</p>
+
+            </div>
+            <img src="./Image (4).png" id="img1">
+        </div>
+        <div id="pr1">
+            <div id="ch3">
+                <p id="mission">Mission & Vision</p>
+                <p id="txt">We envision being a leading force in the industry, driven by innovation, integrity, and inclusivity, creating a brighter financial future for individuals and businesses while maintaining a strong commitment to customer satisfaction and community development</p>
+            </div>
+            <div id="ch4">
+                <div class="divv">
+                    
+                    <div class="div"><img src="./Image (5).png" class="pict"></div>
+                    <div class="ch1">
+                        <p class="texts">Mission</p>
+                        <p class="texts1">At YourBank, our mission is to empower our customers to achieve financial success. We are dedicated to delivering innovative banking solutions that cater to their unique needs. Through personalized services, expert guidance, and cutting-edge technology, we aim to build strong, lasting relationships with our customers. Our mission is to be their trusted partner, helping them navigate their financial journey and realize their dreams.</p>
+                    </div>
+                </div>
+                <div class="divv">
+                    <div class="chh1">
+                        <p class="texts">Vision</p>
+                        <p class="texts1">Our vision at YourBank is to redefine banking by creating a seamless and personalized experience for our customers. We envision a future where banking is accessible, transparent, and tailored to individual preferences. Through continuous innovation and collaboration, we strive to be at the forefront of the industry, setting new standards for customer-centric banking. Our vision is to be the preferred financial institution, known for our unwavering commitment to excellence, trust, and customer satisfaction.</p>
+                    </div>
+                    <div class="div"><img src="./Image (6).png" class="pict"></div>
+                    
+                </div>
+            </div>
+        </div>
+        <div id="pr2">
+            <div id="ch5">
+                <p id="press">Press Releases</p>
+                <p id="stay">Stay updated with the latest happenings and exciting developments at YourBank through our press releases.</p>
+            </div>
+            <div id="ch6">
+                <div class="box">
+                    <div class="minibox">
+                        <img src="./Image (7).png" class="image">
+                        <p class="new">YourBank Launches New Rewards Program to Enhance Customer Loyalty and Satisfaction</p>
+                        <div  class="minidiv1">
+                            <div class="india">
+                                <p>Location: India</p>
+                            </div>
+                            <div class="india">
+                                <p>Date: 06/11/2024</p>
+                            </div>
+                        </div>
+                        <p class="pleased">YourBank is pleased to announce the introduction of our new Rewards Program, aimed at rewarding our loyal customers and enhancing their banking experience. The program offers exclusive benefits, discounts, and personalized offers tailored to individual customer preferences. With this initiative, YourBank reaffirms its commitment to delivering exceptional value and building lasting relationships with our valued customers.</p>
+                    </div><!---->
+                    <div>
+                        <div class="minibox">
+                            <img src="./Image (8).png" class="image">
+                            <p class="new">YourBank Expands Branch Network with Opening of New Location in Chennai</p>
+                            <div  class="minidiv1">
+                                <div class="india">
+                                    <p>Location: India</p>
+                                </div>
+                                <div class="india">
+                                    <p>Date: 12/11/2024</p>
+                                </div>
+                            </div>
+                            <p class="pleased">YourBank is excited to announce the grand opening of our newest branch in [City]. This expansion is a testament to our continued commitment to serving our customers and providing them with convenient access to our comprehensive range of banking services. The new branch will feature state-of-the-art facilities, a team of dedicated professionals, and a personalized approach to banking, further strengthening our presence in the local community.</p>
+                        </div><!---->
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="minibox">
+                        <img src="./Image (9).png" class="image">
+                        <p class="new">YourBank Partners with Local Nonprofit to Support Financial Education Initiatives</p>
+                        <div  class="minidiv1">
+                            <div class="india">
+                                <p>Location: India</p>
+                            </div>
+                            <div class="india">
+                                <p>Date: 24/12/2024</p>
+                            </div>
+                        </div>
+                        <p class="pleased">YourBank is excited to unveil our new Sustainable Banking Initiative, demonstrating our commitment to environmental responsibility. This initiative includes a range of sustainable banking products and services, such as green loans, eco-friendly investment options, and paperless banking solutions. By incorporating sustainable practices into our operations, we aim to contribute to a greener future while providing innovative banking solutions to our customers.</p>
+                    </div><!---->
+                    <div class="minibox">
+                        <img src="./Image (10).png" class="image">
+                        <p class="new">YourBank Launches Sustainable Banking Initiative to Promote Environmental Responsibility</p>
+                        <div  class="minidiv1">
+                            <div class="india">
+                                <p>Location: India</p>
+                            </div>
+                            <div class="india">
+                                <p>Date: 28/12/2024</p>
+                            </div>
+                        </div>
+                        <p class="pleased">YourBank is excited to unveil our new Sustainable Banking Initiative, demonstrating our commitment to environmental responsibility. This initiative includes a range of sustainable banking products and services, such as green loans, eco-friendly investment options, and paperless banking solutions. By incorporating sustainable practices into our operations, we aim to contribute to a greener future while providing innovative banking solutions to our customers.</p>
+                    </div><!---->
+                </div>
+                
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div id="ch24">
+            <img src="/solo/home/Logo (3).png">
+            <div>
+                <a href="/solo/home/home.html"><li>Home</li></a>
+                <a href="/solo/carrers/carrers.html"><li>Careers</li></a>
+                <a href="/solo/about/about.html"><li>About</li></a>
+                <a href="/solo/security/security.html"><li>Security</li></a>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div id="ch25">
+             
+            <div>
+                <img src="/solo/home/Icon (16).png">
+                <p>hello@skillbirdge.com</p>
+            </div>
+            <div>
+                <img src="/solo/home/Icon (14).png">
+                <p>+91 91813 23 2309</p>
+            </div>
+            <div>
+                <img src="/solo/home/Icon (15).png">
+                <p>Somewhere in the World</p>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div id="ch26">
+            <div>
+                <img src="/solo/home/Button.png">
+                <img src="/solo/home/Button (1).png">
+                <img src="/solo/home/Button (2).png">
+            </div>
+            <p>YourBank All Rights Reserve</p>
+            <p>Privacy Policy l Terms of service</p>
+        </div>
+    </footer>
+</body>
+</html>
