@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
     <style>
         *{
             margin: 0;
@@ -20,7 +23,7 @@
             justify-content: center;
             gap: 20px;
         }
-        ul{
+        .click{
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -37,7 +40,7 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            gap: 200px;
+            gap: 16px;
             padding: 20px 150px;
         }
         #pr{
@@ -45,6 +48,7 @@
             height: 44px;
         }
         #pr1{
+            
             display: flex;
             flex-direction: row;
             gap: 20px;
@@ -55,16 +59,176 @@
             color: #494949;
         }
         .fir{
-            width: 108px;
+            width: fit-content;
             height: 48px;
             border: 1px solid #003478;
             display: flex;
             align-items: center;
-            padding: 0px 28px;
+            padding: 0px 8px;
             color: #003478;
         }
         .zer{
             margin-top: 15px;
+        }
+        .box{
+            display: flex;
+            align-items: center;
+            padding-left: 150px;
+            background-image: url("./car.png");
+            width: 100%;
+            height: 600px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            align-items: flex-start;
+            padding: 45px 150px;
+            
+        }
+        .box h1{
+            font-size: 72px;
+            color:#152137 ;
+            font-weight: 300;
+            line-height: 68px;
+            font-family: Sansation;
+            width: 560px;
+            
+            text-transform: uppercase;
+
+        }
+        .yellow-text{
+            font-family: Sansation;
+            color: rgb(251, 170, 12);
+            font-weight: 700;
+            font-size: 72px;
+            text-transform: uppercase;
+        }
+        .box h3{
+            color: #FFFFFF;
+            font-size: 50px;
+            font-weight: 300;
+            font-family: Sansation;
+        }
+        .small-text{
+            font-size: 30px;
+        }
+        .text-conteiner{
+            display: flex;
+            gap: 65px;
+            flex-direction: column;
+        }
+        .btn-conteiner{
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+            margin-top: 50px;
+
+        }
+        .price-btn{
+            width: 200px;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(0, 52, 120);
+            color: white;
+            border: none;
+            font-size: 18px;
+            font-weight: 500;
+        }
+        .ch{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 20px;
+            
+        }
+        .ch p{
+            font-family: Sansation;
+            font-size: 18px;
+            font-weight: 500;
+            color: #28344A;
+        }
+        @media(max-width: 950px){
+            header{
+                padding: 20px 60px;
+            }
+            .box h1{
+                font-size: 60px;
+                
+            }
+            .yellow-text{
+                font-size: 60px;
+            }
+            .box h3{
+                font-size: 40px;
+            }
+        }
+        
+        @media(max-width: 800px){
+            header{
+                flex-direction: column;
+                align-items: center;
+            }
+            .box h1{
+                font-size: 45px;
+            }
+            .yellow-text{
+                font-size: 45px;
+            }
+            .box h3{
+                font-size: 25px;
+                margin-top: 15px;
+            }
+            .btn-conteiner{
+                flex-direction: column;
+            }
+        }
+        @media(max-width: 650px){
+            .box{
+                padding-inline: 0;
+                justify-content: center;
+            }
+            .text-conteiner{
+                width: 400px;
+                align-items: center;
+                
+            }
+            .box h3{
+                width: fit-content;
+            }
+            .box h1{
+                width: fit-content;
+                text-align: center;
+                
+            }
+            .btn-conteiner{
+                width: fit-content;
+            }
+        }
+        @media(max-width: 500px){
+            .click{
+                flex-direction: column;
+            }
+        }
+        @media(max-width: 400px){
+            .box h1{
+                font-size: 25px;
+                line-height: 30px;
+                
+            }
+            .yellow-text{
+                font-size: 25px;
+                
+            }
+            .box h3{
+                color: #152137;
+                margin-top: 0;
+            }
+            
+            .btn-conteiner{
+                margin-top: 0;
+            }
+
         }
          
     </style>
@@ -73,7 +237,7 @@
     <header>
         <img src="./logo (2).png" id="pr">
         <nav>
-            <ul>
+            <ul class="click">
                 <li>Home</li>
                 <li>Suvs</li>
                 <li>Trucks</li>
@@ -87,7 +251,19 @@
         </div>
     </header>
     <main>
-        
+        <div class="box">
+            <div class="text-conteiner">
+                <h1>The future of <span class="yellow-text">exhilaration</span></h1>
+                <h3>Ford Mustang <span class="small-text">2021</span></h3>
+                <div class="btn-conteiner">
+                    <button class="price-btn">Build & Price</button>
+                    <div class="ch">
+                        <img src="./Button.png" class="play">
+                        <p >Watch Video</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 </body>
 </html>
