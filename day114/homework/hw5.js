@@ -8,4 +8,5 @@ let person = {
 }
 for (let i in person){
     console.log(person[i])
+    console.log(person)
 }
