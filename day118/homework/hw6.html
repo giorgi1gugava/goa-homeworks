@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="container"></div>
+    <button id="addBtn">Add Item</button>
+
+    <script>
+        const container = document.getElementById("container");
+        const addBtn = document.getElementById("addBtn");
+        let count = 0;
+
+        addBtn.onclick = function() {
+            count++;
+            const p = document.createElement("p");
+            p.textContent = "Item " + count;
+            container.appendChild(p);
+        };
+    </script>
+
+</body>
+</html>

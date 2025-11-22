@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <title>Button Click Alert</title>
+</head>
+<body>
+
+    <button id="Button">click</button>
+
+    <script>
+        //
+        function show() {
+            alert("Button clicked!");
+        }
+        const button = document.getElementById("Button")
+
+
+        button.addEventListener("click", show);
+    </script>
+
+</body>
+</html>
