@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+<meta charset="UTF-8">
+<title>ტექსტის ფერის არჩევა</title>
+<style>
+  .colors {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .color-box {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border: 2px solid #000;
+  }
+
+  input {
+    width: 300px;
+    height: 30px;
+    font-size: 18px;
+  }
+</style>
+</head>
+<body>
+
+<div class="colors">
+  <div class="color-box" style="background:red;"   data-color="red"></div>
+  <div class="color-box" style="background:blue;"  data-color="blue"></div>
+  <div class="color-box" style="background:green;" data-color="green"></div>
+  <div class="color-box" style="background:orange;" data-color="orange"></div>
+  <div class="color-box" style="background:black;" data-color="black"></div>
+</div>
+
+<input id="textInput" type="text" placeholder="დაწერე ტექსტი...">
+
+<script src="./hw.js"></script>
+
+</body>
+</html>
