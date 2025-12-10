@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+<meta charset="UTF-8">
+<title>ინფორმაციის ფორმა</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f0f2f5;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-container {
+        background: white;
+        padding: 20px 30px;
+        border-radius: 10px;
+        width: 320px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        margin-bottom: 30px;
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    label {
+        font-weight: bold;
+        display: block;
+        margin-top: 10px;
+    }
+
+    input {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 15px;
+        padding: 10px;
+        background: #4a77f7;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+
+    
+
+    ul {
+        width: 320px;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        list-style: none;
+    }
+
+    li {
+        background: #eef2ff;
+        padding: 10px;
+        border-radius: 6px;
+        margin-bottom: 10px;
+        border-left: 4px solid #4a77f7;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="form">
+    <h2>მომხმარებლის ფორმა</h2>
+
+
+    <form id="info">
+
+        <label>სახელი:</label>
+        <input type="text" id="name" required>
+
+        <label>გვარი:</label>
+        <input type="text" id="surname" required>
+
+        <label>ასაკი:</label>
+
+        <input type="number" id="age" required>
+
+        <button type="submit">გაგზავნა</button>
+    </form>
+
+</div>
+
+<ul id="List"></ul>
+
+<script src="./cw.js">
+</script>
+
+</body>
+</html>
