@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>New Year Countdown</title>
+
+<style>
+    body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+  
+     
+    }
+
+    .box {
+        background: rgba(0, 0, 0, 0.6);
+        border: 2px solid #c7ff00;
+        border-radius: 15px;
+        padding: 30px 40px;
+        text-align: center;
+    }
+
+    h1 {
+        color: #ffeb3b;
+        margin-bottom: 20px;
+        letter-spacing: 2px;
+    }
+
+    .time {
+        display: flex;
+        gap: 30px;
+        font-size: 36px;
+    }
+
+    .unit {
+        text-align: center;
+    }
+
+    .label {
+        font-size: 14px;
+        color: #c7ff00;
+        margin-top: 5px;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="box">
+    <h1>New Year Eve</h1>
+    <div class="time">
+        <div class="unit"><span id="days">00</span><div class="label">Days</div></div>
+        <div class="unit"><span id="hours">00</span><div class="label">Hours</div></div>
+        <div class="unit"><span id="mins">00</span><div class="label">Mins</div></div>
+        <div class="unit"><span id="secs">00</span><div class="label">Seconds</div></div>
+    </div>
+</div>
+
+<script>
+ 
+function updateTimer() {
+
+    var now = new Date();
+
+    var nextYear = now.getFullYear() + 1;
+    var newYear = new Date(nextYear, 0, 1, 0, 0, 0);
+
+    var diff = newYear - now;
+
+    var seconds = Math.floor(diff / 1000);
+    var minutes = Math.floor(seconds / 60);
+    var hours = Math.floor(minutes / 60);
+    var days = Math.floor(hours / 24);
+
+    hours = hours % 24;
+    minutes = minutes % 60;
+    seconds = seconds % 60;
+
+    document.getElementById("days").innerHTML = days;
+    document.getElementById("hours").innerHTML = hours;
+    document.getElementById("mins").innerHTML = minutes;
+    document.getElementById("secs").innerHTML = seconds;
+}
+
+setInterval(updateTimer, 1000);
+updateTimer();
+
+
+ 
+</script>
+
+</body>
+</html>

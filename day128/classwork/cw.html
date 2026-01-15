@@ -1,0 +1,156 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Page with Clock</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 50px;
+        font-family: Arial, sans-serif;
+    }
+    header{
+        display: flex;
+        background-color: rgb(33, 33, 52);
+        width: 100%;
+        justify-content: center;
+        height: 60px;
+    }
+    header img{
+        width: 90px;
+        height: 30px;
+        margin-top: 15px;
+    }
+    main{
+        display: flex;
+        flex-direction: row;
+        gap: 100px;
+    }
+    .product-info{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .color-options, .feature-buttons{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    .color-box{
+        width: 50px;
+        height: 35px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    button{
+        background-color: rgb(240, 237, 237);
+        border: none;
+        border-radius: 5px;
+        padding: 5px 10px;
+        cursor: pointer;
+    }
+    #buy-btn{
+        background-color: rgb(255, 165, 0);
+        width: 100px;
+        height: 35px;
+        border: none;
+        border-radius: 5px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    
+    .image-container{
+        position: relative;
+        width: 240px;
+        height: 300px;
+    }
+    .image-container img{
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+    }
+    #clock{
+        position: absolute;
+        top: 150px;
+        width: 130px;
+        height: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: black;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 16px;
+    }
+</style>
+</head>
+<body>
+<header>
+    <img src="./toppng.com-amazon-logo-in-transparent-white-1024x373.png" alt="Logo">
+</header>
+<main>
+    <div class="image-container">
+        <img src="./Screenshot 2025-12-26 214125.png" alt="Product Image">
+        <p id="clock"></p>
+    </div>
+
+    <div class="product-info">
+        <h1>FitBit 19 - The Smart Watch</h1>
+        <p style="color: gray;">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+
+        <div>
+            <p style="font-weight: 600;">Select Color</p>
+            <div class="color-options">
+                <div class="color-box" style="background-color: black;"></div>
+                <div class="color-box" style="background-color: rgb(202, 61, 34);"></div>
+                <div class="color-box" style="background-color: rgb(86, 86, 129);"></div>
+                <div class="color-box" style="background-color: rgb(138, 83, 98);"></div>
+            </div>
+        </div>
+
+        <div>
+            <p style="font-weight: 600;">Features</p>
+            <div class="feature-buttons">
+                <button>Time</button>
+                <button>Heart Rate</button>
+            </div>
+        </div>
+
+        <button id="buy-btn">BUY NOW</button>
+    </div>
+</main>
+
+<script>
+    const clock = document.getElementById("clock");
+
+    function updateClock() {
+        const date = new Date();
+        let hr = date.getHours();
+        let min = date.getMinutes();
+        let sec = date.getSeconds();
+
+        if(hr < 10) hr = `0${hr}`;
+        if(min < 10) min = `0${min}`;
+        if(sec < 10) sec = `0${sec}`;
+
+        clock.textContent = `${hr}:${min}:${sec}`;
+    }
+
+    updateClock(); 
+    setInterval(updateClock, 1000);
+</script>
+</body>
+</html>
