@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+    <style>
+        
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: "Space Grotesk", sans-serif;
+            
+            font-weight: 500;
+            height: 100vh; 
+        }
+        
+        
+        #fir-card{
+        position: absolute;
+        top: 70px;
+        left: 170px;
+        z-index: 2;
+
+        width: 420px;
+        height: 240px;
+        padding: 30px;
+        background-image: url(./bg-card-front.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 10px;
+        color: white;
+        }
+
+#sec-card{
+    position: absolute;
+    top: 350px;      
+    left: 240px;     
+    z-index: 1;
+
+    width: 420px;
+    height: 240px;
+    background-image: url(bg-card-back.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+#bg-main{
+    background-image: url(./bg-main-desktop.png);
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 40%;
+    position: relative;   
+}
+
+        #top-div{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        #nine-num{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+           
+        }
+        .four-nums{
+            display: flex;
+            flex-direction: row;
+            gap: 2px;
+            
+        }
+        .circles{
+            font-size: 26px;
+
+            
+           
+        }
+        #twoCircle-div{
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+            align-items: center;
+            
+        }
+        #jane-div{
+            display: flex;
+            flex-direction: row;
+            gap: 180px;
+            color: white;
+            
+        }
+        #registration{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-left: 200px;
+        }
+        #fir-input{
+            width: 100%;
+            padding: 12px 14px;
+            font-size: 14px;
+            border: 1px solid #e5e2ea;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            outline: none;
+        }
+        label {
+        display: block;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        color: #3a2a4a;
+        margin-bottom: 6px;
+       }
+       #sec-input{
+        width: 100%;
+            padding: 12px 14px;
+            font-size: 14px;
+            border: 1px solid #e5e2ea;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            outline: none;
+       }
+       #date-div{
+        display: flex;
+        flex-direction: row;
+        
+        
+       }
+       .date-input{
+            width: 20%;
+            padding: 12px 14px;
+            font-size: 14px;
+            border: 1px solid #e5e2ea;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            outline: none;
+       }
+       #four-input{
+        padding: 12px 14px;
+            font-size: 14px;
+            border: 1px solid #e5e2ea;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            outline: none;
+           
+       }
+       #label{
+        margin-left: -200px;
+       }
+
+       button {
+        width: 100%;
+        padding: 14px;
+        background: linear-gradient(90deg, #2a083f, #3b0a5e);
+        color: #ffffff;
+        font-size: 15px;
+        font-weight: 600;
+        border: none;
+        border-radius: 10px;
+        }
+        #card{
+            display: flex;
+            flex-direction: column;
+            gap: 65px;
+        }
+        #zero{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        #sec-card p{
+            position: relative;
+            color: white;
+            top: 105px;
+            right: -350px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div id="top-div">
+        <div id="bg-main"><!--card-->
+            <div id="fir-card">
+                <div id="card">
+                <div id="twoCircle-div"><!--circle-->
+                    <div style="background-color: white; width: 42px; height: 42px;border-radius: 50%;"></div>
+                    <div style="width: 25px; height: 25px; border: 1px solid white; border-radius: 50%;"></div>
+                </div>
+                <div id="zero">
+                <div id="nine-num"><!--little-circles-->
+                    <h1 id="card-num">0000 0000 0000 0000</h1>
+                </div>
+                <div id="jane-div" style="justify-content: space-between;">
+                    <p id="name-p">JANE APPLESSED</p>
+                    <div style="display: flex; flex-direction: row;">
+                        <p id="fir-zero">00</p>
+                        <p>/</p>
+                        <p id="sec-zero">00</p>
+                    </div>
+                </div>
+            </div>
+                </div>
+            </div>
+            <div id="sec-card">
+                <p id="three-num">000</p>
+            </div>
+        </div>
+        <div id="registration"><!--registration-->
+            <div>
+                <form id="form">
+                    <label>
+                      CARDHOLDER NAME<br>
+                      <input type="text" placeholder="e.g. Jane Appleseed" id="fir-input" name="name">
+                    </label>
+                  
+                    
+                  
+                    <label>
+                      CARD NUMBER<br>
+                      <input type="text" placeholder="e.g. 1234 5678 9123 0000" id="sec-input" name="card" >
+                    </label>
+                  
+                   
+                  <div id="date-div">
+                    <label>
+                      EXP. DATE (MM/YY)<br>
+                      <input type="text" placeholder="MM" class="date-input" name="month">
+
+                      <input type="text" placeholder="YY" id="thr-input" class="date-input" name="year">
+                    </label>
+                  
+                    
+                  
+                    <label id="label">
+                      CVC<br>
+                      <input type="text" placeholder="e.g. 123" id="four-input" name="cvc">
+                    </label>
+                </div>
+                  
+                    
+                  
+                    <button type="submit">Confirm</button>
+                  </form>
+                  
+            </div>
+        </div>
+    </div>
+    <script src="./hw.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+<script>
+let name = "Goga";
+
+if (true) {
+  let name = "Nika"; // block-scoped ცვლადი if ბლოკში
+  console.log(name); // "Nika" -> ბლოკის შიგნით
+}
+
+console.log(name);   // "Goga" -> გლობალური name, ბლოკის შიგნით არსებული ვერ მოქმედებს აქ
+
+</script>

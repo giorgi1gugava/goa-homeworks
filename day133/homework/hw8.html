@@ -1,0 +1,16 @@
+<script>
+    if (true) {
+  var a = 5;   // var არ იცავს block scope
+  let b = 10;  // let იცავს block scope
+}
+console.log(a); // 
+console.log(b); // block-scoped, ვერ დაიბეჭდება
+
+
+let y = 5;
+{
+  let y = 15;
+  console.log(y);
+}
+console.log(y); 
+</script>

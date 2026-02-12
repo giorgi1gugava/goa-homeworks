@@ -1,0 +1,11 @@
+<script>
+let x = 10;
+
+for (let i = 0; i < 3; i++) {
+  let x = 0;           // block-scoped ცვლადი for ციკლში
+  console.log(x);      // 0
+}
+
+console.log(x);        // 10 -> გლობალური x ციკლის გარეთ
+
+</script>
