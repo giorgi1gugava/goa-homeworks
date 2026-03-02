@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #mainImg{
+            width: 80px;
+        }
+        .div{
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+        }
+        #button{
+            background-color: rgb(46, 139, 175);
+            border: none;
+            padding: 20px 30px;
+            color: white;
+            border-radius: 10px;
+            font-size: 20px;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>dice roll simulator</h1>
+        <img id="mainImg" src="">
+        <button id="button">roll dice</button>
+    </div>
+
+    <script>
+        let body=document.body
+        let mainImg = document.getElementById("mainImg")
+        let button = document.getElementById("button")
+
+        let srcs = []
+        let count=1
+        button.addEventListener('click', function(){
+            let randomNumber=Math.floor(Math.random()*6)
+            mainImg.src=srcs[randomNumber]
+            let newDiv= document.createElement('div')
+            let countText= document.createElement('p')
+            countText.innerHTML=`Roll ${count}`
+
+            newDiv.style.cssText = `
+            display: flex;
+            justify-content:space-between;
+            padding: 19px;
+            width: 250px;
+            `
+
+            let newImg= document.createElement('img')
+            newImg.src=mainImg.src
+
+
+            newImg.style.cssText=`
+            display: flex;
+            justify-content:space-between;
+            padding: 19px;
+            width: 250px;
+
+            `
+            newDiv.appendChild(countText)
+            newDiv.appendChild(newImg)
+            body.appendChild(newDiv)
+            count++
+
+
+        })
+
+    </script>
+</body>
+</html>
