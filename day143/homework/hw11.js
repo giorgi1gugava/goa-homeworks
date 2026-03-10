@@ -1,0 +1,1 @@
+const getLength = text => text.length;

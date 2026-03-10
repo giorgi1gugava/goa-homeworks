@@ -1,0 +1,1 @@
+const createPerson = (name, age) => ({ name, age });

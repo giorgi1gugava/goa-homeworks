@@ -1,0 +1,1 @@
+const { name, surname, address: { country, city: { name: cityName, street } } } = user; console.log(name, surname, country, cityName, street);

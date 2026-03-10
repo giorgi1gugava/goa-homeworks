@@ -1,0 +1,1 @@
+const { name: storeName, address: { city, location: { street } }, products: [ { name: firstProductName }, { price: secondProductPrice } ] } = store; console.log(storeName, city, street, firstProductName, secondProductPrice);

@@ -1,0 +1,1 @@
+const { name: companyName, location: { country, city: { name: cityName, street } }, employees: [ { name: firstEmployeeName }, { age: secondEmployeeAge } ] } = company; console.log(companyName, country, cityName, street, firstEmployeeName, secondEmployeeAge);

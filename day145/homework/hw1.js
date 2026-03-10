@@ -1,0 +1,1 @@
+const { name: universityName, faculty: { title, head: { name: headName } }, students: [ { name: studentName, grades: { math, js } } ] } = university; console.log(universityName, title, headName, studentName, math, js);

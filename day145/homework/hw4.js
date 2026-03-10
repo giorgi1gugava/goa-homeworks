@@ -1,0 +1,1 @@
+const { brand, model, engine: { type, power: { hp, torque } } } = car; console.log(brand, model, type, hp, torque);
