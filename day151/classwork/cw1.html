@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<form id="form">
+    <input placeholder="enter:" type="number" id="inp"> 
+    <input placeholder="enter:" type="number" id="inp1"> 
+
+    <button id="btn">submit</button>
+    <p id="output"></p>
+</form>
+
+<script>
+    let form = document.getElementById("form");
+    let button = document.getElementById("btn");
+    let input = document.getElementById("inp");
+    let input1 = document.getElementById("inp1");
+    let output = document.getElementById("output"); 
+
+    class Calculator{
+        constructor(a,b){
+            this.a = a;
+            this.b = b;
+        }
+        add(){
+            return this.a + this.b;
+        }
+        subtract(){
+            return this.a - this.b;
+        }
+        multiply(){ 
+            return this.a * this.b;
+        }
+        divide(){
+            return this.a / this.b;
+        }
+    }
+
+    form.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        let a = Number(input.value);
+        let b = Number(input1.value);
+
+        const newCal = new Calculator(a, b);
+        let result = newCal.add();
+        
+
+        output.textContent = result;
+       
+
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Form</title>
+</head>
+<body>
+
+    <form id="form">
+        <input id="name" type="text" placeholder="Enter name">
+        <input id="age" type="number" placeholder="Enter age">
+        <button id="submit" type="submit">Submit</button>
+    </form>
+
+    <script src="script.js"></script>
+
+
+
+
+    
+    <script>
+        const form = document.getElementById("form");
+const nameInput = document.getElementById("name");
+const ageInput = document.getElementById("age");
+const submitBtn = document.getElementById("submit");
+
+class User {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    changeName() {
+        this.name = nameInput.value;
+    }
+
+    increaseAge() {
+        this.age = Number(ageInput.value);
+    }
+}
+
+const user1 = new User("nino", 29);
+
+console.log(user1);
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    user1.changeName();
+    user1.increaseAge();
+    console.log(user1);
+});
+
+    </script>
+</body>
+</html>
