@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .container {
+            display: flex;
+            gap: 10px;
+            padding: 20px;
+        }
+
+        input {
+            width: 250px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .output {
+            margin-top: 20px;
+            padding: 20px;
+
+            
+        }
+
+        #output{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+           
+            width: 330px;
+            padding: 0px 20px;
+            
+        }
+
+        li{
+            display: flex;
+            align-items: center;
+            list-style: none;
+            background-color: gray;
+            padding: 10px 10px;
+            border-radius: 10px;
+            justify-content: space-between;
+            
+        }
+
+
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input id="myInput" type="text" placeholder="შეიყვანე ტექსტი">
+        <button id="myButton">click</button>
+    </div>
+    
+    <ul class="output" id="output">
+       
+        
+    </ul>
+
+    <script src="./hw.js"></script>
+</body>
+</html>
