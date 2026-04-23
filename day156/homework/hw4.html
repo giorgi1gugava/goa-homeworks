@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="inp" placeholder="task">
+<button id="btn">add</button>
+
+<ul id="list"></ul>
+
+<script>
+let inp = document.getElementById("inp");
+let btn = document.getElementById("btn");
+let list = document.getElementById("list");
+
+
+let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+
+function save(){
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+}
+
+function showTasks(){
+    list.innerHTML = "";
+
+    tasks.forEach((t, index) => {
+        let li = document.createElement("li");
+
+        li.textContent = t + " ";
+
+        let delBtn = document.createElement("button");
+        delBtn.textContent = "delete";
+
+        delBtn.addEventListener("click", () => {
+            tasks.splice(index, 1);
+            save();                 
+            showTasks();            
+        });
+
+        li.appendChild(delBtn);
+        list.appendChild(li);
+    });
+}
+
+showTasks();
+
+
+btn.addEventListener("click", () => {
+    tasks.push(inp.value);
+    save();
+    inp.value = "";
+    showTasks();
+});
+</script>
+</body>
+</html>

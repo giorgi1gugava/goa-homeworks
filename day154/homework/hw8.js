@@ -1,3 +1,4 @@
+
 let map = new Map([
     ["apple", 5],
     ["banana", 2],

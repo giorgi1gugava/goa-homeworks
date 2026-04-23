@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--გვერდზე გაქვს ქუაუნთერი + -  და reset ღილაკებით
+
+დავალება:
+
+ყოველ დაჭერაზე counter იზრდება 1 ით
+
+მნიშვნელობა ინახება localStorage-ში
+
+refresh-ზე არ ნულდება-->
+<button id="plus">+</button>
+<button id="minus">-</button>
+<button id="reset">reset</button>
+
+<p id="p">0</p>
+
+<script>
+    let plus = document.getElementById("plus");
+    let minus = document.getElementById("minus");
+    let reset = document.getElementById("reset");
+    let p = document.getElementById("p");
+
+    let count = localStorage.getItem("count");
+    p.textContent = count;
+
+
+    plus.addEventListener("click", () => {
+        count  +=1;
+        p.textContent = count;
+        localStorage.setItem("count", count);
+    });
+
+    minus.addEventListener("click", () => {
+        count -= 1;
+        p.textContent = count;
+        localStorage.setItem("count", count);
+    });
+
+
+    reset.addEventListener("click", () => {
+        count = 0;
+        p.textContent = count;
+        localStorage.setItem("count", count);
+    });
+</script>
+
+    
+</body>
+</html>

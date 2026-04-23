@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--გვერდზე გაქვს ღილაკი "Toggle Theme"
+
+დავალება:
+
+დაჭერისას იცვლება background
+შეინახე არჩეული theme refresh-ის შემდეგ იგივე theme დარჩეს
+
+მინიშნება:
+
+შეინახე "dark" ან "light"-->
+
+
+<button id="btn">Toggle Theme</button>
+
+
+
+    <script>
+        let btn = document.getElementById("btn");
+        localStorage.getItem("color");
+
+        btn.addEventListener("click", () =>{
+            btn.style.background = "red"
+            localStorage.setItem("color", btn.style.background)
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--შექმენი ერთი ინფუთი,საბმით ღილაკი და ერთ პარაგრაფი
+
+მომხმარებელი წერს input-ში სახელს და აჭერს ღილაკს.ამის შემდეგ პარაგრაფში უნდა გამჩნდეს მომხმარებლის მიერ შეყვანილი მნიშნველობა
+
+დავალება:
+შეინახე ეს სახელი localStorage-ში და გვერდის გადატვირთვის შემდეგაც გამოჩნდეს.-->
+
+<input placeholder="enter name" id="inp">
+<button id="btn">submit</button>
+<p id="p"></p>
+
+    <script>
+        let btn = document.getElementById("btn");
+        let p = document.getElementById("p");
+        let inp = document.getElementById("inp");
+
+        p.textContent = localStorage.getItem("name");
+
+
+        btn.addEventListener("click", ()=>{
+            localStorage.setItem("name", inp.value);
+            p.textContent = inp.value
+
+        });
+    </script>
+</body>
+</html>

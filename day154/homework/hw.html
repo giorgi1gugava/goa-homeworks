@@ -1,0 +1,24 @@
+<script>
+    let set = new Set(["one", "two", "three", "four", "five"]);
+
+set.add("six").add("seven");
+
+console.log(set);
+
+let has = set.has("one");
+console.log(has);
+
+console.log("zoma:", set.size);
+
+set.delete(1);
+let entries = set.entries();
+
+entries.forEach((value) => {
+    console.log(value);
+});
+
+
+set.clear();
+
+console.log(set);
+</script>
