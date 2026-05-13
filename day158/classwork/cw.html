@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--შექმენით ექაუნთების ობიექტი შემდეგ დაასტრინგიფაიეთ დაბეჭდეთ და მერე გაპარსეთ და ეგეც დაბეჭდეთ-->
+
+    <script>
+        ac = [
+            {
+                name: 'gia',
+                pasword: '333'
+
+            }
+            ,
+            {
+                name: 'giga',
+                pasword: '444'
+
+            }
+        ]
+
+        data = JSON.stringify(ac);
+        console.log(ac);
+
+        parsedData = JSON.parse(data);
+        console.log(parsedData);
+
+
+    </script>
+</body>
+</html>

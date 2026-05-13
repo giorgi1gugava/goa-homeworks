@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account</title>
+
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: black;
+    }
+
+    .card{
+      width: 320px;
+      padding: 30px;
+      border-radius: 20px;
+      background: #111;
+      color: white;
+    }
+
+    h1{
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    p{
+      text-align: center;
+      color: gray;
+      margin-bottom: 25px;
+      font-size: 14px;
+    }
+
+    label{
+      display: block;
+      margin-top: 15px;
+      margin-bottom: 5px;
+      font-size: 14px;
+    }
+
+    input{
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 10px;
+      outline: none;
+      background: #222;
+      color: white;
+    }
+
+    button{
+      width: 100%;
+      padding: 12px;
+      margin-top: 25px;
+      border: none;
+      border-radius: 10px;
+      background: purple;
+      color: white;
+      cursor: pointer;
+    }
+
+    #form2{
+      display: none;
+    }
+
+   
+  </style>
+</head>
+<body>
+
+  <form class="card" id="form">
+
+    <h1>Create Account</h1>
+
+    <label>Username</label>
+    <input type="text" placeholder="Enter username" id="inp-u" name="name">
+
+    <label>Email</label>
+    <input type="email" placeholder="Enter email" id="inp-e" name="email">
+
+    <label>Password</label>
+    <input type="password" placeholder="Enter password" id="inp-p" name="password">
+
+    <button id="btn" type="submit">Sign Up</button>
+
+    
+
+  </form>
+
+  <form id="form2"  >
+    <input type="email" name="email2">
+    <input type="password" name="password2">
+    <button type="submit">log in</button>
+
+  </form>
+
+
+  <script src="./hw.js"></script>
+
+</body>
+</html>

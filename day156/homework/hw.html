@@ -24,11 +24,9 @@
 
         p.textContent = localStorage.getItem("name");
 
-
-        btn.addEventListener("click", ()=>{
+      btn.addEventListener("click", ()=>{
             localStorage.setItem("name", inp.value);
             p.textContent = inp.value
-
         });
     </script>
 </body>

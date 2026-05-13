@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: rgb(13, 13, 13);
+        display: flex;
+        justify-content: center;
+        
+        margin: 0;
+        padding: 30px 0px;
+        font-family: sans-serif;
+    }
+    #main-div{
+        display: flex;
+        flex-direction: column;
+        color: white;
+        gap: 40px;
+    }
+
+
+
+    #task-div{
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        border: 1px solid white;
+        border-radius: 10px;
+        padding: 40px 50px;
+    }
+
+    #one-div{
+        display: flex;
+        width: 140px;
+        border-radius: 50%;
+        background-color: rgb(136, 171, 51);
+        font-size: 40px;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    #text-div{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    #task{
+        font-size: 35px;
+    }
+
+    #keep{
+        margin-top: -35px;
+        font-size: 25px;
+    }
+
+
+
+    #todo-div{
+        display: flex;
+        flex-direction: row;
+        
+        align-items: center;
+        margin-left: -150px;
+        
+    }
+    #todo-p{
+        font-size: 25px;
+        font-weight: bolder;
+    }
+
+    #check{
+        width: 40px;
+        height: 40px;
+    }
+
+
+
+
+    #write-div{
+        display: flex;
+        flex-direction: column;
+        ;
+    }
+    #inp-div{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    #inp{
+        width: 80%;
+        background-color: rgb(31, 41, 54);
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+    }
+
+    #add-btn{
+        background-color: rgb(136, 171, 51);
+        border: none;
+        border-radius: 10px;
+        width: 10%;
+        font-size: 40px;
+        font-weight: 100;
+    }
+
+    #list{
+        display: none;
+        width: 100%;
+   
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .item{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(31, 41, 54);
+        padding: 15px;
+        border-radius: 10px;
+        color: white;
+    }
+
+
+
+
+  
+</style>
+
+
+<body>
+    <div id="main-div">
+        <div id="todo-div">
+            <img src="/day159/classwork/like_15826183.png"id="check">
+            <p id="todo-p">TODO</p>
+        </div>
+<!---->
+        <div id="task-div">
+            <div id="text-div">
+                <p id="task">Task Done</p>
+                <p id="keep">Keep it up</p>
+            </div>
+            <div id="one-div">
+                <p>1/3</p>
+            </div>
+        </div>
+
+<!---->
+        <div id="write-div">
+            <div id="inp-div">
+                <input id="inp" type="text" placeholder="Write your next task" >
+                <button id="add-btn">+</button>
+
+            </div>
+            <div id="list">
+            </div>
+        </div>
+    </div>
+    <script src="./hw.js"></script>
+    
+</body>
+</html>
