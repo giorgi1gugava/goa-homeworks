@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #111;
+        }
+
+        div{
+            width: 320px;
+            padding: 25px;
+            border-radius: 12px;
+            background: #1f1f1f;
+            text-align: center;
+            color: white;
+        }
+
+        h1{
+            margin-bottom: 15px;
+        }
+
+        p{
+            margin: 8px 0;
+            font-size: 18px;
+        }
+
+        form{
+            margin-top: 20px;
+            display: flex;
+            gap: 10px;
+        }
+
+        input{
+            flex: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 6px;
+            outline: none;
+        }
+
+        button{
+            padding: 10px 15px;
+            border: none;
+            border-radius: 6px;
+            background: dodgerblue;
+            color: white;
+            cursor: pointer;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+
+    <div>
+        <h1 id="city-name"></h1>
+        <p id="temterature"></p>
+        <p id="weather"></p>
+
+        
+            <input type="text" name="city" id="city-inp" placeholder="Enter city">
+            <button type="submit">submit</button>
+        </form>
+    </div>
+
+    <script src="./cw.js"></script>
+
+</body>
+</html>
