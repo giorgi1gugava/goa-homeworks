@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+            display: flex;
+            flex-direction: column;
+            padding: 60px;
+            gap: 20px;
+        }
+        .div{
+            display: flex;
+            flex-direction: row;
+            gap: 150px;
+        }
+
+        #img{
+            width: 350px;
+            height: 250px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div class="div">
+            <p id="pic">photo</p>
+            <img src="" id="img"><!-- https://m.media-amazon.com/images/S/pv-target-images/e1e613a24e4bae0551838ba2032208ce4b54406c9194da15607e07ca182ea7d1._SX1080_FMjpg_.jpg-->
+        </div>
+        <div class="div">
+            <p>first name</p>
+            <p id="name"></p>
+        </div>
+        <div class="div">
+            <p>last name</p>
+            <p id="saur"></p>
+        </div>
+        <div class="div">
+            <p>birthdey</p>
+            <p id="brth"></p>
+        </div>
+        <div class="div">
+            <p>mma record</p>
+            <p id="rec"></p>
+        </div>
+    </div>
+
+
+    <script>
+        let pic = document.getElementById("pic");
+        let img = document.getElementById("img");
+        let Fname = document.getElementById("name");
+        let Lname = document.getElementById("saur");
+        let birth = document.getElementById("brth");
+        let reco = document.getElementById("rec");
+        let main = document.getElementById("main")
+
+
+
+
+             let end = true;
+        let prom = new Promise((res,rej)=>{
+            setTimeout(()=>{
+                let info = {
+                name: "conor",
+                saurname: "macgregor",
+                rec: "22-6-0",
+                birth: "July 14, 1988",
+                imag: "https://m.media-amazon.com/images/S/pv-target-images/e1e613a24e4bae0551838ba2032208ce4b54406c9194da15607e07ca182ea7d1._SX1080_FMjpg_.jpg"
+            }
+            if (end) {
+            res(info);
+        } else {
+            rej("Error loading data!");
+        }
+            
+            }, 1000)
+
+            
+            
+        });
+
+        prom.then((inf)=>{
+            Fname.textContent = inf.name;
+            Lname.textContent = inf.saurname;
+            birth.textContent = inf.birth;
+            reco.textContent = inf.rec
+            img.src = inf.imag
+
+        }).catch((err)=>{
+            main.style = "block"
+            
+
+        })
+
+
+
+    </script>
+</body>
+</html>

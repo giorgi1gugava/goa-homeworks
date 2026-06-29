@@ -1,0 +1,24 @@
+<!--video-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="bnt">roll</button>
+    <p id="p">_</p>
+    <script>
+        let b = document.getElementById("bnt");
+        let p = document.getElementById("p");
+        let num = [10, 20, 30, 40, 50];
+
+let randomIndex = Math.floor(Math.random() * num.length);
+
+        b.addEventListener("click",()=>{
+            p.textContent =  num[Math.floor(Math.random() * num.length)];
+        })
+    </script>
+</body>
+</html>
