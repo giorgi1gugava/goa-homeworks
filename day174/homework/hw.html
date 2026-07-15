@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        body{
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgb(80, 80, 137);
+            color: white;
+        }
+        header{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            padding: 10px 20px;
+            align-items: center;
+        }
+
+        input{
+            color: black;
+            width: 300px;
+            height: 40px;
+            padding: 2px 7px;
+            border-radius: 10px;
+            background-color: white;
+            border: none;
+
+        }
+
+
+        button{
+            width: 35px;
+            background-color: blue;
+            border-radius: 2px;
+            padding: 3px;
+            height: 30px;
+            border-radius: 10px;
+            border: none;
+            color: white;
+        }
+
+
+
+        main{
+            margin-top: 100px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 50px;
+
+        }
+        .card{
+            display: flex;
+            gap: 50px;
+            background-color: rgb(63, 63, 159);
+            border-radius: 10px;
+            padding: 30px ;
+        }
+
+        img{
+            width: 300px;
+
+
+
+        }
+
+        #info{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            font-size: 1.3rem;
+            padding: 10px;
+
+        }
+        #discription{
+            margin-top: 50px;
+            max-width: 400px;
+            font-size: 1.1rem;
+        }
+
+        .card p{
+            max-width: 500px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>films</h1>
+        <form id="form">
+            <input type="text" name="name" placeholder="enter moovie name:" id="inp">
+            <button type="submit">click</button>
+        </form>
+    </header>
+    <main id="main">
+
+
+
+       
+
+
+    </main>
+
+
+    <script>
+        let form = document.getElementById("form");
+let main = document.getElementById("main");
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    let fileName = e.target.name.value;
+
+    fetchData(fileName);
+
+    form.reset();
+});
+
+function fetchData(fileName) {
+    fetch(`https://api.tvmaze.com/search/shows?q=${fileName}`)
+        .then(response => response.json())
+        .then(info => {
+            main.innerHTML = `
+                <div class="card">
+                    <img src="${info[0].show.image.original}" id="film-img">
+                    <div id="info">
+                        <p id="year">${info[0].show.premiered}</p>
+                        <p id="name">${info[0].show.name}</p>
+                        <p id="genre">${info[0].show.genres.join(", ")}</p>
+                        <p id="description">${info[0].show.summary}</p>
+                    </div>
+                </div>
+            `;
+        })
+        .catch(error => {
+            console.log(error);
+        });
+}
+    </script>
+</body>
+</html>
