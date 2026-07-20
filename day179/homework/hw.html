@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodstore</title>
+    <link rel="stylesheet" href="./hw.css">
+</head>
+
+<body>
+
+    <!--1.https://www.themealdb.com/api/json/v1/1/search.php?s={food}
+
+2.https://www.themealdb.com/api/json/v1/1/random.php-->
+    <header>
+        <div id="cart-div">
+            <p>Foodstore</p>
+        </div>
+
+        <div id="srch-div">
+
+            <div id="inp-div">
+                <input placeholder="Search Products" id="inp">
+
+                <div id="search-img">
+                    <img src="/day176/homework/search.png">
+                </div>
+            </div>
+
+            <button id="log-btn">
+                <div>
+                    <img src="/day176/homework/account.png">
+                    <p>register</p>
+                </div>
+            </button>
+            <button id="log-btn">
+                <div>
+                    <img src="/day176/homework/account.png">
+                    <p>sign up</p>
+                </div>
+            </button>
+        </div>
+
+    </header>
+    <main>
+        <div id="box">
+            <div>
+                <p id="title"></p>
+                <img src="" id="img">
+                <a href="" id="youtube-a"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBDidPq___zHPYjIll5HjPBAoYgtrnT9dZEzbyiIKuN-EZ6ky-VgShE-Y&s=10"
+                    id="youtube">
+                </a>
+
+
+            </div>
+            <div id="right-side">
+                <div style="display: flex;flex-direction: column; gap: 20px;">
+                    <p id="country"></p>
+                    <p id="category"></p>
+                </div>
+
+
+                <p id="description"></p>
+            </div>
+        </div>
+    </main>
+    <script src="./hw.js"></script>
+</body>
+
+</html>

@@ -1,1 +1,19 @@
-<!--no cw-->
+<!--no cw
+
+
+
+localStorage.setItem("user", JSON.stringify(info));
+let savedUser = JSON.parse(localStorage.getItem("user"));
+
+
+            if (
+                info.email === savedUser.email &&
+                info.password === savedUser.password
+            ) {
+                alert("Login successful!");
+
+                
+            }
+            else {
+                alert("Wrong email or password!");
+            }-->
