@@ -1,6 +1,5 @@
 export default function Home(){
-    const welcome = "zdzd";
-
+    const welcome = "hello"
     return(
         <div>{welcome}</div>
     )
