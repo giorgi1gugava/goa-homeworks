@@ -1,0 +1,16 @@
+/*
+💀 11. მთავარი Festival Status
+შექმენით finalMessage.
+ლოგიკა:
+
+თუ მომხმარებელი ასაკობრივ შეზღუდვას ვერ აკმაყოფილებს:
+🚫 You cannot attend this festival.
+თუ ასაკს აკმაყოფილებს და ფესტივალი თითქმის სავსეა:
+🔥 Hurry! The festival is almost full!
+თუ ასაკს აკმაყოფილებს, ფესტივალი თითქმის სავსე არაა და ამინდი კარგია:
+🎉 Everything is ready! Have fun!
+სხვა შემთხვევაში:
+ℹ️ Check all festival information before entering.
+
+აქ უკვე რამდენიმე ცვლადი უნდა გამოიყენონ ერთდროულად.
+*/
