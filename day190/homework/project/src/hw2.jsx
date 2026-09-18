@@ -62,7 +62,7 @@ function Hw2() {
     let finalMessage =
         userAge < ageLimit
             ? "🚫 You cannot attend this festival."
-            : visitors >= capacity * 0.9
+            : capacity - visitors != 0
                 ? "🔥 Hurry! The festival is almost full!"
                 : weather === "sunny"
                 ? "🎉 Everything is ready! Have fun!"

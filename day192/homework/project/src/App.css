@@ -1,0 +1,25 @@
+/*const destinations = [
+  { id: 1, city: "Paris", country: "France", days: 5, price: 1200 },
+  { id: 2, city: "Rome", country: "Italy", days: 3, price: 800 },
+  { id: 3, city: "Tokyo", country: "Japan", days: 10, price: 2500 },
+  { id: 4, city: "Tbilisi", country: "Georgia", days: 4, price: 400 }
+];
+
+დავალება:
+
+თითოეული მიმართულება გამოიტანე ცალკე ბარათში.
+
+გამოაჩინე ქალაქი, ქვეყანა, დღეების რაოდენობა და ფასი.
+
+თუ მოგზაურობა 7 დღეზე მეტია, გამოაჩინე "ხანგრძლივი მოგზაურობა".
+
+თუ ფასი 1000-ზე ნაკლებია, გამოაჩინე "ბიუჯეტური მოგზაურობა".*/
+
+
+.card{
+  
+  background-color: blue;
+  width: 150px;
+  color: white;
+  
+}

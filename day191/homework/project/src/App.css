@@ -1,0 +1,23 @@
+/*
+
+
+შექმენი თითოეული მომხმარებლისთვის პროფილის ბარათი:
+
+Giorgi
+Age: 22
+
+Skills:
+- JavaScript
+- React
+- CSS
+
+შემდეგი მომხმარებელიც იგივე პრინციპით.
+
+პირობები:
+
+Users-ისთვის .map()
+Skills-ისთვის კიდევ ერთი .map()
+User-ის key → user.id
+Skill-ის key → skill
+
+*/

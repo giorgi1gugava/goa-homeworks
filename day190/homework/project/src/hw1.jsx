@@ -5,7 +5,7 @@ function Hw1() {
     const price = 120;
     const discount = 25;
     const inStock = true;
-    const isPremium = false;
+    const isPremium = true;
     const rating = 4.7;
     const reviews = 128;
     const image = "https://example.com/headphones.jpg";
@@ -45,7 +45,7 @@ function Hw1() {
             <p>{discountMessage}</p>
 
 
-            <p>{inStock == true? "In Stock ✅": "Out of Stock ❌"}</p>
+            <p>{inStock == true ? "In Stock ✅": "Out of Stock ❌"}</p>
 
 
             {isPremium && <p>⭐ Premium Product</p>}
